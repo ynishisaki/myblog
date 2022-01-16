@@ -1,0 +1,62 @@
+.markdown {
+  /* @apply text-lg leading-relaxed; */
+  /* font-size: 18px;
+  line-height: 28px;
+  line-height: 1.625; */
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 70px;
+  background-color: #f6f1eb;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote,
+.markdown h2,
+.markdown h3 {
+  color: #4d5156;
+  font-family: メイリオ, 'Hiragino Sans', 'MSPゴシック', 'Helvetica W01', sans-serif;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  /* @apply my-6;
+  margin-top: 24px;
+  margin-bottom: 24px; */
+  margin: 20px 0;
+  width: 70%;
+  line-height: 1.4;
+  font-size: 1.1rem;
+  font-weight: 200;
+  /* overflow-wrap: break-word; */
+}
+
+.markdown h2 {
+  /* @apply text-3xl mt-12 mb-4 leading-snug; */
+  /* font-size: 30px;
+  line-height: 36px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  line-height: 1.375; */
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.markdown h3 {
+  /* @apply text-2xl mt-8 mb-4 leading-snug; */
+  margin: 0;
+  margin-top: 20px;
+  line-height: 1.15;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
