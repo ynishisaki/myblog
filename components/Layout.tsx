@@ -3,7 +3,7 @@ import { RiHome2Line } from 'react-icons/ri';
 import styles from '../styles/Home.module.css';
 import React from 'react';
 
-export const Layout = ({ children }:{ children: React.ReactElement }) => {
+export const Layout = ({ children }: { children: React.ReactElement }) => {
   return (
     <>
       <Box
@@ -16,14 +16,13 @@ export const Layout = ({ children }:{ children: React.ReactElement }) => {
         width={'100vw'}
         bg={'#f6f1eb'}
       >
-        
         <IconButton
           color={'#4d5156'}
           marginLeft={'70px'}
           aria-label='Home button'
           icon={<RiHome2Line />}
           fontSize='25px'
-          variant={'ghost'}
+          variant={'link'}
         />
         <Image
           left={'calc(50vw - 80px)'}
@@ -36,7 +35,7 @@ export const Layout = ({ children }:{ children: React.ReactElement }) => {
       </Box>
 
       {children}
-      
+
       <footer className={styles.footer}>
         <div className={styles.footersub}>
           <h1 className={styles.profiletitle}>I'm もにょ</h1>

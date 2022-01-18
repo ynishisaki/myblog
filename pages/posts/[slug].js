@@ -7,7 +7,6 @@ import markdownToHtml from '../../lib/markdownToHtml';
 import { PostBody } from '../../components/post-body';
 import { Layout } from '../../components/Layout';
 
-
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
