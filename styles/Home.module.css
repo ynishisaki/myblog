@@ -1,0 +1,103 @@
+.container {
+}
+
+.main {
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #f6f1eb;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  background-color: white;
+  /* border-top: 1px solid #eaeaea; */
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  /* flex-grow: 1; */
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.subtitle {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 1.15;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.text {
+  margin: 20px 0;
+  width: 70%;
+  line-height: 1.4;
+  font-size: 1.1rem;
+  font-weight: 200;
+  overflow-wrap: break-word;
+}
+
+.title,
+.subtitle,
+.text,
+.profiletitle,
+.profiletext {
+  color: #4d5156;
+  font-family: メイリオ, 'Hiragino Sans', 'MSPゴシック', 'Helvetica W01', sans-serif;
+}
+
+.footersub {
+  display: flex;
+  line-height: 2rem;
+  flex-direction: column;
+}
+
+.profiletitle {
+  /* margin-block-start: 0.83em; */
+  /* margin-block-end: 0.83em; */
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.profiletext {
+  /* text-align: center; */
+  /* font-size: 1rem; */
+  /* font-weight: 400; */
+  margin-top: 10px;
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

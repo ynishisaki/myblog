@@ -1,0 +1,46 @@
+{
+  "name": "four",
+  "private": true,
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 100
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css}'"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "axios": "^0.25.0",
+    "framer-motion": "^6.2.3",
+    "fs": "^0.0.1-security",
+    "gray-matter": "4.0.3",
+    "next": "12.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "remark": "13.0.0",
+    "remark-html": "13.0.1",
+    "zenn-content-css": "^0.1.106",
+    "zenn-markdown-html": "^0.1.106",
+    "zenn-embed-elements": "^0.1.106",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.12",
+    "@types/react": "17.0.38",
+    "eslint": "8.7.0",
+    "eslint-config-next": "12.0.9",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.5"
+  }
+}
