@@ -31,8 +31,8 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
     router.push(`/posts/privacy_policy`);
   };
 
-  const jumpToContact = () => {
-    router.push(`/posts/privacy_policy`);
+  const jumpToGithub = () => {
+    router.push(`https://github.com/ynishisaki/myblog.git`);
   };
 
   return (
@@ -83,19 +83,23 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
           >
             プライバシーポリシー/免責事項
           </Link>
-          <Link
+          {/* <Link
             onClick={jumpToContact}
             textDecoration='underline'
             _hover={{ textDecoration: 'none' }}
             w={'auto'}
           >
             お問い合わせ
-          </Link>
-          <Link href='https://github.com/ynishisaki/myblog.git' isExternal
+          </Link> */}
+          {/* <Link href='https://github.com/ynishisaki/myblog.git' isExternal */}
+          <Link
+          onClick={jumpToGithub}
           textDecoration='underline'
           _hover={{ textDecoration: 'none' }}
+          // w={'auto'}
           >
-            <AiFillGithub mx='2px' />お問い合わせはこちらor修正はGitHubにて 
+            <Icon as={AiFillGithub} mx={'2px'} />
+            お問い合わせはこちらor修正はGitHubにて 
           </Link>
         </HStack>
       </Box>

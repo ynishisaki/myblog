@@ -23,9 +23,10 @@ export const Intro = ({
 
   return (
     <>
-      <Box layerStyle={'posts'}>
-        <HStack spacing='0' w={'100%'}>
-          <Box w={'50%'} h={'100%'} pr={'5'}>
+      <Box layerStyle={'posts'} >
+        {/* <HStack spacing='0' w={'100%'} > */}
+        <Box  spacing='0' w={'100%'} display={{ md: 'flex' }}>
+          <Box w={{ md: '50%' }} h={{ base: '50%' }} pr={{ base: '0', md: '5' }} pb={{ base: '3', md: '0' }}>
             <Image
               fit={'cover'}
               boxSize={'100%'}
@@ -35,7 +36,7 @@ export const Intro = ({
               alt='coverimage'
             />
           </Box>
-          <Box w={'50%'} h={'100%'} pl={'5'}>
+          <Box w={{ md: '50%' }} h={{ base: '50%' }} pl={{ base: '0', md: '5' }} pt={{ base: '3', md: '0' }} >
             <Text textStyle={'h2'} mt={'30px'}>
               {title}
             </Text>
@@ -56,7 +57,8 @@ export const Intro = ({
               </Link>
             </Text>
           </Box>
-        </HStack>
+        {/* </HStack> */}
+        </Box>
       </Box>
     </>
   );

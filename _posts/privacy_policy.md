@@ -4,22 +4,21 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 # author:
-  # name: JJ Kasper
-  # picture: '/assets/blog/authors/jj.jpeg'
+# name: JJ Kasper
+# picture: '/assets/blog/authors/jj.jpeg'
 # ogImage:
-  # url: '/assets/blog/dynamic-routing/cover.jpg'
+# url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
 ## プライバシーポリシー/免責事項
 
-
 # サイトが使用しているアクセス解析ツールについて
 
-当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
-このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。
+当サイトでは、Google によるアクセス解析ツール「Google アナリティクス」を利用しています。
+この Google アナリティクスはトラフィックデータの収集のために Cookie を使用しています。
 このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
-この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
-この規約に関して、詳しくはGoogle アナリティクス利用規約をご覧ください。
+この機能は Cookie を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
+この規約に関して、詳しくは Google アナリティクス利用規約をご覧ください。
 
 # 個人情報の利用目的について
 
@@ -27,13 +26,8 @@ date: '2020-03-16T05:35:07.322Z'
 取得した個人情報は、必要な連絡のみに利用させていただくもので、これらの目的以外では利用いたしません。
 また、取得した個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。
 
-<ul>
-<li>本人の同意が得られた場合</li>
-<li>法令により開示が求められた場合</li>
-</ul>
-
-本人の同意が得られた場合
-法令により開示が求められた場合
+- 本人の同意が得られた場合
+- 法令により開示が求められた場合
 
 # 免責事項
 

@@ -40,6 +40,7 @@ const Home = ({
             {posts.slice(0, postCount + 1).map((post) => {
               return (
                 <Intro
+                  key={post.slug}
                   title={post.title}
                   coverImage={post.coverImage}
                   excerpt={post.excerpt}

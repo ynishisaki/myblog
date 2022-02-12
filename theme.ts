@@ -29,7 +29,7 @@ export const theme = extendTheme({
     },
     h2: {
       color: '#4d5156',
-      // margin: '16px 0',
+      // margin: '16px 0',      
       fontSize: '24px',
       fontWeight: 'bold',
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
@@ -38,21 +38,22 @@ export const theme = extendTheme({
 
   layerStyles: {
     base: {
-      // bg: 'gray.50',
+      // bg: 'yellow.100'
       // border: '2px solid',
       // borderColor: 'gray.500',
     },
     posts: {
-      display: 'flex',
-      h: '500%',
-      w: '100%',
-      py: '3%',
+      // display: 'flex',
+      // h: '500%',
+      // w: '100%',
+      py: '5%', 
       bg: '#f6f1eb',
     },
     conteiner: {
       bg: '#f6f1eb',
       mt: '70px',
-      p: '3% 20%',
+      // p: '3% 20%',
+      p: { base: '0 5%', md: '0 20%' },
       color: '#4d5156',
       display: 'flex',
       flexDirection: 'column',
