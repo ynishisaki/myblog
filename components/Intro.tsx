@@ -7,8 +7,7 @@ export const Intro = ({
   date,
   slug,
   excerpt,
-}:
-{
+}: {
   title: string;
   coverImage: string;
   date: string;
@@ -23,10 +22,14 @@ export const Intro = ({
 
   return (
     <>
-      <Box layerStyle={'posts'} >
-        {/* <HStack spacing='0' w={'100%'} > */}
-        <Box  spacing='0' w={'100%'} display={{ md: 'flex' }}>
-          <Box w={{ md: '50%' }} h={{ base: '50%' }} pr={{ base: '0', md: '5' }} pb={{ base: '3', md: '0' }}>
+      <Box layerStyle={'posts'}>
+        <Box spacing='0' w={'100%'} display={{ md: 'flex' }}>
+          <Box
+            w={{ md: '50%' }}
+            h={{ base: '50%' }}
+            pr={{ base: '0', md: '5' }}
+            pb={{ base: '3', md: '0' }}
+          >
             <Image
               fit={'cover'}
               boxSize={'100%'}
@@ -36,14 +39,15 @@ export const Intro = ({
               alt='coverimage'
             />
           </Box>
-          <Box w={{ md: '50%' }} h={{ base: '50%' }} pl={{ base: '0', md: '5' }} pt={{ base: '3', md: '0' }} >
-            <Text textStyle={'h2'} mt={'30px'}>
-              {title}
-            </Text>
-            <Text textStyle={'p'} mt={'20px'}>
-              {date}
-            </Text>
-            <Text textStyle={'p'} mt={'20px'} noOfLines={3}>
+          <Box
+            w={{ md: '50%' }}
+            h={{ base: '50%' }}
+            pl={{ base: '0', md: '5' }}
+            pt={{ base: '3', md: '0' }}
+          >
+            <Text textStyle={'h2'}>{title}</Text>
+            <Text textStyle={'p'}>{date}</Text>
+            <Text textStyle={'p'} noOfLines={3}>
               {excerpt}
             </Text>
             <Text textStyle={'p'} mt={'20px'}>
@@ -57,7 +61,6 @@ export const Intro = ({
               </Link>
             </Text>
           </Box>
-        {/* </HStack> */}
         </Box>
       </Box>
     </>

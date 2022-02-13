@@ -1,4 +1,13 @@
-import { Box, Button, IconButton, Image, layout, ListItem, UnorderedList } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Center,
+  IconButton,
+  Image,
+  layout,
+  ListItem,
+  UnorderedList,
+} from '@chakra-ui/react';
 import { Conteiner } from '../components/Conteiner';
 import { Intro } from '../components/Intro';
 import { Layout } from '../components/Layout';
@@ -50,16 +59,18 @@ const Home = ({
               );
             })}
             {postCount + 1 !== posts.length && (
-              <Button
-                onClick={ReadMorePosts}
-                aria-label={'read more posts'}
-                variant={'outline'}
-                textStyle={'h1'}
-                borderColor={'#4d5156'}
-                _hover={{ backgroundColor: 'gray ' }}
-              >
-                read more
-              </Button>
+              <Center>
+                <Button
+                  onClick={ReadMorePosts}
+                  aria-label={'read more posts'}
+                  variant={'outline'}
+                  textStyle={'h1'}
+                  borderColor={'#4d5156'}
+                  _hover={{ backgroundColor: 'gray ' }}
+                >
+                  read more
+                </Button>
+              </Center>
             )}
           </>
         </Conteiner>

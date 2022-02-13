@@ -1,5 +1,6 @@
 .znc {
   line-height: 1.9;
+  /* width: 60%; */
 }
 
 .znc > *:first-child {
@@ -261,7 +262,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .znc pre > code {
+  z .znc pre > code {
     padding: 1rem 0.8rem;
     font-size: 0.85em;
   }
