@@ -1,4 +1,3 @@
-// import '../styles/globals.css';
 import '../styles/zenn-global.css';
 import { useEffect } from 'react';
 import type { AppProps } from 'next/app';

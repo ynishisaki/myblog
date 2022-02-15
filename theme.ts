@@ -43,7 +43,8 @@ export const theme = extendTheme({
       // borderColor: 'gray.500',
     },
     posts: {
-      pb: { base: '25%', md: '15%' },
+      pt: { base: '5%', md: '1%' },
+      pb: { base: '20%', md: '10%' },
       bg: '#f6f1eb',
     },
     conteiner: {

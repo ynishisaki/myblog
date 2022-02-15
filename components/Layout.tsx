@@ -38,21 +38,13 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
     router.push(`https://github.com/ynishisaki/myblog.git`);
   };
 
-  // const SomeComponent = () => {
-  
-    const isMobile = useBreakpointValue({ base: true, md: false });
-    
+  const isnotMobile = useBreakpointValue({ base: false, md: true });
+
+  console.log(isnotMobile);
 
   return (
     <>
       <Box layerStyle={'header'} boxShadow='lg'>
-      <>
-        if (isMobile) {
-      return <MobileVersion />;
-    }
-    return <DesktopVersion />;
-  };
-  </>
         <Button
           onClick={jumpToHome}
           layerStyle={'homeButton'}
@@ -63,7 +55,7 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
           fontSize={'25px'}
           _hover={{ backgroundColor: 'gray ' }}
         >
-          <Text textStyle={'h1'}>Home</Text>
+          {isnotMobile && <Text textStyle={'h1'}>Home</Text>}
         </Button>
         {/* <Image layerStyle={'blogLogo'} src={'/logo.png'}></Image> */}
         <Text textStyle={'h2'} layerStyle={'blogTitle'}>
@@ -78,6 +70,7 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
             もにょ
           </Text>
           <Text textStyle={'p'}>
+            ずんばばずんばば
             {/* 今年の目標は、
             <UnorderedList>
               <ListItem>ハーブを植える</ListItem>
