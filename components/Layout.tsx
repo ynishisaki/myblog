@@ -40,8 +40,6 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
 
   const isnotMobile = useBreakpointValue({ base: false, md: true });
 
-  console.log(isnotMobile);
-
   return (
     <>
       <Box layerStyle={'header'} boxShadow='lg'>
@@ -59,7 +57,7 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
         </Button>
         {/* <Image layerStyle={'blogLogo'} src={'/logo.png'}></Image> */}
         <Text textStyle={'h2'} layerStyle={'blogTitle'}>
-          もにょブログ
+          もにょblog
         </Text>
       </Box>
       {children}
@@ -70,7 +68,8 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
             もにょ
           </Text>
           <Text textStyle={'p'}>
-            ずんばばずんばば
+            海なし岐阜県生まれ。 今は東京に住んでいる。<br></br>
+            なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。
             {/* 今年の目標は、
             <UnorderedList>
               <ListItem>ハーブを植える</ListItem>
