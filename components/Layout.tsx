@@ -71,14 +71,6 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
             海なし岐阜県生まれ。 今は東京に住んでいる。<br></br>
             なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
             使用言語は、Python、JavaScript、Fortran。
-            {/* 今年の目標は、
-            <UnorderedList>
-              <ListItem>ハーブを植える</ListItem>
-              <ListItem>ブログを開設する</ListItem>
-              <ListItem>脱毛を契約する</ListItem>
-              <ListItem>泳げるようになる</ListItem>
-              <ListItem>証券口座を開設する</ListItem>
-            </UnorderedList>{' '} */}
           </Text>
         </Box>
         <Box layerStyle={'borderLine'} />
@@ -96,15 +88,6 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
               プライバシーポリシー/免責事項
             </Link>
           </Center>
-          {/* <Link
-            onClick={jumpToContact}
-            textDecoration='underline'
-            _hover={{ textDecoration: 'none' }}
-            w={'auto'}
-          >
-            お問い合わせ
-          </Link> */}
-          {/* <Link href='https://github.com/ynishisaki/myblog.git' isExternal */}
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
               alignItems={'center'}
