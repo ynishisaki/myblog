@@ -69,7 +69,8 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
           </Text>
           <Text textStyle={'p'}>
             海なし岐阜県生まれ。 今は東京に住んでいる。<br></br>
-            なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。
+            なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
+            使用言語は、Python、JavaScript、Fortran。
             {/* 今年の目標は、
             <UnorderedList>
               <ListItem>ハーブを植える</ListItem>
