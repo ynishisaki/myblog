@@ -3,7 +3,6 @@ import { NextRouter, useRouter } from 'next/router';
 
 export const Intro = ({
   title,
-  coverImage,
   date,
   slug,
   excerpt,

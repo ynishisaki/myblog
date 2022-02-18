@@ -29,7 +29,7 @@ const Home = ({
     excerpt: string;
   }>;
 }) => {
-  const initialState = 0;
+  const initialState = 2;
   const [postCount, setCount] = useState(initialState);
   const ReadMorePosts = () => {
     setCount(postCount + 1);

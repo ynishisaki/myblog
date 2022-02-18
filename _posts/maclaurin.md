@@ -1,24 +1,18 @@
 ---
-title: 'マクローリン展開'
+title: 'Pythonではじめてのマクローリン展開'
 excerpt: 'Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 得られた式ををmatplotlibでグラフ表示する。'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-03-16'
-author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
-ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+date: '2022-02-17'
 ---
 
 # 本記事の内容
-Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
-得られた式をmatplotlibでグラフ表示する。
 
-
-
+Python の sympy を用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
+得られた式を matplotlib でグラフ表示する。
 
 # マクローリン展開する関数
+
 指数関数$f(x)=e^{x}$のマクローリン展開を、以下に示す。
 
 $$
@@ -28,22 +22,19 @@ e^{x} &= \displaystyle\sum_{n=0}^\infin{x^{n} \above{1pt} n!} \\
 \end{aligned}
 $$
 
+# sympy でマクローリン展開
 
-
-
-# sympyでマクローリン展開
-sympyのドキュメントはこちら。
-Symbolについて
+sympy のドキュメントはこちら。
+Symbol について
 https://docs.sympy.org/dev/tutorial/gotchas.html#symbols
 
 series（級数展開）について
 https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion
 
-
 #### コード
 
 ```python
-from sympy import * 
+from sympy import *
 
 # 文字'x'を変数xとして定義
 x = Symbol('x')
@@ -61,19 +52,17 @@ print(maclaurin.removeO())
 x**4/24 + x**3/6 + x**2/2 + x + 1
 ```
 
-4次の第5項までのマクローリン展開結果が出力された。
-O(x**5)は、5次以降の剰余項であり、.remove()で取り除くことができる。
-
-
-
+4 次の第 5 項までのマクローリン展開結果が出力された。
+O(x\*\*5)は、5 次以降の剰余項であり、.remove()で取り除くことができる。
 
 # マクローリン展開で得られた式を、グラフ表示する
+
 上記の計算結果が$f(x)=e^{x}$の近似になっているか確かめるために、numpy.exp()による計算結果も同一グラフ上にプロットする。
 
 #### コード
 
 ```python
-from sympy import * 
+from sympy import *
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -100,11 +89,9 @@ plt.show()
 
 #### 出力結果
 
-第10項(n=10)までマクローリン展開した結果を以下に示す。
+第 10 項(n=10)までマクローリン展開した結果を以下に示す。
 ![](https://storage.googleapis.com/zenn-user-upload/f467775e7619-20211218.jpeg)
 
-
-
-コード内の変数nを変えることで、より$f(x)=e^{x}$に近似した曲線グラフを得ることができる。
-例として、第50項(n=50)までマクローリン展開した結果を以下に示す。
+コード内の変数 n を変えることで、より$f(x)=e^{x}$に近似した曲線グラフを得ることができる。
+例として、第 50 項(n=50)までマクローリン展開した結果を以下に示す。
 ![](https://storage.googleapis.com/zenn-user-upload/ad0bfbd6161a-20211218.jpeg)
