@@ -40,7 +40,7 @@ const Home = ({
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>もにょblog｜Home</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>

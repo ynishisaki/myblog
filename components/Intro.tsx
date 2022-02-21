@@ -3,6 +3,7 @@ import { NextRouter, useRouter } from 'next/router';
 
 export const Intro = ({
   title,
+  coverImage,
   date,
   slug,
   excerpt,
@@ -34,7 +35,7 @@ export const Intro = ({
               boxSize={'100%'}
               objectFit={'cover'}
               borderRadius={'1rem'}
-              src={'/images.jpeg'}
+              src={coverImage}
               alt='coverimage'
             />
           </Box>

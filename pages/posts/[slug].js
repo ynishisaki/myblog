@@ -5,11 +5,12 @@ import Head from 'next/head';
 import { CMS_NAME } from '../../lib/constants';
 import markdownToHtml from 'zenn-markdown-html';
 import 'zenn-content-css';
+import { PostHeader } from '../../components/post-header';
 import { PostBody } from '../../components/post-body';
 import { Layout } from '../../components/Layout';
 import { Conteiner } from '../../components/Conteiner';
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, morePosts }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -25,7 +26,14 @@ export default function Post({ post, morePosts, preview }) {
 
       <Layout>
         <Conteiner>
-          <PostBody content={post.content}></PostBody>
+          <>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+            ></PostHeader>
+            <PostBody content={post.content}></PostBody>
+          </>
         </Conteiner>
       </Layout>
     </>
@@ -33,7 +41,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, ['title', 'date', 'slug', 'content']);
+  const post = getPostBySlug(params.slug, ['slug', 'title', 'date', 'coverImage', 'content']);
 
   const content = await markdownToHtml(post.content || '');
 
