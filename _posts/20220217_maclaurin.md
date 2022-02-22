@@ -2,7 +2,7 @@
 title: 'Pythonではじめてのマクローリン展開'
 excerpt: 'Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 得られた式ををmatplotlibでグラフ表示する。'
-coverImage: '../assets/blog/20220217_maclaurin/cover.jpg'
+coverImage: 'https://i.gyazo.com/3a6935e7ee2b300500e76567041ea56a.png'
 date: '2022-02-17'
 ---
 

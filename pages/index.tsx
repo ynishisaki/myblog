@@ -1,19 +1,8 @@
-import {
-  Box,
-  Button,
-  Center,
-  IconButton,
-  Image,
-  layout,
-  ListItem,
-  UnorderedList,
-} from '@chakra-ui/react';
+import { Button, Center } from '@chakra-ui/react';
 import { Conteiner } from '../components/Conteiner';
 import { Intro } from '../components/Intro';
 import { Layout } from '../components/Layout';
-import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import { NextRouter, useRouter } from 'next/router';
 import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
@@ -22,11 +11,11 @@ const Home = ({
   posts,
 }: {
   posts: Array<{
+    slug: string;
     title: string;
+    excerpt: string;
     coverImage: string;
     date: string;
-    slug: string;
-    excerpt: string;
   }>;
 }) => {
   const initialState = 2;
@@ -36,7 +25,7 @@ const Home = ({
   };
 
   const router: NextRouter = useRouter();
-  // debugger;
+
   return (
     <>
       <Head>
@@ -50,11 +39,11 @@ const Home = ({
               return (
                 <Intro
                   key={post.slug}
-                  title={post.title}
-                  coverImage={post.coverImage}
-                  excerpt={post.excerpt}
-                  date={post.date}
                   slug={post.slug}
+                  title={post.title}
+                  excerpt={post.excerpt}
+                  coverImage={post.coverImage}
+                  date={post.date}
                 />
               );
             })}
@@ -80,16 +69,7 @@ const Home = ({
 };
 
 export async function getStaticProps() {
-  const posts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'excerpt',
-    'content',
-    'ogImage',
-    'coverImage',
-  ]);
+  const posts = getAllPosts(['slug', 'title', 'excerpt', 'date', 'coverImage', 'content']);
 
   return {
     props: {

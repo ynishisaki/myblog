@@ -1,4 +1,4 @@
-import { Box, Image, HStack, Link, Text, LinkBox, Heading, LinkOverlay } from '@chakra-ui/react';
+import { Box, Image, Link, Text } from '@chakra-ui/react';
 import { NextRouter, useRouter } from 'next/router';
 
 export const Intro = ({
@@ -34,7 +34,6 @@ export const Intro = ({
               fit={'cover'}
               boxSize={'100%'}
               objectFit={'cover'}
-              borderRadius={'1rem'}
               src={coverImage}
               alt='coverimage'
             />

@@ -41,7 +41,14 @@ export default function Post({ post, morePosts }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, ['slug', 'title', 'date', 'coverImage', 'content']);
+  const post = getPostBySlug(params.slug, [
+    'slug',
+    'title',
+    'coverImage',
+    'exerpt',
+    'date',
+    'content',
+  ]);
 
   const content = await markdownToHtml(post.content || '');
 

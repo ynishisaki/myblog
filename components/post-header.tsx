@@ -11,9 +11,12 @@ export const PostHeader = ({
 }) => {
   return (
     <Box mb={50}>
-      <Text>{title}</Text>
-      <Text>{date}</Text>
+      <Text textStyle={'p'} fontSize={'2.4em'} fontWeight={'bold'}>
+        {title}
+      </Text>
+      <Text textStyle={'p'}>{date}</Text>
       <Image
+        my={5}
         fit={'cover'}
         boxSize={'100%'}
         objectFit={'cover'}
