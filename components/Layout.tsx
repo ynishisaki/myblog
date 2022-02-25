@@ -48,7 +48,9 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
           layerStyle={'homeButton'}
           aria-label={'Home button'}
           leftIcon={<RiHome2Line />}
-          variant={'ghost'}
+          // variant={'ghost'}
+          variant={'outline'}
+          borderColor={'#4d5156'}
           marginLeft={{ base: '0px', md: '70px' }}
           fontSize={'25px'}
           _hover={{ backgroundColor: 'gray ' }}
@@ -70,7 +72,7 @@ export const Layout = ({ children }: { children: React.ReactElement }) => {
           <Text textStyle={'p'}>
             海なし岐阜県生まれ。 今は東京に住んでいる。<br></br>
             なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
-            使用言語は、Python、JavaScript、Fortran。
+            使用言語は、Python、JavaScript。
           </Text>
         </Box>
         <Box layerStyle={'borderLine'} />
