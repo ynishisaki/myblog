@@ -30,9 +30,9 @@
     "react-icons": "^4.3.1",
     "remark": "13.0.0",
     "remark-html": "13.0.2",
-    "zenn-content-css": "^0.1.106",
-    "zenn-markdown-html": "^0.1.106",
-    "zenn-embed-elements": "^0.1.106",
+    "zenn-content-css": "^0.1.107",
+    "zenn-markdown-html": "^0.1.107",
+    "zenn-embed-elements": "^0.1.107",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {

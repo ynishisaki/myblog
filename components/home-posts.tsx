@@ -1,7 +1,7 @@
 import { Box, Image, Link, Text } from '@chakra-ui/react';
 import { NextRouter, useRouter } from 'next/router';
 
-export const Intro = ({
+export const HomePosts = ({
   title,
   coverImage,
   date,
@@ -31,9 +31,13 @@ export const Intro = ({
             pb={{ base: '3', md: '0' }}
           >
             <Image
-              fit={'cover'}
+              // fit={'fill'}
               boxSize={'100%'}
-              objectFit={'cover'}
+              // htmlHeight={'100%'}
+              // boxSize={'100px'}
+              // objectFit={'cover'}
+              // objectFit={'contain'}
+              objectFit={'fill'}
               src={coverImage}
               alt='coverimage'
             />

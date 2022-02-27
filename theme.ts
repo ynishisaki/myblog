@@ -47,7 +47,7 @@ export const theme = extendTheme({
       pb: { base: '20%', md: '10%' },
       bg: '#f6f1eb',
     },
-    conteiner: {
+    display: {
       bg: '#f6f1eb',
       mt: '70px',
       p: { base: '3% 5%', md: '3% 20%' },
