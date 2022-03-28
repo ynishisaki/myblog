@@ -13,7 +13,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
   };
 
   const jumpToPrivacyPolicy = () => {
-    router.push(`/posts/20220215_privacy_policy`);
+    router.push(`/posts/20220215_privacy-policy`);
   };
 
   const jumpToGithub = () => {

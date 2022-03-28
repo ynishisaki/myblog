@@ -14,13 +14,15 @@ const Home = ({
     title: string;
     excerpt: string;
     coverImage: string;
+    coverImagePhotographer: string;
+    coverImageSrc: string;
     date: string;
   }>;
 }) => {
   const initialState = 2;
   const [postCount, setCount] = useState(initialState);
   const ReadMorePosts = () => {
-    setCount(postCount + 1);
+    setCount(postCount + 2);
   };
 
   const router: NextRouter = useRouter();
@@ -42,6 +44,8 @@ const Home = ({
                 title={post.title}
                 excerpt={post.excerpt}
                 coverImage={post.coverImage}
+                coverImagePhotographer={post.coverImagePhotographer}
+                coverImageSrc={post.coverImageSrc}
                 date={post.date}
               />
             );
@@ -67,7 +71,16 @@ const Home = ({
 };
 
 export async function getStaticProps() {
-  const posts = getAllPosts(['slug', 'title', 'excerpt', 'date', 'coverImage', 'content']);
+  const posts = getAllPosts([
+    'slug',
+    'title',
+    'excerpt',
+    'date',
+    'coverImage',
+    'coverImagePhotographer',
+    'coverImageSrc',
+    'content',
+  ]);
 
   return {
     props: {

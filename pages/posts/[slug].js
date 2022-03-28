@@ -25,7 +25,13 @@ export default function Post({ post, morePosts }) {
 
       <HeaderAndFooter>
         <Box layerStyle={'display'}>
-          <PostHeader title={post.title} coverImage={post.coverImage} date={post.date} />
+          <PostHeader
+            title={post.title}
+            coverImage={post.coverImage}
+            coverImagePhotographer={post.coverImagePhotographer}
+            coverImageSrc={post.coverImageSrc}
+            date={post.date}
+          />
           <PostBody content={post.content} />
         </Box>
       </HeaderAndFooter>
@@ -38,6 +44,8 @@ export async function getStaticProps({ params }) {
     'slug',
     'title',
     'coverImage',
+    'coverImagePhotographer',
+    'coverImageSrc',
     'exerpt',
     'date',
     'content',
