@@ -27,7 +27,8 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
       <Box layerStyle={'header'} boxShadow='lg'>
         <Button
           onClick={jumpToHome}
-          layerStyle={'homeButton'}
+          // layerStyle={'homeButton'}
+          pl={'4'}
           aria-label={'Home button'}
           leftIcon={<RiHome2Line />}
           // variant={'ghost'}
@@ -35,6 +36,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           borderColor={'#4d5156'}
           marginLeft={{ base: '0px', md: '70px' }}
           fontSize={'25px'}
+          width={'auto'}
           _hover={{ backgroundColor: 'gray ' }}
         >
           {isnotMobile && <Text textStyle={'h1'}>Home</Text>}

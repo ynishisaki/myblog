@@ -44,10 +44,10 @@ export const HomePosts = ({
           >
             <Text textStyle={'h2'}>{title}</Text>
             <Text textStyle={'p'}>{date}</Text>
-            <Text textStyle={'p'} noOfLines={3}>
+            <Text textStyle={'p'} noOfLines={3} mt={'30px'}>
               {excerpt}
             </Text>
-            <Text textStyle={'p'} mt={'20px'}>
+            <Text textStyle={'p'} mt={'10px'}>
               詳しくは{' '}
               <Link
                 onClick={jumpToSlug}
