@@ -15,9 +15,9 @@ export const theme = extendTheme({
     p: {
       color: '#4d5156',
       margin: '8px 0',
-      fontSize: { base: '14px', md: '16px' },
+      fontSize: '16px',
       fontWeight: '200',
-      fontFamily: 'メイリオ',
+      fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
       // lineHeight: '1.4',
     },
     h1: {
