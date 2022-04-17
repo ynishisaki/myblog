@@ -88,6 +88,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
             </Link>
           </Center>
         </Stack>
+        <Center textStyle={'p'}>© 2022 もにょ</Center>
       </Box>
     </>
   );
