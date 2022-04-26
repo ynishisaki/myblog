@@ -34,7 +34,7 @@ export const HomePosts = ({
             pr={{ base: '0', md: '5' }}
             pb={{ base: '3', md: '0' }}
           >
-            <Image objectFit={'fill'} src={coverImage} alt='coverimage' />
+            <Image objectFit={'fill'} src={coverImage} alt='coverimage from Unsplash' />
           </Box>
           <Box
             w={{ md: '50%' }}

@@ -24,9 +24,8 @@ export const PostHeader = ({
         fit={'cover'}
         boxSize={'100%'}
         objectFit={'cover'}
-        // borderRadius={'1rem'}
         src={coverImage}
-        alt='coverimage'
+        alt='coverimage from Unsplash'
       />
       <Text textStyle={'p'} align={'right'}>
         Photo by{' '}
