@@ -32,7 +32,7 @@ const Home = ({
       <Head>
         <meta charSet='utf-8' />
         <title>Home｜もにょblog</title>
-        <meta name='description' content='' />
+        <meta name='description' content='つれづれなるもにょ' />
         <meta name='author' content='monyo'></meta>
         <link rel='icon' href='/favicon.ico' />
       </Head>
