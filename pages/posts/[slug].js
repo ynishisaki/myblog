@@ -25,8 +25,8 @@ export default function Post({ post }) {
         <meta property='og:site_name' content='もにょblog' />
         <meta property='og:title' content={post.title} />
         <meta property='og:type' content='article' />
-        <meta property='og:url' content={`https://www.monyoblog.com/posts/${post.slug}`} />
-        <meta property='og:image' content={post.coverImage} />
+        <meta property='og:url' content={`https://www.monyoblog.com/posts/${post.slug}/`} />
+        <meta property='og:image' content={`https://www.monyoblog.com/${post.coverImage}`} />
         <meta property='og:description' content={post.excerpt} />
         <meta property='og:locale' content='ja_JP' />
         <link rel='icon' href='/favicon.ico' />
