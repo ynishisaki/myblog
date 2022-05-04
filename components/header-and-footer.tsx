@@ -56,7 +56,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
             もにょ
           </Text>
           <Text textStyle={'p'}>
-            海なし岐阜県生まれ。 今は東京に住んでいる。<br></br>
+            海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
             なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
             使用言語は、Python、JavaScript。
           </Text>
