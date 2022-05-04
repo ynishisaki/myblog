@@ -16,7 +16,7 @@ export default function Post({ post }) {
   }
 
   return (
-    <>
+    <html prefix='og: https://ogp.me/ns#'>
       <Head>
         <meta charSet='utf-8' />
         <title>{post.title}｜もにょblog</title>
@@ -48,7 +48,7 @@ export default function Post({ post }) {
           <PostBody content={post.content} />
         </Box>
       </HeaderAndFooter>
-    </>
+    </html>
   );
 }
 

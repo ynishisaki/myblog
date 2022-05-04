@@ -28,7 +28,7 @@ const Home = ({
   const router: NextRouter = useRouter();
 
   return (
-    <>
+    <html prefix='og: https://ogp.me/ns#'>
       <Head>
         <meta charSet='utf-8' />
         <title>Home｜もにょblog</title>
@@ -85,7 +85,7 @@ const Home = ({
           )}
         </Box>
       </HeaderAndFooter>
-    </>
+    </html>
   );
 };
 
