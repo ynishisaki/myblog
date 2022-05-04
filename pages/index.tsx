@@ -47,6 +47,10 @@ const Home = ({
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
         <meta property='og:locale' content='ja_JP' />
+        {/* for twitter */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@monyo75559702' />
+        <meta name='twitter:player' content='@monyo75559702' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <HeaderAndFooter>
