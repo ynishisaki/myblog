@@ -18,8 +18,17 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
+        <meta charSet='utf-8' />
         <title>{post.title}｜もにょblog</title>
+        <meta name='author' content='monyo'></meta>
         <meta name='description' content={post.excerpt} />
+        <meta property='og:site_name' content='もにょblog' />
+        <meta property='og:title' content={post.title} />
+        <meta property='og:type' content='article' />
+        <meta property='og:url' content={`https://www.monyoblog.com/posts/${post.slug}`} />
+        <meta property='og:image' content={post.coverImage} />
+        <meta property='og:description' content={post.excerpt} />
+        <meta property='og:locale' content='ja_JP' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 

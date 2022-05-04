@@ -32,11 +32,21 @@ const Home = ({
       <Head>
         <meta charSet='utf-8' />
         <title>Home｜もにょblog</title>
+        <meta name='author' content='monyo'></meta>
         <meta
           name='description'
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
-        <meta name='author' content='monyo'></meta>
+        <meta property='og:site_name' content='もにょblog' />
+        <meta property='og:title' content='Home｜もにょblog' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://www.monyoblog.com/' />
+        <meta property='og:image' content='' />
+        <meta
+          property='og:description'
+          content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
+        />
+        <meta property='og:locale' content='ja_JP' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <HeaderAndFooter>
