@@ -1,6 +1,8 @@
 import { Box, Text, Icon, Link, Button, Stack, Center, useBreakpointValue } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { RiHome2Line } from 'react-icons/ri';
 import { FcBusinesswoman } from 'react-icons/fc';
+import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai';
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
@@ -43,7 +45,11 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           width={'auto'}
           _hover={{ backgroundColor: 'gray ' }}
         >
-          {isnotMobile && <Text textStyle={'h1'}>Home</Text>}
+          {isnotMobile && (
+            <Text textStyle={'h1'} mt={'1'}>
+              ホーム
+            </Text>
+          )}
         </Button>
         {/* <Image layerStyle={'blogLogo'} src={'/logo.png'}></Image> */}
         <Text textStyle={'h2'} layerStyle={'blogTitle'}>
@@ -83,12 +89,13 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
               alignItems={'center'}
-              onClick={jumpToGithub}
+              // onClick={jumpToGithub}
+              href='https://github.com/ynishisaki/myblog.git'
               textDecoration='underline'
               _hover={{ textDecoration: 'none' }}
+              isExternal
             >
-              <Icon as={AiFillGithub} />
-              お問い合わせはGitHub{AiFillGithub}にて
+              <Icon as={AiFillGithub} /> お問い合わせはGitHubにて <Icon as={FiExternalLink} />
             </Link>
           </Center>
         </Stack>

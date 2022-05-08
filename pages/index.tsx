@@ -76,10 +76,11 @@ const Home = ({
                 aria-label={'read more posts'}
                 variant={'outline'}
                 textStyle={'h1'}
+                mt={'1'}
                 borderColor={'#4d5156'}
                 _hover={{ backgroundColor: 'gray ' }}
               >
-                read more
+                前の記事
               </Button>
             </Center>
           )}

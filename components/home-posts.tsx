@@ -47,16 +47,15 @@ export const HomePosts = ({
             <Text textStyle={'p'} noOfLines={3} mt={'30px'}>
               {excerpt}
             </Text>
-            <Text textStyle={'p'} mt={'10px'}>
-              詳しくは{' '}
-              <Link
-                onClick={jumpToSlug}
-                textDecoration='underline'
-                _hover={{ textDecoration: 'none' }}
-              >
-                こちら
-              </Link>
-            </Text>
+            <Link
+              textStyle={'p'}
+              mt={'10px'}
+              onClick={jumpToSlug}
+              textDecoration='underline'
+              _hover={{ textDecoration: 'none' }}
+            >
+              もっと読む
+            </Link>
           </Box>
         </Box>
       </Box>
