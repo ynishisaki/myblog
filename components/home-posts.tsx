@@ -1,4 +1,4 @@
-import { Box, Image, Link, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Link, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 import { NextRouter, useRouter } from 'next/router';
 
 export const HomePosts = ({
@@ -26,7 +26,7 @@ export const HomePosts = ({
 
   return (
     <>
-      <Box layerStyle={'posts'}>
+      <LinkBox as='article' layerStyle={'posts'} borderWidth='2px' rounded='md'>
         <Box spacing='0' w={'100%'} display={{ md: 'flex' }}>
           <Box
             w={{ md: '50%' }}
@@ -42,23 +42,20 @@ export const HomePosts = ({
             pl={{ base: '0', md: '5' }}
             pt={{ base: '3', md: '0' }}
           >
-            <Text textStyle={'h2'}>{title}</Text>
-            <Text textStyle={'p'}>{date}</Text>
+            <Heading>
+              <LinkOverlay href={`/posts/${slug}`} textStyle={'h2'}>
+                {title}
+              </LinkOverlay>
+            </Heading>
+            <Box as='time' textStyle={'p'}>
+              {date}
+            </Box>
             <Text textStyle={'p'} noOfLines={3} mt={'30px'}>
               {excerpt}
             </Text>
-            <Link
-              textStyle={'p'}
-              mt={'10px'}
-              onClick={jumpToSlug}
-              textDecoration='underline'
-              _hover={{ textDecoration: 'none' }}
-            >
-              もっと読む
-            </Link>
           </Box>
         </Box>
-      </Box>
+      </LinkBox>
     </>
   );
 };
