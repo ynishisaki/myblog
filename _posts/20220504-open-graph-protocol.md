@@ -1,7 +1,7 @@
 ---
 title: '自分のブログにOpen Graph Protocol（OGP）を設定したよ'
 excerpt: '自分のブログ（Next.js）にOpen Graph Protocol（OGP）を設定し、Twitterでブログ記事へのリンクがカード表示されることを確かめる。'
-coverImage: '/assets/blog/20220504_open-graph-protocol/cover.jpg'
+coverImage: '/assets/blog/20220504-open-graph-protocol/cover.jpg'
 coverImagePhotographer: 'Persnickety Prints'
 coverImageSrc: 'https://unsplash.com/photos/98uOSdqum6E'
 date: '2022-05-04'

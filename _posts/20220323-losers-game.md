@@ -1,7 +1,7 @@
 ---
 title: '敗者のゲームを読んで、長期での投資運用の考え方を学ぶ'
 excerpt: 'チャールズ・エリスの敗者のゲームを読んだ。この本を読んで、投資運用の目的と人生設計について、勉強になったことを２つ紹介する。'
-coverImage: '/assets/blog/20220323_losers-game/cover.jpg'
+coverImage: '/assets/blog/20220323-losers-game/cover.jpg'
 coverImagePhotographer: 'micheile || visual stories'
 coverImageSrc: 'https://unsplash.com/photos/lZ_4nPFKcV8'
 date: '2022-03-23'

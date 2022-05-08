@@ -1,7 +1,7 @@
 ---
 title: 'ブログ用ドメインを取得したよ'
 excerpt: 'ブログを開設して、2か月ほど経過した。自分のブログに愛着が湧いてきたため、ブログ用のドメインを取得することにした。'
-coverImage: '/assets/blog/20220502_get-domain/cover.jpg'
+coverImage: '/assets/blog/20220502-get-domain/cover.jpg'
 coverImagePhotographer: 'Irina Blok'
 coverImageSrc: 'https://unsplash.com/photos/RLR9AfOd5hw'
 date: '2022-05-02'

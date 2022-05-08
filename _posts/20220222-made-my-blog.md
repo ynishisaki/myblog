@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript未経験者が、2ヶ月勉強してブログをつくった話'
 excerpt: 'このブログは、JavaScript未経験の私が、JavaScriptの勉強を始めて２か月で完成・開設したものである。なぜ２か月でブログを開設することができたのか、振り返ってまとめた。'
-coverImage: '/assets/blog/20220222_made-my-blog/cover.jpg'
+coverImage: '/assets/blog/20220222-made-my-blog/cover.jpg'
 coverImagePhotographer: 'Lautaro Andreani'
 coverImageSrc: 'https://unsplash.com/photos/xkBaqlcqeb4'
 date: '2022-02-22'

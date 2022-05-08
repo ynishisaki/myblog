@@ -1,7 +1,7 @@
 import { Box, Text, Icon, Link, Button, Stack, Center, useBreakpointValue } from '@chakra-ui/react';
 import { RiHome2Line } from 'react-icons/ri';
 import { FcBusinesswoman } from 'react-icons/fc';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai';
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 
@@ -13,11 +13,15 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
   };
 
   const jumpToPrivacyPolicy = () => {
-    router.push(`/posts/20220215_privacy-policy`);
+    router.push(`/posts/20220215-privacy-policy`);
   };
 
   const jumpToGithub = () => {
     router.push(`https://github.com/ynishisaki/myblog.git`);
+  };
+
+  const jumpToTwitter = () => {
+    router.push(`https://twitter.com/monyo75559702`);
   };
 
   const isnotMobile = useBreakpointValue({ base: false, md: true });
@@ -84,7 +88,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
               _hover={{ textDecoration: 'none' }}
             >
               <Icon as={AiFillGithub} />
-              お問い合わせはGitHubにて
+              お問い合わせはGitHub{AiFillGithub}にて
             </Link>
           </Center>
         </Stack>
