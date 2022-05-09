@@ -14,7 +14,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
   };
 
   const jumpToPrivacyPolicy = () => {
-    router.push(`/posts/20220215-privacy-policy`);
+    router.push(`/posts/20220215-privacy-policy/`);
   };
 
   const jumpToGithub = () => {
@@ -38,7 +38,8 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           leftIcon={<RiHome2Line />}
           // variant={'ghost'}
           variant={'outline'}
-          borderColor={'#4d5156'}
+          // borderColor={'#4d5156'}
+          borderColor={'gray.500'}
           marginLeft={{ base: '0px', md: '70px' }}
           fontSize={'25px'}
           width={'auto'}
@@ -67,7 +68,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           <Text textStyle={'p'}>
             海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
             なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
-            使用言語は、Python、JavaScript。
+            使用言語は、Python、TypeScript。
           </Text>
         </Box>
         <Box layerStyle={'borderLine'} />
@@ -78,7 +79,8 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
         >
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
-              onClick={jumpToPrivacyPolicy}
+              // onClick={jumpToPrivacyPolicy}
+              href='`/posts/20220215-privacy-policy/`'
               textDecoration={'underline'}
               _hover={{ textDecoration: 'none' }}
             >

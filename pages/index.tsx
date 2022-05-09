@@ -70,14 +70,15 @@ const Home = ({
             );
           })}
           {postCount + 1 !== posts.length && (
-            <Center pt={'5'}>
+            <Center pt={'10'}>
               <Button
                 onClick={ReadMorePosts}
                 aria-label={'read more posts'}
                 variant={'outline'}
                 textStyle={'h1'}
-                mt={'1'}
-                borderColor={'#4d5156'}
+                pt={'1'}
+                // borderColor={'#4d5156'}
+                borderColor={'gray.500'}
                 _hover={{ bg: 'gray.50' }}
               >
                 前の記事
