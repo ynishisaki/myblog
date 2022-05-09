@@ -70,7 +70,7 @@ const Home = ({
             );
           })}
           {postCount + 1 !== posts.length && (
-            <Center>
+            <Center pt={'5'}>
               <Button
                 onClick={ReadMorePosts}
                 aria-label={'read more posts'}
@@ -78,7 +78,7 @@ const Home = ({
                 textStyle={'h1'}
                 mt={'1'}
                 borderColor={'#4d5156'}
-                _hover={{ backgroundColor: 'gray ' }}
+                _hover={{ bg: 'gray.50' }}
               >
                 前の記事
               </Button>

@@ -1,5 +1,4 @@
 import { Box, Text, Icon, Link, Button, Stack, Center, useBreakpointValue } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { RiHome2Line } from 'react-icons/ri';
 import { FcBusinesswoman } from 'react-icons/fc';
 import { FiExternalLink } from 'react-icons/fi';
@@ -43,7 +42,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           marginLeft={{ base: '0px', md: '70px' }}
           fontSize={'25px'}
           width={'auto'}
-          _hover={{ backgroundColor: 'gray ' }}
+          _hover={{ bg: 'gray.50' }}
         >
           {isnotMobile && (
             <Text textStyle={'h1'} mt={'1'}>

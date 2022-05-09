@@ -26,12 +26,20 @@ export const HomePosts = ({
 
   return (
     <>
-      <LinkBox as='article' layerStyle={'posts'} borderWidth='2px' rounded='md'>
+      <LinkBox
+        as='article'
+        layerStyle={'posts'}
+        borderTop={'1px solid'}
+        borderBottom={'1px solid'}
+        borderColor={'gray.200'}
+        transition={'background 0.4s '}
+        _hover={{ background: 'gray.50' }}
+      >
         <Box spacing='0' w={'100%'} display={{ md: 'flex' }}>
           <Box
             w={{ md: '50%' }}
             h={{ base: '50%' }}
-            pr={{ base: '0', md: '5' }}
+            pr={{ base: '0', md: '3' }}
             pb={{ base: '3', md: '0' }}
           >
             <Image objectFit={'fill'} src={coverImage} alt='coverimage from Unsplash' />
@@ -39,7 +47,7 @@ export const HomePosts = ({
           <Box
             w={{ md: '50%' }}
             h={{ base: '50%' }}
-            pl={{ base: '0', md: '5' }}
+            pl={{ base: '0', md: '3' }}
             pt={{ base: '3', md: '0' }}
           >
             <Heading>

@@ -38,13 +38,13 @@ export const theme = extendTheme({
 
   layerStyles: {
     base: {
-      // bg: 'yellow.100'
+      bg: 'yellow.100',
       // border: '2px solid',
       // borderColor: 'gray.500',
     },
     posts: {
-      mt: { base: '5%', md: '3%' },
-      mb: { base: '5%', md: '5%' },
+      // mt: { base: '5%', md: '2%' },
+      // mb: { base: '5%', md: '2%' },
       p: { base: '3%', md: '2%' },
     },
     display: {
