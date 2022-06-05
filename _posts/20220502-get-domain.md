@@ -33,7 +33,8 @@ https://my-best.com/11725
 
 # ドメインを取得する
 namegearにて、第一希望「monyoblog.com」で申請。
-[![Image from Gyazo](https://i.gyazo.com/56128cc06eacc055fc1feeb38695331f.png)](https://gyazo.com/56128cc06eacc055fc1feeb38695331f)*（出展：https://namegear.co )*
+![Image from Gyazo](https://i.gyazo.com/56128cc06eacc055fc1feeb38695331f.png)
+*（出展：https://namegear.co )*
 
 取得できました～！
 
@@ -48,7 +49,8 @@ DNSの設定で、Vercelで表示されたDNSレコードを新規登録する�
 
 再びVercelに戻り、「Valid Configuration」と表示されていればOK。
 
-[![Image from Gyazo](https://i.gyazo.com/c07232a562dff6cd960a3819d077bb95.png)](https://gyazo.com/c07232a562dff6cd960a3819d077bb95)*（出展：https://vercel.com )*
+![Image from Gyazo](https://i.gyazo.com/c07232a562dff6cd960a3819d077bb95.png)
+*（出展：https://vercel.com )*
 
 出来ました～！
 

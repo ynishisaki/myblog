@@ -12,7 +12,8 @@ date: '2022-05-04'
 # 事の発端
 先日、自分のブログ用のドメインを取得したので、Twitterでツイートした時のこと。
 
-[![Image from Gyazo](https://i.gyazo.com/5f5937a110e7cdbfe18d12a03aace776.jpg)](https://gyazo.com/5f5937a110e7cdbfe18d12a03aace776)*（出所：https://twitter.com/ ）OGP設定前。*
+![Image from Gyazo](https://i.gyazo.com/5f5937a110e7cdbfe18d12a03aace776.jpg)
+*（出所：https://twitter.com/ ）OGP設定前。*
 
 あれ、物寂しいな？
 
@@ -74,7 +75,8 @@ https://cards-dev.twitter.com/validator
 
 
 ブログのURLを打つと、
-[![Image from Gyazo](https://i.gyazo.com/61f948c36694f2b2ecfeee1bf41fed64.png)](https://gyazo.com/61f948c36694f2b2ecfeee1bf41fed64)*（出所：https://cards-dev.twitter.com/validator ）OGP設定後。*
+![Image from Gyazo](https://i.gyazo.com/61f948c36694f2b2ecfeee1bf41fed64.png)
+*（出所：https://cards-dev.twitter.com/validator ）OGP設定後。*
 
 おー！カードでてきた！
 
