@@ -2,7 +2,7 @@
 title: 'Pythonでバイナリファイルを読んでみよう（実践編）'
 excerpt: '（本記事は実践編にあたる。）Pythonでバイナリファイルを読み込むする方法を紹介する。
 具体的には、WAV（Waveform Audio File Format）ファイルを例として使用し、サンプリングレートと時系列データを取得することを目指す。'
-coverImage: '/assets/blog/20220504-open-graph-protocol/cover.jpg'
+coverImage: ''
 coverImagePhotographer: 'Persnickety Prints'
 coverImageSrc: 'https://unsplash.com/photos/98uOSdqum6E'
 date: '2022-06-08'

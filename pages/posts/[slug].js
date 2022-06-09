@@ -26,13 +26,13 @@ export default function Post({ post }) {
         <meta property='og:title' content={post.title} />
         <meta property='og:type' content='article' />
         <meta property='og:url' content={`https://www.monyoblog.com/posts/${post.slug}/`} />
-        <meta property='og:image' content={`https://www.monyoblog.com/${post.coverImage}`} />
+        <meta property='og:image' content={`https://www.monyoblog.com${post.coverImage}`} />
         <meta property='og:description' content={post.excerpt} />
         <meta property='og:locale' content='ja_JP' />
         {/* for twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@monyo75559702' />
-        <meta name='twitter:player' content='@monyo75559702' />
+
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
