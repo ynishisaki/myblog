@@ -19,8 +19,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           __html: initTwitterScriptInner,
         }}
       />
-      <link rel='stylesheet' href='https://pyscript.net/alpha/pyscript.css' />
-      <script defer src='https://pyscript.net/alpha/pyscript.js'></script>
       <Script
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
