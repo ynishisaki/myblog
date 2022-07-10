@@ -35,11 +35,7 @@ export const HomePosts = ({
         transition={'background 0.4s '}
         _hover={{ background: 'gray.50' }}
       >
-        <Box
-          // spacing="0"
-          w={'100%'}
-          display={{ md: 'flex' }}
-        >
+        <Box w={'100%'} display={{ md: 'flex' }}>
           <Box
             w={{ md: '50%' }}
             h={{ base: '50%' }}
