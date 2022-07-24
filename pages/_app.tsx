@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           __html: initTwitterScriptInner,
         }}
       />
+
       {/* Add google analytics */}
       <Script
         strategy='lazyOnload'
