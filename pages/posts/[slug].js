@@ -40,9 +40,9 @@ export default function Post({ post }) {
         <Box layerStyle={'display'}>
           <PostHeader
             title={post.title}
-            coverImage={post.coverImage}
+            coverImagePath={post.coverImagePath}
             coverImagePhotographer={post.coverImagePhotographer}
-            coverImageSrc={post.coverImageSrc}
+            coverImageSrcUrl={post.coverImageSrcUrl}
             date={post.date}
           />
           <PostBody content={post.content} />
@@ -57,9 +57,9 @@ export async function getStaticProps({ params }) {
     'slug',
     'title',
     'excerpt',
-    'coverImage',
+    'coverImagePath',
     'coverImagePhotographer',
-    'coverImageSrc',
+    'coverImageSrcUrl',
     'date',
     'content',
   ]);

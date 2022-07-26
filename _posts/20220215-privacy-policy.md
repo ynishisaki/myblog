@@ -3,9 +3,9 @@ title: 'プライバシーポリシー/免責事項'
 excerpt: '当サイトからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
 当サイトに掲載されている情報について、できる限り正確な情報を提供するよう努めておりますが、正確性や安全性を保証するものではありません。
 情報の正確性について問題がある場合、告知なしに情報を変更・削除することがあります。また、情報が古くなっていることもあります。'
-coverImage: '/assets/blog/20220215-privacy-policy/cover.jpg'
+coverImagePath: '/assets/blog/20220215-privacy-policy/cover.jpg'
 coverImagePhotographer: 'Jan Kahánek'
-coverImageSrc: 'https://unsplash.com/photos/fVUl6kzIvLg'
+coverImageSrcUrl: 'https://unsplash.com/photos/fVUl6kzIvLg'
 date: '2022-02-15'
 ---
 
@@ -22,4 +22,3 @@ date: '2022-02-15'
 このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
 この機能は Cookie を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
 この規約に関して、詳しくは Google アナリティクス利用規約をご覧ください。
-

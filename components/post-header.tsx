@@ -3,15 +3,15 @@ import { Box, Link, Text, Image } from '@chakra-ui/react';
 export const PostHeader = ({
   title,
   date,
-  coverImage,
+  coverImagePath,
   coverImagePhotographer,
-  coverImageSrc,
+  coverImageSrcUrl,
 }: {
   title: string;
   date: string;
-  coverImage: string;
+  coverImagePath: string;
   coverImagePhotographer: string;
-  coverImageSrc: string;
+  coverImageSrcUrl: string;
 }) => {
   return (
     <Box mb={50}>
@@ -24,14 +24,14 @@ export const PostHeader = ({
         fit={'cover'}
         boxSize={'100%'}
         objectFit={'cover'}
-        src={coverImage}
+        src={coverImagePath}
         alt='coverimage from Unsplash'
       />
       <Text textStyle={'p'} align={'right'}>
         Photo by{' '}
         <Link
           color='gray.500'
-          href={coverImageSrc}
+          href={coverImageSrcUrl}
           textDecoration={'underline'}
           _hover={{ textDecoration: 'none' }}
         >

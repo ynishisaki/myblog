@@ -13,9 +13,9 @@ const Home = ({
     slug: string;
     title: string;
     excerpt: string;
-    coverImage: string;
+    coverImagePath: string;
     coverImagePhotographer: string;
-    coverImageSrc: string;
+    coverImageSrcUrl: string;
     date: string;
   }>;
 }) => {
@@ -62,9 +62,9 @@ const Home = ({
                 slug={post.slug}
                 title={post.title}
                 excerpt={post.excerpt}
-                coverImage={post.coverImage}
+                coverImagePath={post.coverImagePath}
                 coverImagePhotographer={post.coverImagePhotographer}
-                coverImageSrc={post.coverImageSrc}
+                coverImageSrcUrl={post.coverImageSrcUrl}
                 date={post.date}
               />
             );
@@ -97,9 +97,9 @@ export async function getStaticProps() {
     'title',
     'excerpt',
     'date',
-    'coverImage',
+    'coverImagePath',
     'coverImagePhotographer',
-    'coverImageSrc',
+    'coverImageSrcUrl',
     'content',
   ]);
 

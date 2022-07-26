@@ -3,17 +3,17 @@ import { NextRouter, useRouter } from 'next/router';
 
 export const HomePosts = ({
   title,
-  coverImage,
+  coverImagePath,
   coverImagePhotographer,
-  coverImageSrc,
+  coverImageSrcUrl,
   date,
   slug,
   excerpt,
 }: {
   title: string;
-  coverImage: string;
+  coverImagePath: string;
   coverImagePhotographer: string;
-  coverImageSrc: string;
+  coverImageSrcUrl: string;
   date: string;
   slug: string;
   excerpt: string;
@@ -42,7 +42,7 @@ export const HomePosts = ({
             pr={{ base: '0', md: '3' }}
             pb={{ base: '3', md: '0' }}
           >
-            <Image objectFit={'fill'} src={coverImage} alt='coverimage from Unsplash' />
+            <Image objectFit={'fill'} src={coverImagePath} alt='coverimage from Unsplash' />
           </Box>
           <Box
             w={{ md: '50%' }}

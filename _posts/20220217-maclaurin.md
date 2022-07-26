@@ -2,9 +2,9 @@
 title: 'Pythonではじめてのマクローリン展開'
 excerpt: 'Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 得られた式をmatplotlibでグラフ表示する。'
-coverImage: '/assets/blog/20220217-maclaurin/cover.jpg'
+coverImagePath: '/assets/blog/20220217-maclaurin/cover.jpg'
 coverImagePhotographer: 'uomo libero'
-coverImageSrc: 'https://unsplash.com/photos/ONytz6ri4k4'
+coverImageSrcUrl: 'https://unsplash.com/photos/ONytz6ri4k4'
 date: '2022-02-17'
 ---
 
@@ -98,6 +98,6 @@ plt.show()
 例として、第 50 項(n=50)までマクローリン展開した結果を以下に示す。
 ![](https://storage.googleapis.com/zenn-user-upload/ad0bfbd6161a-20211218.jpeg)
 
-
 # あとがき
-アイキャッチ画像の緑のヘビさん、SymPyのヘビに似てないですか。世の中にはこんな可愛いらしいヘビもいるんですね。今後SymPy関連の記事を書くことがあれば、また使おうと思います。
+
+アイキャッチ画像の緑のヘビさん、SymPy のヘビに似てないですか。世の中にはこんな可愛いらしいヘビもいるんですね。今後 SymPy 関連の記事を書くことがあれば、また使おうと思います。
