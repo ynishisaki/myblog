@@ -21,7 +21,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.9.3",
     "axios": "^0.26.0",
-    "framer-motion": "^6.2.3",
+    "framer-motion": "^6.5.1",
     "fs": "^0.0.1-security",
     "gray-matter": "4.0.3",
     "next": "12.2.3",
