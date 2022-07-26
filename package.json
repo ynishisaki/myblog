@@ -33,7 +33,7 @@
     "zenn-content-css": "^0.1.107",
     "zenn-markdown-html": "^0.1.107",
     "zenn-embed-elements": "^0.1.107",
-    "ts-node": "^10.4.0"
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/node": "17.0.18",
