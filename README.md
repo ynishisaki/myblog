@@ -6,7 +6,7 @@ https://www.monyoblog.com/
 
 - TypeScript,HTML,CSS 全くの未経験から制作開始。２ヶ月ほどで完成した。
 
-- Vercel の blog-starter(https://github.com/vercel/next.js/tree/canary/examples/blog-starter)をベースに作成した。
+- Vercel の blog-starter( https://github.com/vercel/next.js/tree/canary/examples/blog-starter )をベースに作成した。
   おかげで、サイトの見た目等を少し変更するだけで、ブログを完成させることができた。
 
 - Next.js/React.js を使用。
