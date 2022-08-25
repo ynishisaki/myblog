@@ -13,18 +13,6 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
     router.push(`/`);
   };
 
-  const jumpToPrivacyPolicy = () => {
-    router.push(`/posts/20220215-privacy-policy/`);
-  };
-
-  const jumpToGithub = () => {
-    router.push(`https://github.com/ynishisaki/myblog.git`);
-  };
-
-  const jumpToTwitter = () => {
-    router.push(`https://twitter.com/monyo75559702`);
-  };
-
   const isnotMobile = useBreakpointValue({ base: false, md: true });
 
   return (
@@ -32,13 +20,10 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
       <Box layerStyle={'header'} boxShadow='lg'>
         <Button
           onClick={jumpToHome}
-          // layerStyle={'homeButton'}
           pl={'4'}
           aria-label={'Home button'}
           leftIcon={<RiHome2Line />}
-          // variant={'ghost'}
           variant={'outline'}
-          // borderColor={'#4d5156'}
           borderColor={'gray.500'}
           marginLeft={{ base: '0px', md: '70px' }}
           fontSize={'25px'}
@@ -79,7 +64,6 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
         >
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
-              // onClick={jumpToPrivacyPolicy}
               href='`/posts/20220215-privacy-policy/`'
               textDecoration={'underline'}
               _hover={{ textDecoration: 'none' }}
@@ -90,7 +74,6 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
               alignItems={'center'}
-              // onClick={jumpToGithub}
               href='https://github.com/ynishisaki/myblog.git'
               textDecoration='underline'
               _hover={{ textDecoration: 'none' }}

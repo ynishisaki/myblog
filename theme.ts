@@ -37,11 +37,7 @@ export const theme = extendTheme({
   },
 
   layerStyles: {
-    base: {
-      bg: 'yellow.100',
-      // border: '2px solid',
-      // borderColor: 'gray.500',
-    },
+    base: {},
     posts: {
       // mt: { base: '5%', md: '2%' },
       // mb: { base: '5%', md: '2%' },
@@ -52,7 +48,6 @@ export const theme = extendTheme({
       mt: '70px',
       p: { base: '3% 5%', md: '3% 20%' },
       width: { md: '100%' },
-      color: '#4d5156',
     },
     header: {
       px: '10px',
@@ -77,12 +72,14 @@ export const theme = extendTheme({
       position: 'absolute',
     },
     footer: {
+      position: 'relative',
+      bg: '#f5f5f5',
+      // bg: 'white',
       borderTop: '1px solid #eaeaea',
       flexDirection: 'column',
       display: 'flex',
       flex: '1',
       p: '1rem 0',
-      bgColor: 'white',
       justifyContent: 'center',
       alignItems: 'center',
       zIndex: 'stickey', //1100

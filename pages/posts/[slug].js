@@ -35,7 +35,6 @@ export default function Post({ post }) {
 
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <HeaderAndFooter>
         <Box layerStyle={'display'}>
           <PostHeader

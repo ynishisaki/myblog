@@ -1,8 +1,9 @@
+import Head from 'next/head';
+import Image from 'next/image';
+import { NextRouter, useRouter } from 'next/router';
 import { Button, Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/home-posts';
 import { HeaderAndFooter } from '../components/header-and-footer';
-import Head from 'next/head';
-import { NextRouter, useRouter } from 'next/router';
 import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
 
@@ -53,6 +54,8 @@ const Home = ({
         <meta name='twitter:player' content='@monyo75559702' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      {/* set background image */}
+      <Image src='/background-image.svg' layout='fill' objectFit='cover' />
       <HeaderAndFooter>
         <Box layerStyle={'display'}>
           {posts.slice(0, postCount + 1).map((post) => {
@@ -77,9 +80,8 @@ const Home = ({
                 variant={'outline'}
                 textStyle={'h1'}
                 pt={'1'}
-                // borderColor={'#4d5156'}
                 borderColor={'gray.500'}
-                _hover={{ bg: 'gray.50' }}
+                _hover={{ bg: '#f3f0ed' }}
               >
                 前の記事
               </Button>

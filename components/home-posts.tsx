@@ -31,9 +31,9 @@ export const HomePosts = ({
         layerStyle={'posts'}
         borderTop={'1px solid'}
         borderBottom={'1px solid'}
-        borderColor={'gray.200'}
+        borderColor={'#f3f0ed'}
         transition={'background 0.4s '}
-        _hover={{ background: 'gray.50' }}
+        _hover={{ background: '#f3f0ed' }}
       >
         <Box w={'100%'} display={{ md: 'flex' }}>
           <Box
