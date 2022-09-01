@@ -1,6 +1,6 @@
 ---
 title: '数式を使わず，相互相関を理解しよう（Pythonソースコード付き）'
-excerpt: '本記事は，Python で相互相関処理（numpy.correlate(), scipy.signal.correlate()）を行いたいが，そもそも相互相関をよく知らない人を対象に，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。'
+excerpt: '本記事は，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。'
 coverImagePath: '/assets/blog/20220901-cross-correlation/cover.jpg'
 coverImagePhotographer: 'Amir-abbas Abdolali'
 coverImageSrcUrl: 'https://unsplash.com/photos/_Tm4622z4Dg'
@@ -9,7 +9,7 @@ date: '2022-09-01'
 
 # 本記事について
 
-本記事は，Python で相互相関処理（numpy.correlate(), scipy.signal.correlate()）を行いたいが，そもそも相互相関をよく知らない人を対象に，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。
+本記事は，Python で相互相関（numpy.correlate(), scipy.signal.correlate()）を行いたいが，そもそも相互相関をよく知らない人を対象に，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。
 
 ## 目次
 
