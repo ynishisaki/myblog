@@ -6,7 +6,8 @@ https://www.monyoblog.com/
 
 ### 開発動機
 
-私がプログラミングを好きな理由の一つに、エンジニア界隈における、みんなで技術を共有してもっと良いもの作っていこうとする風潮（OSSの存在や、Web 上で個人の技術やコードを惜しげもなく公開されている点など）がある。
+私がプログラミングを好きな理由の一つに、エンジニア界隈における、みんなで技術を共有してもっと良いもの作っていこうとする風潮（OSS の存在や、Web 上で個人の技術やコードを惜しげもなく公開されている点など）がある。
+
 そこで、私も１エンジニアとして、技術ブログを作って人の役に立つような情報を web で共有していきたいと思い、ブログ制作を開始した。
 
 ### 技術選定について
@@ -27,26 +28,27 @@ HTML も CSS も知らない状況だったが、以下のことを考えた。
 
 ### 技術的特徴
 
-- Vercel の blog-starter( https://github.com/vercel/next.js/tree/canary/examples/blog-starter )をベースに作成。
-
+- Vercel の [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)をベースに作成。
 - Next.js/React.js を使用。
-
 - UI ライブラリとして、Chakra UI を使用。
-
 - zenn-markdown-html を使用しているので、Zenn と全く同じ記法で記事が書ける。
   そのため、もともと Zenn で書いていた記事をそのままブログに移行することができた。
 
-## 苦労したところ
+### 苦労した点など
 
-- Vercel の blog-starter( https://github.com/vercel/next.js/tree/canary/examples/blog-starter )をベースに作成しているが、pages/posts/[slug].js の構造を理解するのに時間がかかった。
-
+- Vercel の [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)をベースに作成しているが、pages/posts/[slug].js の構造を理解するのに時間がかかった。
 - TypeScript の型がとにかくよくわからなかった。Python と Fortran しか経験がなかったため、型といえば int や float ぐらいしかイメージがなかった。
 
-## 面白かったところ
+### 制作の感想など
 
-- 新しい言語に触れて、新しい概念に色々触れることができたこと。
-- Web アプリがどうやって制作されているか、自分で作りながら理解することができたこと。この時得た知識が、のちに Web スクレイピングする際に役立った。
+- Web アプリがどうやって制作されているか、自分で作りながら理解することができた。この時得た知識が、のちに Web スクレイピングする際に役立った。
+- TypeScript, Next.js/React.js での制作経験を積むことができた。
+- 最初の技術選定と環境構築は、友人の Web エンジニアに手伝ってもらったが、その後は自走して、無事ブログを完成されることができた。
+- Chakra UI はドキュメントが充実していてわかりやすく、
+- Web アプリが作れるようになったことで、他にも作りたいものが出てきた（例えば、[10 進数-16 進数変換ツール](https://github.com/ynishisaki/Hex-Dec-Converter) ）。もっと勉強して、できることの幅を広げたい。
 
-## 今後頑張りたいところ
+### 今後の課題
 
-- ブラウザのアイコンがいまだにVercelのままなので、どうにかしたい。
+- ブラウザのアイコンがいまだに Vercel のままなので、変更したい。何がいいかな。
+- 記事にタグをつけて管理したい。
+- compornents をもっと細分化して管理しやすくしたい。
