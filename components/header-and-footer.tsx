@@ -64,7 +64,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
         >
           <Center width={{ base: '100%', md: '50%' }}>
             <Link
-              href='`/posts/20220215-privacy-policy/`'
+              href='/posts/20220215-privacy-policy/'
               textDecoration={'underline'}
               _hover={{ textDecoration: 'none' }}
             >
