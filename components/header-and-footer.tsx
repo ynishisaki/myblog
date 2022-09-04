@@ -23,23 +23,16 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           pl={'4'}
           aria-label={'Home button'}
           leftIcon={<RiHome2Line />}
-          variant={'outline'}
-          borderColor={'gray.500'}
-          marginLeft={{ base: '0px', md: '70px' }}
+          bg={'#f6f1eb'}
+          borderRadius={'100px'}
           fontSize={'25px'}
           width={'auto'}
           _hover={{ bg: 'gray.50' }}
         >
-          {isnotMobile && (
-            <Text textStyle={'h1'} mt={'1'}>
-              ホーム
-            </Text>
-          )}
+          {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
         </Button>
         {/* <Image layerStyle={'blogLogo'} src={'/logo.png'}></Image> */}
-        <Text textStyle={'h2'} layerStyle={'blogTitle'}>
-          もにょblog
-        </Text>
+        <Center layerStyle={'blogTitle'}>もにょblog</Center>
       </Box>
 
       {children}

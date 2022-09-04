@@ -68,8 +68,12 @@ export const theme = extendTheme({
       borderRadius: '10px',
     },
     blogTitle: {
-      left: 'calc(50vw - 80px)',
+      width: '100%',
       position: 'absolute',
+      color: '#4d5156',
+      fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
+      fontSize: '4xl',
+      fontWeight: 'bold',
     },
     footer: {
       position: 'relative',

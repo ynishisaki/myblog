@@ -76,11 +76,11 @@ const Home = ({
             <Center pt={'10'}>
               <Button
                 onClick={ReadMorePosts}
+                bg={'#f6f1eb'}
+                borderColor={'#f6f1eb'}
+                borderRadius={'100px'}
                 aria-label={'read more posts'}
-                variant={'outline'}
                 textStyle={'h1'}
-                pt={'1'}
-                borderColor={'gray.500'}
                 _hover={{ bg: '#f3f0ed' }}
               >
                 前の記事
