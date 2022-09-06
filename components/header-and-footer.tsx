@@ -27,7 +27,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           borderRadius={'100px'}
           fontSize={'25px'}
           width={'auto'}
-          _hover={{ bg: 'gray.50' }}
+          _hover={{ bg: '#fffcf7' }}
           zIndex={'banner'} //1200
         >
           {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}

@@ -74,7 +74,7 @@ const Home = ({
                 borderRadius={'100px'}
                 aria-label={'read more posts'}
                 textStyle={'h1'}
-                _hover={{ bg: '#f3f0ed' }}
+                _hover={{ bg: '#fffcf7' }}
               >
                 前の記事
               </Button>

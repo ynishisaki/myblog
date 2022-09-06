@@ -30,14 +30,17 @@ export default function Post({ post }) {
       </Head>
       <HeaderAndFooter>
         <Box layerStyle={'display'}>
+          {/* <Box layerStyle={'post_display'}> */}
           <PostHeader
             title={post.title}
             coverImagePath={post.coverImagePath}
             coverImagePhotographer={post.coverImagePhotographer}
             coverImageSrcUrl={post.coverImageSrcUrl}
             date={post.date}
+            category={post.category}
           />
           <PostBody content={post.content} />
+          {/* </Box> */}
         </Box>
       </HeaderAndFooter>
     </>
@@ -53,6 +56,7 @@ export async function getStaticProps({ params }) {
     'coverImagePhotographer',
     'coverImageSrcUrl',
     'date',
+    'category',
     'content',
   ]);
 

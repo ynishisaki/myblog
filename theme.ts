@@ -49,6 +49,11 @@ export const theme = extendTheme({
       p: { base: '3% 5%', md: '3% 20%' },
       width: { md: '100%' },
     },
+    post_display: {
+      pt: { md: '3px' },
+      m: { base: '3% 5%', md: '3% 20%' },
+      bg: '#fffcf7',
+    },
     header: {
       px: '10px',
       alignItems: 'center',

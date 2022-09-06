@@ -6,15 +6,22 @@ export const PostHeader = ({
   coverImagePath,
   coverImagePhotographer,
   coverImageSrcUrl,
+  category,
 }: {
   title: string;
   date: string;
   coverImagePath: string;
   coverImagePhotographer: string;
   coverImageSrcUrl: string;
+  category: string;
 }) => {
   return (
-    <Box mb={50}>
+    <Box
+      mb={50}
+      alignItems={'center'}
+      // display={'flex'}
+    >
+      <Text textStyle={'p'}>{category}</Text>
       <Text textStyle={'p'} fontSize={'2.4em'} fontWeight={'bold'}>
         {title}
       </Text>

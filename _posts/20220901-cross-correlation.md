@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220901-cross-correlation/cover.jpg'
 coverImagePhotographer: 'Amir-abbas Abdolali'
 coverImageSrcUrl: 'https://unsplash.com/photos/_Tm4622z4Dg'
 date: '2022-09-01'
+category: 'Python'
 ---
 
 # 本記事について
