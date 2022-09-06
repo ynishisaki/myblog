@@ -7,6 +7,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet='utf-8' />
           <meta name='author' content='monyo'></meta>
+          {/* og */}
           <meta property='og:locale' content='ja_JP' />
           {/* for twitter */}
           <meta name='twitter:card' content='summary_large_image' />

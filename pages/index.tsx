@@ -29,13 +29,13 @@ const Home = ({
   const router: NextRouter = useRouter();
 
   return (
-    <html>
       <Head>
         <title>Home｜もにょblog</title>
         <meta
           name='description'
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
+        {/* og */}
         <meta property='og:site_name' content='もにょblog' />
         <meta property='og:title' content='Home｜もにょblog' />
         <meta property='og:type' content='blog' />
@@ -45,7 +45,6 @@ const Home = ({
           property='og:description'
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
-      </Head>
       {/* set background image */}
       <Image src='/background-image.svg' layout='fill' objectFit='cover' />
       <HeaderAndFooter>

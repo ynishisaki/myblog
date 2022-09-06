@@ -16,10 +16,11 @@ export default function Post({ post }) {
   }
 
   return (
-    <html>
+    <>
       <Head>
         <title>{post.title}｜もにょblog</title>
         <meta name='description' content={post.excerpt} />
+        {/* og */}
         <meta property='og:site_name' content='もにょblog' />
         <meta property='og:title' content={post.title} />
         <meta property='og:type' content='article' />
@@ -39,7 +40,7 @@ export default function Post({ post }) {
           <PostBody content={post.content} />
         </Box>
       </HeaderAndFooter>
-    </html>
+    </>
   );
 }
 
