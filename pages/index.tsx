@@ -29,6 +29,7 @@ const Home = ({
   const router: NextRouter = useRouter();
 
   return (
+    <>
       <Head>
         <title>Home｜もにょblog</title>
         <meta
@@ -45,6 +46,7 @@ const Home = ({
           property='og:description'
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
+      </Head>
       {/* set background image */}
       <Image src='/background-image.svg' layout='fill' objectFit='cover' />
       <HeaderAndFooter>
@@ -80,11 +82,11 @@ const Home = ({
           )}
         </Box>
       </HeaderAndFooter>
-    </html>
+    </>
   );
 };
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const posts = getAllPosts([
     'slug',
     'title',
@@ -101,6 +103,6 @@ export async function getStaticProps() {
       posts: posts,
     },
   };
-}
+};
 
 export default Home;

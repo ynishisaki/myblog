@@ -28,11 +28,12 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           fontSize={'25px'}
           width={'auto'}
           _hover={{ bg: 'gray.50' }}
+          zIndex={'banner'} //1200
         >
           {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
         </Button>
         {/* <Image layerStyle={'blogLogo'} src={'/logo.png'}></Image> */}
-        <Center layerStyle={'blogTitle'}>もにょblog</Center>
+        <Center layerStyle={'blogTitle'}>もにょぶろぐ</Center>
       </Box>
 
       {children}

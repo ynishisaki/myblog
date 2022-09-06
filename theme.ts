@@ -71,8 +71,9 @@ export const theme = extendTheme({
       width: '100%',
       position: 'absolute',
       color: '#4d5156',
-      fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
-      fontSize: '4xl',
+      fontFamily: '"Kosugi Maru", sans-serif',
+      // fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
+      fontSize: '2xl',
       fontWeight: 'bold',
     },
     footer: {
