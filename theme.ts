@@ -38,20 +38,25 @@ export const theme = extendTheme({
 
   layerStyles: {
     base: {},
-    posts: {
-      // mt: { base: '5%', md: '2%' },
-      // mb: { base: '5%', md: '2%' },
+    home_posts: {
       p: { base: '3%', md: '2%' },
     },
     display: {
       bg: '#f6f1eb',
       mt: '70px',
       p: { base: '3% 5%', md: '3% 20%' },
+
+      // pb: { base: '0%' },
       width: { md: '100%' },
     },
+    post_base: {
+      bg: '#f6f1eb',
+      mt: '70px',
+      width: { base: '100%' },
+    },
     post_display: {
-      pt: { md: '3px' },
-      m: { base: '3% 5%', md: '3% 20%' },
+      p: { base: '3%' },
+      m: { base: '0% 5%', md: '0% 20%' },
       bg: '#fffcf7',
     },
     header: {

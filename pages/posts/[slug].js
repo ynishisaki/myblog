@@ -29,18 +29,18 @@ export default function Post({ post }) {
         <meta property='og:description' content={post.excerpt} />
       </Head>
       <HeaderAndFooter>
-        <Box layerStyle={'display'}>
-          {/* <Box layerStyle={'post_display'}> */}
-          <PostHeader
-            title={post.title}
-            coverImagePath={post.coverImagePath}
-            coverImagePhotographer={post.coverImagePhotographer}
-            coverImageSrcUrl={post.coverImageSrcUrl}
-            date={post.date}
-            category={post.category}
-          />
-          <PostBody content={post.content} />
-          {/* </Box> */}
+        <Box layerStyle={'post_base'}>
+          <Box layerStyle={'post_display'}>
+            <PostHeader
+              title={post.title}
+              coverImagePath={post.coverImagePath}
+              coverImagePhotographer={post.coverImagePhotographer}
+              coverImageSrcUrl={post.coverImageSrcUrl}
+              date={post.date}
+              category={post.category}
+            />
+            <PostBody content={post.content} />
+          </Box>
         </Box>
       </HeaderAndFooter>
     </>

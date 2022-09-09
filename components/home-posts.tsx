@@ -28,10 +28,11 @@ export const HomePosts = ({
     <>
       <LinkBox
         as='article'
-        layerStyle={'posts'}
+        layerStyle={'home_posts'}
         borderTop={'1px solid'}
         borderBottom={'1px solid'}
         borderColor={'#fffcf7'}
+        borderRadius={'10px'}
         transition={'background 0.4s '}
         _hover={{ background: '#fffcf7' }}
       >
