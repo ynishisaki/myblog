@@ -16,11 +16,7 @@ export const PostHeader = ({
   category: string;
 }) => {
   return (
-    <Box
-      mb={50}
-      alignItems={'center'}
-      // display={'flex'}
-    >
+    <Box mb={50} alignItems={'center'}>
       <Text textStyle={'p'}>{category}</Text>
       <Text textStyle={'p'} fontSize={'2.4em'} fontWeight={'bold'}>
         {title}

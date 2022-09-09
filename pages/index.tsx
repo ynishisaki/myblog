@@ -50,7 +50,7 @@ const Home = ({
       {/* set background image */}
       <Image src='/background-image.svg' layout='fill' objectFit='cover' />
       <HeaderAndFooter>
-        <Box layerStyle={'display'}>
+        <Box layerStyle={'home_base'}>
           {posts.slice(0, postCount + 1).map((post) => {
             return (
               <HomePosts

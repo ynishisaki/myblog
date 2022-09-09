@@ -28,7 +28,7 @@ export const HomePosts = ({
     <>
       <LinkBox
         as='article'
-        layerStyle={'home_posts'}
+        layerStyle={'home_display'}
         borderTop={'1px solid'}
         borderBottom={'1px solid'}
         borderColor={'#fffcf7'}

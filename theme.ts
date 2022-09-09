@@ -38,16 +38,14 @@ export const theme = extendTheme({
 
   layerStyles: {
     base: {},
-    home_posts: {
-      p: { base: '3%', md: '2%' },
-    },
-    display: {
+    home_base: {
       bg: '#f6f1eb',
       mt: '70px',
       p: { base: '3% 5%', md: '3% 20%' },
-
-      // pb: { base: '0%' },
       width: { md: '100%' },
+    },
+    home_display: {
+      p: { base: '3%', md: '2%' },
     },
     post_base: {
       bg: '#f6f1eb',
@@ -82,7 +80,6 @@ export const theme = extendTheme({
       position: 'absolute',
       color: '#4d5156',
       fontFamily: '"Kosugi Maru", sans-serif',
-      // fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
       fontSize: '2xl',
       fontWeight: 'bold',
     },
