@@ -56,10 +56,10 @@ export const HomePosts = ({
                 {title}
               </LinkOverlay>
             </Heading>
-            <Box as='time' textStyle={'p'}>
+            <Text textStyle={'p'} my={'5'}>
               {date}
-            </Box>
-            <Text textStyle={'p'} noOfLines={3} mt={'30px'}>
+            </Text>
+            <Text textStyle={'p'} noOfLines={3} my={'5'}>
               {excerpt}
             </Text>
           </Box>

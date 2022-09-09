@@ -14,11 +14,12 @@ export const theme = extendTheme({
   textStyles: {
     p: {
       color: '#4d5156',
-      margin: '8px 0',
-      fontSize: '16px',
+      // m: '8px 0',
+      // fontSize: '16px',
+      my: { base: '5' },
+      fontSize: { base: 'sm', md: 'md' },
       fontWeight: 'normal', //400
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
-      // lineHeight: '1.4',
     },
     h1: {
       color: '#4d5156',
@@ -30,9 +31,11 @@ export const theme = extendTheme({
     h2: {
       color: '#4d5156',
       // margin: '16px 0',
-      fontSize: '24px',
+      // fontSize: '24px',
+      fontSize: '2xl',
       fontWeight: 'bold',
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
+      lineHeights: '1',
     },
   },
 
@@ -40,7 +43,7 @@ export const theme = extendTheme({
     base: {},
     home_base: {
       bg: '#f6f1eb',
-      mt: '70px',
+      mt: { base: '50px', md: '70px' },
       p: { base: '3% 5%', md: '3% 20%' },
       width: { md: '100%' },
     },
@@ -49,7 +52,7 @@ export const theme = extendTheme({
     },
     post_base: {
       bg: '#f6f1eb',
-      mt: '70px',
+      mt: { base: '50px', md: '70px' },
       width: { base: '100%' },
     },
     post_display: {
@@ -63,7 +66,7 @@ export const theme = extendTheme({
       display: 'flex',
       position: 'fixed',
       top: '0px',
-      height: '70px',
+      height: { base: '50px', md: '70px' },
       width: '100vw',
       bgColor: '#f6f1eb',
       zIndex: 'banner', //1200
@@ -80,7 +83,7 @@ export const theme = extendTheme({
       position: 'absolute',
       color: '#4d5156',
       fontFamily: '"Kosugi Maru", sans-serif',
-      fontSize: '2xl',
+      fontSize: { base: 'lg', md: '2xl' },
       fontWeight: 'bold',
     },
     footer: {

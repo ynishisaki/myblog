@@ -43,7 +43,7 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
             <Icon as={FcBusinesswoman} fontSize={'30px'} />
             もにょ
           </Text>
-          <Text textStyle={'p'}>
+          <Text textStyle={'p'} my={'3'}>
             海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
             なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
             使用言語は、Python、TypeScript。
@@ -76,7 +76,9 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
             </Link>
           </Center>
         </Stack>
-        <Center textStyle={'p'}>© 2022 もにょ</Center>
+        <Center textStyle={'p'} my={'3'}>
+          © 2022 もにょ
+        </Center>
       </Box>
     </>
   );
