@@ -152,7 +152,7 @@ fig.show()
 ![出力結果](<https://i.gyazo.com/5e0a32da1079bf3fa3f188717f3f37ba.png> =400x)
 _出力結果。_
 
-2-4. チャープ波（3 周期）
+### 2-4. チャープ波（3 周期）
 
 ```python
 import numpy as np
