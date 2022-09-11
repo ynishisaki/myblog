@@ -6,6 +6,7 @@ coverImagePath: '/assets/blog/20220710-read-binary-file-py-2/cover.jpg'
 coverImagePhotographer: 'Nagara Oyodo'
 coverImageSrcUrl: 'https://unsplash.com/photos/kZvkjdcwJec'
 date: '2022-07-10'
+category: 'Python'
 ---
 
 # 本記事の内容

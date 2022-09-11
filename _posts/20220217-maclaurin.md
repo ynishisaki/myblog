@@ -6,6 +6,7 @@ coverImagePath: '/assets/blog/20220217-maclaurin/cover.jpg'
 coverImagePhotographer: 'uomo libero'
 coverImageSrcUrl: 'https://unsplash.com/photos/ONytz6ri4k4'
 date: '2022-02-17'
+category: 'Python'
 ---
 
 # 本記事の内容

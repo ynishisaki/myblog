@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220222-made-my-blog/cover.jpg'
 coverImagePhotographer: 'Lautaro Andreani'
 coverImageSrcUrl: 'https://unsplash.com/photos/xkBaqlcqeb4'
 date: '2022-02-22'
+category: 'TypeScript'
 ---
 
 # 本記事の内容

@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220502-get-domain/cover.jpg'
 coverImagePhotographer: 'Irina Blok'
 coverImageSrcUrl: 'https://unsplash.com/photos/RLR9AfOd5hw'
 date: '2022-05-02'
+category: 'Vercel'
 ---
 
 # 本記事の内容

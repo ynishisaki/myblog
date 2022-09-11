@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220323-losers-game/cover.jpg'
 coverImagePhotographer: 'micheile || visual stories'
 coverImageSrcUrl: 'https://unsplash.com/photos/lZ_4nPFKcV8'
 date: '2022-03-23'
+category: '投資初心者'
 ---
 
 # 本記事の内容

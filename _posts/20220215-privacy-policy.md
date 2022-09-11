@@ -7,6 +7,7 @@ coverImagePath: '/assets/blog/20220215-privacy-policy/cover.jpg'
 coverImagePhotographer: 'Jan Kahánek'
 coverImageSrcUrl: 'https://unsplash.com/photos/fVUl6kzIvLg'
 date: '2022-02-15'
+category: 'プライバシーポリシー/免責事項'
 ---
 
 # 免責事項

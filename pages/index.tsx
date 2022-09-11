@@ -18,6 +18,7 @@ const Home = ({
     coverImagePhotographer: string;
     coverImageSrcUrl: string;
     date: string;
+    category: string;
   }>;
 }) => {
   const initialState = 2;
@@ -62,6 +63,7 @@ const Home = ({
                 coverImagePhotographer={post.coverImagePhotographer}
                 coverImageSrcUrl={post.coverImageSrcUrl}
                 date={post.date}
+                category={post.category}
               />
             );
           })}
@@ -71,7 +73,7 @@ const Home = ({
                 onClick={ReadMorePosts}
                 bg={'#f6f1eb'}
                 borderColor={'#f6f1eb'}
-                borderRadius={'100px'}
+                borderRadius={'3xl'}
                 aria-label={'read more posts'}
                 textStyle={'h1'}
                 _hover={{ bg: '#fffcf7' }}
@@ -92,6 +94,7 @@ export const getStaticProps = async () => {
     'title',
     'excerpt',
     'date',
+    'category',
     'coverImagePath',
     'coverImagePhotographer',
     'coverImageSrcUrl',

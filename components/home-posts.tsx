@@ -9,6 +9,7 @@ export const HomePosts = ({
   date,
   slug,
   excerpt,
+  category,
 }: {
   title: string;
   coverImagePath: string;
@@ -17,6 +18,7 @@ export const HomePosts = ({
   date: string;
   slug: string;
   excerpt: string;
+  category: string;
 }) => {
   const router: NextRouter = useRouter();
 
@@ -59,6 +61,15 @@ export const HomePosts = ({
             <Text textStyle={'p'} my={'5'}>
               {date}
             </Text>
+            {/* <Text
+              textStyle={'p'}
+              my={'5'}
+              borderRadius={'2xl'}
+              borderColor={'#f6f1eb'}
+              border={'2px solid #f6f1eb'}
+            >
+              {category}
+            </Text> */}
             <Text textStyle={'p'} noOfLines={3} my={'5'}>
               {excerpt}
             </Text>

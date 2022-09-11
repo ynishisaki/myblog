@@ -24,8 +24,8 @@ export const HeaderAndFooter = ({ children }: { children: React.ReactElement }) 
           aria-label={'Home button'}
           leftIcon={<RiHome2Line />}
           bg={'#f6f1eb'}
-          borderRadius={'100px'}
-          fontSize={'25px'}
+          borderRadius={'3xl'}
+          fontSize={'2xl'}
           _hover={isnotMobile ? { bg: '#fffcf7' } : {}}
           zIndex={'banner'} //1200
         >

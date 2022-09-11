@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220504-open-graph-protocol/cover.jpg'
 coverImagePhotographer: 'Persnickety Prints'
 coverImageSrcUrl: 'https://unsplash.com/photos/98uOSdqum6E'
 date: '2022-05-04'
+category: 'Next.js'
 ---
 
 # 本記事の内容

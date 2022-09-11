@@ -5,6 +5,7 @@ coverImagePath: '/assets/blog/20220724-fixed-row-and-col-table/cover.jpg'
 coverImagePhotographer: 'Mika Baumeister'
 coverImageSrcUrl: 'https://unsplash.com/photos/Wpnoqo2plFA'
 date: '2022-07-24'
+category: 'React'
 ---
 
 # 本記事の内容
