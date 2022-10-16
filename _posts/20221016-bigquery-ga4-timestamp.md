@@ -72,7 +72,7 @@ SELECT
   event_timestamp,
   TIMESTAMP_MICROS(event_timestamp) AS event_timestamp_value,
   DATE(TIMESTAMP_MICROS(event_timestamp), 'Asia/Tokyo') AS event_date
-FROM `プロジェクトID名.データセット名.テーブル名`;
+FROM `プロジェクトID名.データセット名.テーブル名`
 ```
 
 ![Image from Gyazo](https://gyazo.com/89b1b92deba40589de7b1e6f1df35c00.png)_クエリ実行結果。_
