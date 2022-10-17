@@ -8,6 +8,7 @@ import 'zenn-content-css';
 import { PostHeader } from '../../components/post-header';
 import { PostBody } from '../../components/post-body';
 import { HeaderAndFooter } from '../../components/header-and-footer';
+// import { ReccomendPosts } from '../../components/reccomend-posts';
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -25,8 +26,10 @@ export default function Post({ post }) {
         <meta property='og:title' content={post.title} />
         <meta property='og:type' content='article' />
         <meta property='og:url' content={`https://www.monyoblog.com/posts/${post.slug}/`} />
-        <meta property='og:image' content={`https://www.monyoblog.com${post.coverImage}`} />
+        <meta property='og:image' content={`https://www.monyoblog.com${post.coverImagePath}`} />
         <meta property='og:description' content={post.excerpt} />
+        {/* twitter */}
+        <meta name='twitter:title' content={post.title} />
       </Head>
       <HeaderAndFooter>
         <Box layerStyle={'post_base'}>
@@ -40,6 +43,18 @@ export default function Post({ post }) {
               category={post.category}
             />
             <PostBody content={post.content} />
+            {/* {posts.map((each_post) => {
+              if (post.category == each_post.category) {
+                return (
+                  <ReccomendPosts
+                    title={post.title}
+                    coverImagePath={post.coverImagePath}
+                    coverImageSrcUrl={post.coverImageSrcUrl}
+                    category={post.category}
+                  ></ReccomendPosts>
+                );
+              }
+            })} */}
           </Box>
         </Box>
       </HeaderAndFooter>

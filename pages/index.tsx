@@ -47,6 +47,8 @@ const Home = ({
           property='og:description'
           content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
         />
+        {/* twitter */}
+        <meta name='twitter:title' content='もにょblog' />
       </Head>
       {/* set background image */}
       <Image src='/background-image.svg' layout='fill' objectFit='cover' />
