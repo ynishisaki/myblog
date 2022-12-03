@@ -20,6 +20,7 @@
     "@chakra-ui/react": "^1.8.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@vercel/og": "^0.0.18",
     "axios": "^0.26.0",
     "framer-motion": "^6.5.1",
     "fs": "^0.0.1-security",
@@ -30,10 +31,10 @@
     "react-icons": "^4.4.0",
     "remark": "13.0.0",
     "remark-html": "13.0.2",
+    "ts-node": "^10.9.1",
     "zenn-content-css": "^0.1.107",
-    "zenn-markdown-html": "^0.1.107",
     "zenn-embed-elements": "^0.1.107",
-    "ts-node": "^10.9.1"
+    "zenn-markdown-html": "^0.1.107"
   },
   "devDependencies": {
     "@types/node": "17.0.18",

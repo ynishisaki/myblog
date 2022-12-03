@@ -29,6 +29,7 @@ export default function Post({ post }) {
         <meta property='og:image' content={`https://www.monyoblog.com${post.coverImagePath}`} />
         <meta property='og:description' content={post.excerpt} />
         {/* twitter */}
+        <meta property='twitter:image' content={`https://www.monyoblog.com${post.coverImagePath}`} />
         <meta name='twitter:title' content={post.title} />
       </Head>
       <HeaderAndFooter>
