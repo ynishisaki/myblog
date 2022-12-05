@@ -69,7 +69,7 @@ export const theme = extendTheme({
       height: { base: '50px', md: '70px' },
       width: '100vw',
       bgColor: '#EFECE7',
-      zIndex: 'bannçer', //1200
+      zIndex: 'banner', //1200
     },
     blogLogo: {
       left: 'calc(50vw - 80px)',
