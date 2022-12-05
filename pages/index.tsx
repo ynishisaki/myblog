@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { NextRouter, useRouter } from 'next/router';
 import { Button, Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/home-posts';
 import { HeaderAndFooter } from '../components/header-and-footer';
@@ -26,8 +25,6 @@ const Home = ({
   const ReadMorePosts = () => {
     setCount(postCount + 2);
   };
-
-  const router: NextRouter = useRouter();
 
   return (
     <>
