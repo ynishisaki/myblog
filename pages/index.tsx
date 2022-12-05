@@ -73,7 +73,7 @@ const Home = ({
             <Center pt={'10'}>
               <Button
                 onClick={ReadMorePosts}
-                bg={'#f6f1eb'}
+                bg={'#FAF7F2'}
                 borderColor={'#f6f1eb'}
                 borderRadius={'3xl'}
                 aria-label={'read more posts'}
