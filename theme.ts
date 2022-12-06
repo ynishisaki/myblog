@@ -105,7 +105,6 @@ export const theme = extendTheme({
     },
     borderLine: {
       w: '80%',
-      mb: '30px',
       borderTop: '1px solid',
       borderColor: 'gray.300',
     },

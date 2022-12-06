@@ -54,7 +54,7 @@ export const HomePosts = ({
             pt={{ base: '3', md: '0' }}
           >
             <Heading>
-              <LinkOverlay href={`/posts/${slug}`} textStyle={'h2'}>
+              <LinkOverlay href={`/posts/${slug}`} textStyle={'h2'} lineHeight={'1'}>
                 {title}
               </LinkOverlay>
             </Heading>
