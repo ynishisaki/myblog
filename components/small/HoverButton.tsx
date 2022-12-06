@@ -10,14 +10,13 @@ export const HoverButton = (props: ChildCompProps) => {
   return (
     <Button
       onClick={(e) => props.onClick(e)}
-      bg={'#FAF7F2'}
-      borderColor={'#f6f1eb'}
+      bg={'#EFECE7'}
       borderRadius={'3xl'}
       aria-label={props.areaLabel}
       textStyle={'h1'}
       position={'relative'}
       zIndex={1}
-      _hover={{ bg: '#fffcf7' }}
+      _hover={{ boxShadow: 'lg' }}
     >
       {props.children}
     </Button>
