@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Button, Center, Box } from '@chakra-ui/react';
+import { Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/home-posts';
-import { HeaderAndFooter } from '../components/header-and-footer';
+import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
 import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
+import { HoverButton } from '../components/small/HoverButton';
 
 const Home = ({
   posts,
@@ -68,17 +69,9 @@ const Home = ({
           })}
           {postCount + 1 !== posts.length && (
             <Center pt={'10'}>
-              <Button
-                onClick={ReadMorePosts}
-                bg={'#FAF7F2'}
-                borderColor={'#f6f1eb'}
-                borderRadius={'3xl'}
-                aria-label={'read more posts'}
-                textStyle={'h1'}
-                _hover={{ bg: '#fffcf7' }}
-              >
-                前の記事
-              </Button>
+              <HoverButton onClick={ReadMorePosts} areaLabel='read more posts'>
+                <>前の記事</>
+              </HoverButton>
             </Center>
           )}
         </Box>
