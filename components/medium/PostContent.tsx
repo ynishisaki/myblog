@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react';
 
-export const PostBody = ({ content }: { content: string }) => {
+export const PostContent = ({ content }: { content: string }) => {
   return <Box className='znc' dangerouslySetInnerHTML={{ __html: content }} />;
 };

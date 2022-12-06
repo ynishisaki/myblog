@@ -1,44 +1,31 @@
-import { Box, Link, Text, Image } from '@chakra-ui/react';
+import { Link, Text, Image } from '@chakra-ui/react';
 
-export const PostHeader = ({
-  title,
-  date,
-  coverImagePath,
-  coverImagePhotographer,
-  coverImageSrcUrl,
-  category,
-}: {
-  title: string;
-  date: string;
+type ChildCompProps = {
   coverImagePath: string;
   coverImagePhotographer: string;
   coverImageSrcUrl: string;
-  category: string;
-}) => {
+};
+
+export const CoverImage = (props: ChildCompProps) => {
   return (
-    <Box mb={50} alignItems={'center'}>
-      <Text textStyle={'p'}>{category}</Text>
-      <Text textStyle={'p'} fontSize={'2.4em'} fontWeight={'bold'}>
-        {title}
-      </Text>
-      <Text textStyle={'p'}>{date}</Text>
+    <>
       <Image
         my={5}
         fit={'cover'}
         boxSize={'100%'}
         objectFit={'cover'}
-        src={coverImagePath}
+        src={props.coverImagePath}
         alt='coverimage from Unsplash'
       />
       <Text textStyle={'p'} align={'right'}>
         Photo by{' '}
         <Link
           color='gray.500'
-          href={coverImageSrcUrl}
+          href={props.coverImageSrcUrl}
           textDecoration={'underline'}
           _hover={{ textDecoration: 'none' }}
         >
-          {coverImagePhotographer}
+          {props.coverImagePhotographer}
         </Link>{' '}
         on{' '}
         <Link
@@ -50,6 +37,6 @@ export const PostHeader = ({
           Unsplash
         </Link>
       </Text>
-    </Box>
+    </>
   );
 };

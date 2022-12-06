@@ -49,6 +49,7 @@ export const theme = extendTheme({
     },
     home_display: {
       p: { base: '3%', md: '2%' },
+      my: '5',
     },
     post_base: {
       bg: '#EFECE7',

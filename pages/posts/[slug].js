@@ -5,8 +5,8 @@ import { getPostBySlug, getAllPosts } from '../../lib/api';
 import Head from 'next/head';
 import markdownToHtml from 'zenn-markdown-html';
 import 'zenn-content-css';
-import { PostHeader } from '../../components/post-header';
-import { PostBody } from '../../components/post-body';
+import { PostTitle } from '../../components/medium/PostTitle';
+import { PostContent } from '../../components/medium/PostContent';
 import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 
 export default function Post({ post }) {
@@ -37,7 +37,7 @@ export default function Post({ post }) {
       <HeaderAndFooter>
         <Box layerStyle={'post_base'}>
           <Box layerStyle={'post_display'}>
-            <PostHeader
+            <PostTitle
               title={post.title}
               coverImagePath={post.coverImagePath}
               coverImagePhotographer={post.coverImagePhotographer}
@@ -45,7 +45,7 @@ export default function Post({ post }) {
               date={post.date}
               category={post.category}
             />
-            <PostBody content={post.content} />
+            <PostContent content={post.content} />
           </Box>
         </Box>
       </HeaderAndFooter>

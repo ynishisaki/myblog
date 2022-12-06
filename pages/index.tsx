@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Center, Box } from '@chakra-ui/react';
-import { HomePosts } from '../components/home-posts';
+import { HomePosts } from '../components/medium/HomePosts';
 import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
 import { getAllPosts } from '../lib/api';
 import { useState } from 'react';

@@ -31,11 +31,12 @@ export const HomePosts = ({
       <LinkBox
         as='article'
         layerStyle={'home_display'}
-        borderY={'1px solid'}
-        borderColor={'#fffcf7'}
+        bg={'#EFECE7'}
         borderRadius={'md'}
-        transition={'background 0.4s '}
-        _hover={{ background: '#fffcf7' }}
+        transition={'box-shadow 0.4s'}
+        _hover={{
+          boxShadow: '2xl',
+        }}
       >
         <Box w={'100%'} display={{ md: 'flex' }}>
           <Box
