@@ -28,7 +28,7 @@ AWS の多要素認証（MFA）といえば、スマホアプリ（Google Authen
 ただし上記の使い方で OK なのかはケースバイケースでしょうから、そこは注意していただきたい。
 :::
 
-# Twilio Authy by Twilio（Window, Mac, Linux）
+# Authy by Twilio（Window, Mac, Linux）
 
 ![Image from Gyazo](https://i.gyazo.com/296712bf2cab526fd0dfb7871cccf4a5.jpg)_ダウンロードはこちらから。https://authy.com/download/_
 
