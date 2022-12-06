@@ -1,13 +1,14 @@
-import { Box } from '@chakra-ui/react';
+import Head from 'next/head';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
+import { Box } from '@chakra-ui/react';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
-import Head from 'next/head';
 import markdownToHtml from 'zenn-markdown-html';
 import 'zenn-content-css';
+import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 import { PostTitle } from '../../components/medium/PostTitle';
 import { PostContent } from '../../components/medium/PostContent';
-import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -36,7 +37,9 @@ export default function Post({ post }) {
       </Head>
       <HeaderAndFooter>
         <Box layerStyle={'post_base'}>
-          <Box layerStyle={'post_display'}>
+          {/* set background image */}
+          <Image src='/background-image.svg' layout='fill' objectFit='cover' />
+          <Box layerStyle={'post_display'} position='relative'>
             <PostTitle
               title={post.title}
               coverImagePath={post.coverImagePath}

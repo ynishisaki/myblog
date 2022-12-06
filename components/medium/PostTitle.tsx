@@ -19,7 +19,7 @@ export const PostTitle = ({
   return (
     <Box mb={50} alignItems={'center'}>
       <Text textStyle={'p'}>{category}</Text>
-      <Text textStyle={'p'} fontSize={'2.4em'} fontWeight={'bold'}>
+      <Text textStyle={'p'} fontSize={'4xl'} fontWeight={'bold'} lineHeight={1.3}>
         {title}
       </Text>
       <Text textStyle={'p'}>{date}</Text>

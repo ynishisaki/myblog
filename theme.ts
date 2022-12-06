@@ -51,27 +51,6 @@ export const theme = extendTheme({
   },
 
   layerStyles: {
-    base: {},
-    home_base: {
-      bg: '#EFECE7',
-      mt: { base: '50px', md: '70px' },
-      p: { base: '3% 5%', md: '3% 20%' },
-      width: { md: '100%' },
-    },
-    home_display: {
-      p: { base: '3%', md: '2%' },
-      my: '5',
-    },
-    post_base: {
-      bg: '#EFECE7',
-      mt: { base: '50px', md: '70px' },
-      width: { base: '100%' },
-    },
-    post_display: {
-      p: { base: '3%' },
-      m: { base: '0% 5%', md: '0% 20%' },
-      bg: '#FAF7F2',
-    },
     header: {
       px: '10px',
       alignItems: 'center',
@@ -83,13 +62,6 @@ export const theme = extendTheme({
       bgColor: '#EFECE7',
       zIndex: 'banner', //1200
     },
-    blogLogo: {
-      left: 'calc(50vw - 80px)',
-      top: '5px',
-      position: 'absolute',
-      width: '160px',
-      borderRadius: '10px',
-    },
     blogTitle: {
       width: '100%',
       position: 'absolute',
@@ -98,10 +70,28 @@ export const theme = extendTheme({
       fontSize: { base: 'lg', md: '2xl' },
       fontWeight: 'bold',
     },
+    base: {},
+    home_base: {
+      mt: { base: '50px', md: '70px' },
+      p: { base: '3% 5%', md: '3% 20%' },
+      width: { md: '100%' },
+    },
+    home_display: {
+      p: { base: '3%', md: '2%' },
+      my: '5',
+    },
+    post_base: {
+      mt: { base: '50px', md: '70px' },
+      width: { base: '100%' },
+    },
+    post_display: {
+      p: { base: '3%' },
+      m: { base: '0% 5%', md: '0% 20%' },
+      bg: '#FAF7F2',
+    },
     footer: {
       position: 'relative',
       bg: '#E5E3DE',
-      // bg: 'white',
       borderTop: '1px solid #eaeaea',
       flexDirection: 'column',
       display: 'flex',
