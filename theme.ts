@@ -59,7 +59,7 @@ export const theme = extendTheme({
       top: '0px',
       height: { base: '50px', md: '70px' },
       width: '100vw',
-      bgColor: '#EFECE7',
+      bgColor: '#EFECE7', // medium color
       zIndex: 'banner', //1200
     },
     blogTitle: {
@@ -87,11 +87,11 @@ export const theme = extendTheme({
     post_display: {
       p: { base: '3%' },
       m: { base: '0% 5%', md: '0% 20%' },
-      bg: '#FAF7F2',
+      bg: '#FAF7F2', // high color
     },
     footer: {
       position: 'relative',
-      bg: '#E5E3DE',
+      bg: '#E5E3DE', // low color
       borderTop: '1px solid #eaeaea',
       flexDirection: 'column',
       display: 'flex',
