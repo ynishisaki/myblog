@@ -3,10 +3,21 @@ import { extendTheme } from '@chakra-ui/react';
 export const theme = extendTheme({
   components: {
     Button: {
+      // ボタン押したときの青枠を消す
       baseStyle: {
         _focus: {
           boxShadow: 'None',
         },
+      },
+      variants: {
+        // （スマホサイズのみ）ボタンホバー時の影を消す
+        solid: () => ({
+          '@media screen and (max-width: 767px)': {
+            _hover: {
+              boxShadow: 'None',
+            },
+          },
+        }),
       },
     },
   },
