@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import { Box } from '@chakra-ui/react';
+import { Box, Center, Flex, Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from 'zenn-markdown-html';
 import 'zenn-content-css';
@@ -10,11 +10,12 @@ import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 import { PostTitle } from '../../components/medium/PostTitle';
 import { PostContent } from '../../components/medium/PostContent';
 
-export default function Post({ post }) {
+export default function Post({ post, relatedPosts }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+  console.log(relatedPosts);
 
   return (
     <>
@@ -49,6 +50,27 @@ export default function Post({ post }) {
               category={post.category}
             />
             <PostContent content={post.content} />
+            {relatedPosts[0] ? (
+              <Box mt='100' color='#4d5156'>
+                <Box borderTop='1px solid' borderColor='gray.300' />
+                <Center fontSize='3xl' p='5'>
+                  関連記事
+                </Center>
+                <Flex>
+                  {/* 関連記事を最大2つ表示する */}
+                  {relatedPosts.slice(0, 2).map((post) => (
+                    <LinkBox as='article' w='40%' mx='auto'>
+                      <img src={post.coverImagePath} />
+                      <LinkOverlay href={`/posts/${post.slug}/`} title={post.title} target='_blank'>
+                        <Text my={'3'} fontSize='sm' lineHeight={1} noOfLines={3}>
+                          {post.title}
+                        </Text>
+                      </LinkOverlay>
+                    </LinkBox>
+                  ))}
+                </Flex>
+              </Box>
+            ) : null}
           </Box>
         </Box>
       </HeaderAndFooter>
@@ -71,12 +93,22 @@ export async function getStaticProps({ params }) {
 
   const content = await markdownToHtml(post.content || '');
 
+  const relatedPosts = getAllPosts([
+    'slug',
+    'title',
+    'excerpt',
+    'coverImagePath',
+    'date',
+    'category',
+  ]).filter((p) => p.category === post.category && p.slug !== post.slug); // 同一カテゴリーの記事を取得
+
   return {
     props: {
       post: {
         ...post,
         content,
       },
+      relatedPosts,
     },
   };
 }
