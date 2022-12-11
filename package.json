@@ -1,6 +1,5 @@
 {
   "name": "myblog",
-  "private": true,
   "prettier": {
     "trailingComma": "all",
     "tabWidth": 2,

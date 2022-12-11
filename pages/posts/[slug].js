@@ -39,7 +39,7 @@ export default function Post({ post, relatedPosts }) {
       <HeaderAndFooter>
         <Box layerStyle={'post_base'}>
           {/* set background image */}
-          <Image src='/background-image.svg' layout='fill' objectFit='cover' />
+          <Image src='/background-image.svg' layout='fill' objectFit='cover' alt='cover image' />
           <Box layerStyle={'post_display'} position='relative'>
             <PostTitle
               title={post.title}
@@ -59,8 +59,8 @@ export default function Post({ post, relatedPosts }) {
                 <Flex>
                   {/* 関連記事を最大2つ表示する */}
                   {relatedPosts.slice(0, 2).map((post) => (
-                    <LinkBox as='article' w='40%' mx='auto'>
-                      <img src={post.coverImagePath} />
+                    <LinkBox key={post.slug} as='article' mx='auto' w='40%'>
+                      <img src={post.coverImagePath} alt='' />
                       <LinkOverlay href={`/posts/${post.slug}/`} title={post.title} target='_blank'>
                         <Text my={'3'} fontSize='sm' lineHeight={1} noOfLines={3}>
                           {post.title}
