@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Box, Link, position, Text } from '@chakra-ui/react';
+import { Box, Link, Text } from '@chakra-ui/react';
 
 type ChildCompProps = {
   coverImagePath: string;
@@ -10,6 +10,7 @@ type ChildCompProps = {
 export const PostCoverImage = (props: ChildCompProps) => {
   return (
     <>
+      {/* 画像サイズを親要素で指定する */}
       <Box position='relative' w='100%' h={{ base: '200px', sm: '300px', md: '450px' }}>
         <Image
           src={props.coverImagePath}
