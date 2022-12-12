@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import { Box, Center, Flex, Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
@@ -9,6 +8,7 @@ import 'zenn-content-css';
 import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 import { PostTitle } from '../../components/medium/PostTitle';
 import { PostContent } from '../../components/medium/PostContent';
+import { FixedBackgroundImage } from '../../components/small/FixedBackgroundImage';
 
 export default function Post({ post, relatedPosts }) {
   const router = useRouter();
@@ -36,10 +36,9 @@ export default function Post({ post, relatedPosts }) {
         />
         <meta name='twitter:title' content={post.title} />
       </Head>
+      <FixedBackgroundImage />
       <HeaderAndFooter>
         <Box layerStyle={'post_base'}>
-          {/* set background image */}
-          <Image src='/background-image.svg' layout='fill' objectFit='cover' alt='cover image' />
           <Box layerStyle={'post_display'} position='relative'>
             <PostTitle
               title={post.title}

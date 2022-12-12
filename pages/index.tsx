@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import { FixedBackgroundImage } from '../components/small/FixedBackgroundImage';
 import { Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/medium/HomePosts';
 import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
@@ -48,8 +48,7 @@ const Home = ({
         {/* twitter */}
         <meta name='twitter:title' content='もにょblog' />
       </Head>
-      {/* set background image */}
-      <Image src='/background-image.svg' layout='fill' objectFit='cover' />
+      <FixedBackgroundImage />
       <HeaderAndFooter>
         <Box layerStyle={'home_base'}>
           {posts.slice(0, postCount + 1).map((post) => {

@@ -81,7 +81,7 @@ export const theme = extendTheme({
       my: '5',
     },
     post_base: {
-      mt: { base: '50px', md: '70px' },
+      pt: { base: '50px', md: '70px' },
       width: { base: '100%' },
     },
     post_display: {
