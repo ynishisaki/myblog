@@ -1,5 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
-import { CoverImage } from '../small/CoverImage';
+import { PostCoverImage } from '../small/PostCoverImage';
 
 export const PostTitle = ({
   title,
@@ -23,7 +23,7 @@ export const PostTitle = ({
         {title}
       </Text>
       <Text textStyle={'p'}>{date}</Text>
-      <CoverImage
+      <PostCoverImage
         coverImagePath={coverImagePath}
         coverImagePhotographer={coverImagePhotographer}
         coverImageSrcUrl={coverImageSrcUrl}
