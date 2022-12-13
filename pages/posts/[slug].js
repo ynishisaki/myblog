@@ -15,7 +15,6 @@ export default function Post({ post, relatedPosts }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-  console.log(relatedPosts);
 
   return (
     <>

@@ -30,7 +30,7 @@ AWS の多要素認証（MFA）といえば、スマホアプリ（Google Authen
 
 # Authy by Twilio（Window, Mac, Linux）
 
-![Image from Gyazo](https://i.gyazo.com/296712bf2cab526fd0dfb7871cccf4a5.jpg)_ダウンロードはこちらから。https://authy.com/download/_
+![Image from Gyazo](https://i.gyazo.com/296712bf2cab526fd0dfb7871cccf4a5.jpg)_ダウンロードはこちらから。<https://authy.com/download/>_
 
 OS の種類を問わず、スマホ、デスクトップ版の両方がある。
 UI/UX もシンプルで良い感じ。
@@ -40,7 +40,7 @@ UI/UX もシンプルで良い感じ。
 
 # Authenticator by 2Stable(Mac)
 
-![Image from Gyazo](https://gyazo.com/b8fd1d31b769d8e3e804ff2c7da21f50.png)_ダウンロードはこちらから。https://authenticator.2stable.com/_
+![Image from Gyazo](https://gyazo.com/b8fd1d31b769d8e3e804ff2c7da21f50.png)_ダウンロードはこちらから。<https://authenticator.2stable.com/>_
 
 iPhone はもちろん、Apple Watch でも使用できるらしい。すごいな。
 
