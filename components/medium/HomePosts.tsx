@@ -33,9 +33,11 @@ export const HomePosts = ({
         layerStyle={'home_display'}
         bg={'#EFECE7'}
         borderRadius={'md'}
-        transition={'box-shadow 0.4s'}
+        // ホバーすると記事がちょっと浮き出た感じになる
+        transition={'box-shadow 0.4s, transform 0.4s'}
         _hover={{
           boxShadow: '2xl',
+          transform: 'translateY(-4px)',
         }}
       >
         <Box w={'100%'} display={{ md: 'flex' }}>
