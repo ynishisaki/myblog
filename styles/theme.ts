@@ -59,7 +59,8 @@ export const theme = extendTheme({
       top: '0px',
       height: { base: '50px', md: '70px' },
       width: '100vw',
-      bgColor: '#EFECE7', // medium color
+      bgColor: '#FAF7F2', // high color
+      // bgColor: '#EFECE7', // medium color
       zIndex: 'banner', //1200
     },
     blogTitle: {
@@ -91,7 +92,7 @@ export const theme = extendTheme({
     },
     footer: {
       position: 'relative',
-      bg: '#E5E3DE', // low color
+      bg: '#EFECE7', // medium color
       borderTop: '1px solid #eaeaea',
       flexDirection: 'column',
       display: 'flex',

@@ -10,7 +10,7 @@ export const HoverButton = (props: ChildCompProps) => {
   return (
     <Button
       onClick={(e) => props.onClick(e)}
-      bg={'#EFECE7'}
+      bg={'#FAF7F2'} // high color
       borderRadius={'3xl'}
       aria-label={props.areaLabel}
       textStyle={'h1'}

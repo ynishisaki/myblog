@@ -31,7 +31,7 @@ export const HomePosts = ({
       <LinkBox
         as='article'
         layerStyle={'home_display'}
-        bg={'#EFECE7'}
+        bg={'#FAF7F2'} // high color
         borderRadius={'md'}
         // ホバーすると記事がちょっと浮き出た感じになる
         transition={'box-shadow 0.4s, transform 0.4s'}
