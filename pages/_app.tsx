@@ -1,24 +1,19 @@
-import '../styles/zenn-global.css';
 import Script from 'next/script';
 import { useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import { ChakraProvider } from '@chakra-ui/react';
 import { theme } from '../theme';
-import initTwitterScriptInner from 'zenn-embed-elements/lib/init-twitter-script-inner';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    import('zenn-embed-elements'), [];
-  });
+    import('zenn-embed-elements');
+  }, []);
 
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: initTwitterScriptInner,
-        }}
-      />
+
+      <Script src='https://embed.zenn.studio/js/listen-embed-event.js' />
 
       {/* Add google analytics */}
       <Script

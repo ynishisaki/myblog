@@ -1,10 +1,9 @@
+import 'zenn-content-css';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import { Box, Center, Flex, Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import { Box, Center, Flex, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
-import markdownToHtml from 'zenn-markdown-html';
-import 'zenn-content-css';
 import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 import { PostTitle } from '../../components/medium/PostTitle';
 import { PostContent } from '../../components/medium/PostContent';
@@ -89,7 +88,7 @@ export async function getStaticProps({ params }) {
     'content',
   ]);
 
-  const content = await markdownToHtml(post.content || '');
+  const content = post.content || '';
 
   const relatedPosts = getAllPosts([
     'slug',
