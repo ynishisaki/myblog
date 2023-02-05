@@ -8,7 +8,6 @@ export const PostContent = ({ content }: { content: string }) => {
   }, []);
 
   const html = markdownHtml(content);
-  console.log(html);
 
   return (
     <div
