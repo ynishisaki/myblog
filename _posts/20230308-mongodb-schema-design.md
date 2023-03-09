@@ -1,6 +1,6 @@
 ---
-title: 'はじめてのMongoDB、スキーマ設計の考え方'
-excerpt: 'MongoDB 初心者を対象とした、ドキュメントの構造とスキーマ設計の考え方の入門内容。'
+title: 'MongoDBのスキーマ設計入門'
+excerpt: 'MongoDB をはじめて触る人を対象としたMongoDB におけるドキュメントの構造とスキーマ設計の考え方。'
 coverImagePath: '/assets/blog/20230308-mongodb-schema-design/cover.jpg'
 coverImagePhotographer: 'Kwang Javier'
 coverImageSrcUrl: 'https://unsplash.com/photos/qcRMfoIWxRo'
@@ -10,22 +10,22 @@ category: 'MongoDB'
 
 # 本記事について
 
-この記事は、MongoDB をはじめて触る人を対象に、MongoDB におけるドキュメントの構造とスキーマ設計の考え方の入門内容をまとめたものである。
+MongoDB をはじめて触る人を対象とした MongoDB におけるドキュメントの構造とスキーマ設計の考え方。
 
-## 参考
+## 参考サイト
 
-<https://docs.mongodb.com/manual/core/data-modeling-introduction/>
+[Data Modeling Introduction — MongoDB Manual](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
 
 &nbsp;
 
 # はじめに用語解説
 
-## docments
+## docment
 
 RDB における record に相当。  
 JSON Object とほぼ同じ形式。
 
-## collections
+## collection
 
 RDB における table に相当。  
 collection 内の docment は、デフォルトで同じフィールドや同じデータ型を持つ必要がない。
@@ -43,24 +43,27 @@ RDB における column に相当。
 
 &nbsp;
 
-# Document Structure
+# 2 種類の document 構造
 
-データモデルを設計するにあたり、document の構造、データ間の関係をどう示すかは以下の二つから選択することになる。
+スキーマ設計をするにあたり、document の構造をどうするか、データ間の関係をどう示すかは以下の二つから選択することになる。
 
-## Embedded Data Models（非正規化）
+## 1. Embedded Data Models（denormalized）
 
 以下の例では、ブログ記事の情報に加えて、記事の著者（author）とコメント（comments）も埋め込まれている。
 
 ```json
+// article collection
 {
   "_id": "1234567890",
   "title": "My Blog Post",
   "body": "This is my blog post.",
   "author": {
+    // embedded
     "name": "John Smith",
     "email": "john.smith@example.com"
-  }, // embedded
+  },
   "comments": [
+    // embedded
     {
       "name": "Jane Doe",
       "email": "jane.doe@example.com",
@@ -71,16 +74,18 @@ RDB における column に相当。
       "email": "bob.johnson@example.com",
       "body": "Thanks for sharing."
     }
-  ] // embedded
+  ]
 }
 ```
 
-Embedded Data Models は、一回の DB 操作で関連データを取得できるという利点がある。  
-大抵のケースでは、このモデルが適しているらしい。
+Embedded Data Models は、一回の DB 操作で関連データを取得できるという利点がある。
 
-## Normalized Data Models
+大抵のケースでは、このモデルが適しているらしい。  
+ただし、document にはデータサイズの上限がある点には注意。
 
-もちろん正規化もできる。
+## 2. Normalized Data Models
+
+正規化もできる。
 
 以下の例では、著者とコメントは別のコレクションに格納されている。
 
@@ -103,21 +108,23 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 
 &nbsp;
 
-# Atomicity
+# Atomicity が保証される範囲に注意
 
-単一 document での write 操作では、atomicity が保証されている。  
-しかし、複数 document にまたがる write 操作は、atomic ではない。
+単一 document の操作は、atomicity が保たれている。
 
-各 document の変更は atomic だが操作全体は atomic ではない、ということになる。
+複数 document にまたがる操作は、atomic ではない。
+この場合、各 document の更新は atomic だが操作全体は atomic ではない。
 
-現在では multi-document transactions もサポートされている。  
+なお、現在では multi-document transactions もサポートされている。  
 が、Embedded Data Models を活用することによって、multi-document transactions の使用を必要最低限に抑えた方がよいらしい。
 
 &nbsp;
 
-# Data Model Design
+# スキーマ設計の考え方
 
-先述した Embedded Data Models と Normalized Data Models のどちらを選択するかのざっくりした判断基準は以下の通り。
+問題は Embedded Data Models と Normalized Data Models をどう使い分けるかだが、明確な答えはないようだ。
+
+...と言われても困るので、MongoDB のドキュメントで挙げられている、ざっくりした指針を以下に示す。
 
 ## Embedded Data Models がよい場合
 
@@ -129,3 +136,19 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 - 仮に Embedded Data Models を採用した場合、データの重複が発生し、かつ重複の影響を上回るほどの十分な読み取りパフォーマンスの利点が得られない場合
 - 複雑な多対多
 - 大規模な階層データセット
+
+これはあくまで指針であって、当てはまらないケースもあることに注意が必要である。
+
+例えば、一口に「一対多」と言っても「一対少数」なのか「一対数十万」なのかで話は変わってくるわけで、「一対数十万」は Embedded Data Models に向いていない（document がオーバーフローする恐れがあるため）。
+
+※もっと言うと、「一対数十万」の関係でも Embedded Data Models を適応する方法はある。 「一」側に非正規化する方法、「数十万」側に非正規化する方法どちらも実装可能。だから「答えはない」「ケースバイケースです」ということになるのだろう。
+
+&nbsp;
+
+# まとめ
+
+- MongoDB には二つのデータモデルがある。
+  1. Embedded Data Models
+  2. Normalized Data Models
+- これら二つのモデルの使い分け方について、ざっくりした指針を示した。
+- 基本的には、Embedded Data Models が適しているケースが多く、Normalized Data Models は Embedded Data Models を適応するのが難しい場面で使うことになりやすい。
