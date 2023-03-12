@@ -13,8 +13,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
 
-      <Script src='https://embed.zenn.studio/js/listen-embed-event.js' />
-
       {/* Add google analytics */}
       <Script
         strategy='lazyOnload'

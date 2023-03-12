@@ -14,7 +14,7 @@ MongoDB をはじめて触る人を対象とした MongoDB におけるドキュ
 
 ## 参考サイト
 
-[Data Modeling Introduction — MongoDB Manual](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
+https://docs.mongodb.com/manual/core/data-modeling-introduction/
 
 &nbsp;
 

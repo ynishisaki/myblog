@@ -1,4 +1,5 @@
 import 'zenn-content-css';
+import markdownHtml from 'zenn-markdown-html';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
@@ -88,7 +89,10 @@ export async function getStaticProps({ params }) {
     'content',
   ]);
 
-  const content = post.content || '';
+  const content =
+    markdownHtml(post.content, {
+      embedOrigin: 'https://embed.zenn.studio',
+    }) || '';
 
   const relatedPosts = getAllPosts([
     'slug',
