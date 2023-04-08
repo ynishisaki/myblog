@@ -1,9 +1,9 @@
 ---
-title: '【MapLibre GL JS】地図の下に三角マークがいるけどこれはなんだ'
-excerpt: '三角マーク（attributionControl）を非表示にする方法を紹介する。'
+title: '【MapLibre GL JS】地図の下に三角マークがあるけど、なんだこれは？'
+excerpt: 'MapLibre GL JSで地図の下にある三角マーク（attributionControl）を非表示にする方法を紹介する。'
 coverImagePath: '/assets/blog/20230408-maplibregl-hidden-attribution-control/cover.jpg'
-coverImagePhotographer: 'Vlad Sargu'
-coverImageSrcUrl: 'https://unsplash.com/photos/ItphH2lGzuI'
+coverImagePhotographer: 'Nick Seagrave'
+coverImageSrcUrl: 'https://unsplash.com/photos/1tpLdmxki-c'
 date: '2023-04-08'
 category: 'Maplibre GL JS'
 ---
