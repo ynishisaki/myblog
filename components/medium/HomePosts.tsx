@@ -1,5 +1,6 @@
-import { Box, Heading, Image, Link, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import { Box, Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 import { NextRouter, useRouter } from 'next/router';
+import Image from 'next/image';
 
 export const HomePosts = ({
   title,
@@ -32,6 +33,7 @@ export const HomePosts = ({
         as='article'
         layerStyle={'home_display'}
         bg={'#FAF7F2'} // high color
+        p={'4'}
         borderRadius={'md'}
         // ホバーすると記事がちょっと浮き出た感じになる
         transition={'box-shadow 0.4s, transform 0.4s'}
@@ -47,32 +49,47 @@ export const HomePosts = ({
             pr={{ base: '0', md: '3' }}
             pb={{ base: '3', md: '0' }}
           >
-            <Image objectFit={'fill'} src={coverImagePath} alt='coverimage from Unsplash' />
+            <Image
+              width={400}
+              height={300}
+              objectFit='cover'
+              src={coverImagePath}
+              alt='coverimage from Unsplash'
+              style={{ borderRadius: 'md' }}
+            />
           </Box>
           <Box
             w={{ md: '50%' }}
             h={{ base: '50%' }}
             pl={{ base: '0', md: '3' }}
             pt={{ base: '3', md: '0' }}
+            display={'flex'}
+            flexDirection={'column'}
+            flex={'1'}
+            my={'auto'}
           >
             <Heading>
-              <LinkOverlay href={`/posts/${slug}`} textStyle={'h2'} lineHeight={'1'}>
+              <LinkOverlay href={`/posts/${slug}`} textStyle={'h2'}>
                 {title}
               </LinkOverlay>
             </Heading>
-            <Text textStyle={'p'} my={'5'}>
+            <Text
+              textStyle={'p'}
+              mt={'1'} // override
+              color={'gray.600'} // override
+            >
               {date}
             </Text>
-            {/* <Text
+
+            {/* md 以上の時だけ表示 */}
+            <Text
               textStyle={'p'}
-              my={'5'}
-              borderRadius={'2xl'}
-              borderColor={'#f6f1eb'}
-              border={'2px solid #f6f1eb'}
+              fontSize={'sm'} // override
+              color={'gray.600'} // override
+              mt={'5'} // override
+              noOfLines={3}
+              display={{ base: 'none', md: 'block' }}
             >
-              {category}
-            </Text> */}
-            <Text textStyle={'p'} noOfLines={3} my={'5'}>
               {excerpt}
             </Text>
           </Box>
