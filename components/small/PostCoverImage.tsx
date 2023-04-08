@@ -17,6 +17,7 @@ export const PostCoverImage = (props: ChildCompProps) => {
           alt='cover image from Unsplash'
           layout='fill'
           objectFit='cover'
+          priority
         />
       </Box>
       <Text textStyle={'p'} align={'right'}>

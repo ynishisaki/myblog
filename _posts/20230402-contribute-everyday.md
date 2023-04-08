@@ -5,7 +5,7 @@ coverImagePath: '/assets/blog/20230402-contribute-everyday/cover.jpg'
 coverImagePhotographer: 'Nikola Jovanovic'
 coverImageSrcUrl: 'https://unsplash.com/photos/OBok3F8buKY'
 date: '2023-04-02'
-category: ''
+category: 'キャリア'
 ---
 
 # 本記事について

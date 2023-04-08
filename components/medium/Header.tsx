@@ -15,26 +15,13 @@ export const Header = () => {
 
   return (
     <Box layerStyle={'header'} boxShadow='lg'>
-      <HoverButton onClick={jumpToHome} areaLabel={'Home button'}>
-        <>
-          <Icon as={RiHome2Line} fontSize={'2xl'} />
-          {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
-        </>
+      <HoverButton
+        icon={<Icon as={RiHome2Line} fontSize={'2xl'} />}
+        onClick={jumpToHome}
+        areaLabel={'Home button'}
+      >
+        {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
       </HoverButton>
-      {/*       
-        <Button
-          onClick={jumpToHome}
-          pl={'4'}
-          aria-label={'Home button'}
-          leftIcon={<RiHome2Line />}
-          bg={'#EFECE7'}
-          borderRadius={'3xl'}
-          fontSize={'2xl'}
-          _hover={isnotMobile ? { bg: '#fffcf7' } : {}}
-          zIndex={'banner'} //1200
-        >
-          {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
-        </Button> */}
       <Center layerStyle={'blogTitle'}>もにょぶろぐ</Center>
     </Box>
   );
