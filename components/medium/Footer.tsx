@@ -15,7 +15,7 @@ export const Footer = () => {
         <Text textStyle={'p'} my={'3'}>
           海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
           なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
-          使用言語は、Python、TypeScript。
+          普段はReactでの開発がメイン。
         </Text>
       </Box>
       <Box layerStyle={'borderLine'} />

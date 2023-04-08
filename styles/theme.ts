@@ -72,7 +72,7 @@ export const theme = extendTheme({
     },
     base: {},
     home_base: {
-      mt: { base: '50px', md: '70px' },
+      mt: '40px',
       p: { base: '3% 5%', md: '3% 20%' },
       width: { md: '100%' },
     },
@@ -81,7 +81,7 @@ export const theme = extendTheme({
       my: '5',
     },
     post_base: {
-      pt: { base: '50px', md: '70px' },
+      pt: { base: '20px', md: '50px' },
       width: { base: '100%' },
     },
     post_display: {
@@ -108,6 +108,7 @@ export const theme = extendTheme({
       w: '80%',
       borderTop: '1px solid',
       borderColor: 'gray.300',
+      mb: '5',
     },
   },
 });

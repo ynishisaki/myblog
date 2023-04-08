@@ -31,20 +31,14 @@ const Home = ({
     <>
       <Head>
         <title>Home｜もにょblog</title>
-        <meta
-          name='description'
-          content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
-        />
+        <meta name='description' content='もにょのテックブログ。' />
         {/* og */}
         <meta property='og:site_name' content='もにょblog' />
         <meta property='og:title' content='Home｜もにょblog' />
         <meta property='og:type' content='blog' />
         <meta property='og:url' content='https://www.monyoblog.com/' />
         {/* <meta property='og:image' content='' /> */}
-        <meta
-          property='og:description'
-          content='もにょの成長記録です。プログラミング（Python、JavaScript）の話が多いかな。'
-        />
+        <meta property='og:description' content='もにょのテックブログ。' />
         {/* twitter */}
         <meta name='twitter:title' content='もにょblog' />
       </Head>
@@ -67,7 +61,7 @@ const Home = ({
             );
           })}
           {postCount + 1 !== posts.length && (
-            <Center pt={'10'}>
+            <Center pt={'4'}>
               <HoverButton onClick={ReadMorePosts} areaLabel='read more posts'>
                 <>前の記事</>
               </HoverButton>
