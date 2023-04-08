@@ -55,7 +55,9 @@ export const HomePosts = ({
               objectFit='cover'
               src={coverImagePath}
               alt='coverimage from Unsplash'
-              style={{ borderRadius: 'md' }}
+              style={{
+                borderRadius: '0.375rem', // md
+              }}
             />
           </Box>
           <Box
