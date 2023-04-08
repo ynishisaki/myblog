@@ -27,8 +27,11 @@ export const theme = extendTheme({
       color: '#4d5156',
       my: { base: '1' },
       py: { base: '0' },
-      fontSize: { base: 'sm', md: 'md' },
-      fontWeight: 'normal', //400
+      fontSize: '16px',
+      // fontWeight: 'thin', // 200
+      fontWeight: 'light', // 300
+      // fontSize: { base: 'sm', md: 'md' },
+      // fontWeight: 'normal', //400
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
     },
     h1: {
