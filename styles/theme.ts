@@ -105,6 +105,7 @@ export const theme = extendTheme({
     },
     profile: {
       py: '4',
+      px: '30px',
     },
     borderLine: {
       w: '80%',
