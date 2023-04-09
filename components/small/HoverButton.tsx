@@ -15,7 +15,7 @@ export const HoverButton = (props: Props) => {
       bg={'#FAF7F2'} // high color
       borderRadius={'3xl'}
       aria-label={props.areaLabel}
-      textStyle={'h1'}
+      textStyle={'h3'}
       position={'relative'}
       zIndex={1}
       _hover={{ boxShadow: 'lg' }}

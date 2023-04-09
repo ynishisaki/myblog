@@ -10,12 +10,12 @@ export const Footer = () => {
       <Box layerStyle={'profile'}>
         <Flex alignItems={'flex-end'}>
           <Icon as={FcBusinesswoman} fontSize={'30px'} />
-          <Text textStyle={'h1'}>もにょ</Text>
+          <Text textStyle={'h3'}>もにょ</Text>
         </Flex>
         <Text fontSize={{ base: 'sm', md: 'md' }} textStyle={'p'} my={'3'}>
           海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
           なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
-          普段はReactでの開発がメイン。
+          主な使用言語はTypeScriptとPython。
         </Text>
       </Box>
       <Box layerStyle={'borderLine'} />

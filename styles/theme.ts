@@ -28,18 +28,15 @@ export const theme = extendTheme({
       my: { base: '1' },
       py: { base: '0' },
       fontSize: '16px',
-      // fontWeight: 'thin', // 200
       fontWeight: 'light', // 300
-      // fontSize: { base: 'sm', md: 'md' },
-      // fontWeight: 'normal', //400
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif',
     },
     h1: {
       color: '#4d5156',
-      // margin: '16px 0',
-      fontSize: '16px',
-      fontWeight: 'bold', //700
+      fontSize: '3xl',
+      fontWeight: 'bold',
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
+      lineHeight: '1',
     },
     h2: {
       color: '#4d5156',
@@ -49,6 +46,12 @@ export const theme = extendTheme({
       fontWeight: 'bold',
       fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
       lineHeight: '1',
+    },
+    h3: {
+      color: '#4d5156',
+      fontSize: '16px',
+      fontWeight: 'bold', //700
+      fontFamily: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
     },
   },
 
@@ -83,6 +86,8 @@ export const theme = extendTheme({
       my: '5',
     },
     post_base: {
+      mt: '30px',
+      mb: '8px',
       pt: { base: '20px', md: '50px' },
       width: { base: '100%' },
     },
