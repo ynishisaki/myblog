@@ -104,7 +104,7 @@ export const theme = extendTheme({
       zIndex: 'stickey', //1100
     },
     profile: {
-      m: '30px',
+      py: '4',
     },
     borderLine: {
       w: '80%',

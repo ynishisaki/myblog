@@ -61,7 +61,7 @@ const Home = ({
             );
           })}
           {postCount + 1 !== posts.length && (
-            <Center pt={'4'}>
+            <Center>
               <HoverButton onClick={ReadMorePosts} areaLabel='read more posts'>
                 <>前の記事</>
               </HoverButton>
