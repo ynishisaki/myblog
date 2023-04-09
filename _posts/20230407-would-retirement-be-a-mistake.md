@@ -1,7 +1,7 @@
 ---
 title: '退職は失敗ではない vol.1 退職時に上司からかけられた言葉'
 excerpt: '退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験からいくつか紹介する。'
-coverImagePath: '/assets/blog/20230407-would-retirement-be-a-mistake/cover1.jpg'
+coverImagePath: '/assets/blog/20230407-would-retirement-be-a-mistake/cover.jpg'
 coverImagePhotographer: 'Vlad Sargu'
 coverImageSrcUrl: 'https://unsplash.com/photos/ItphH2lGzuI'
 date: '2023-04-07'
