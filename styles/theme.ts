@@ -54,20 +54,19 @@ export const theme = extendTheme({
 
   layerStyles: {
     header: {
-      px: '10px',
-      alignItems: 'center',
-      display: 'flex',
       position: 'fixed',
       top: '0px',
+      zIndex: 'banner', //1200
       height: { base: '50px', md: '70px' },
       width: '100vw',
+      px: { base: '0', md: '20%' },
+      display: 'flex',
+      alignItems: 'center',
       bgColor: '#FAF7F2', // high color
-      // bgColor: '#EFECE7', // medium color
-      zIndex: 'banner', //1200
     },
     blogTitle: {
-      width: '100%',
       position: 'absolute',
+      left: 'calc(50% - 3em)',
       color: '#4d5156',
       fontFamily: '"Kosugi Maru", sans-serif',
       fontSize: { base: 'lg', md: '2xl' },

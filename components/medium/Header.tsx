@@ -1,8 +1,33 @@
-import { Box, Text, Icon, Center, useBreakpointValue } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Icon,
+  Center,
+  useBreakpointValue,
+  Link,
+  keyframes,
+  Show,
+} from '@chakra-ui/react';
 import { RiHome2Line } from 'react-icons/ri';
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import { HoverButton } from '../small/HoverButton';
+import NextLink from 'next/link';
+
+const bump = keyframes({
+  'from, to': {
+    transform: 'scale(1, 1)',
+  },
+  '25%': {
+    transform: 'scale(0.9, 1.1)',
+  },
+  '50%': {
+    transform: 'scale(1.1, 0.9)',
+  },
+  '75%': {
+    transform: 'scale(0.95, 1.05)',
+  },
+});
 
 export const Header = () => {
   const router: NextRouter = useRouter();
@@ -11,18 +36,29 @@ export const Header = () => {
     router.push(`/`);
   };
 
+  const animation = `${bump}  0.3s ease-in-out`;
+
   const isnotMobile = useBreakpointValue({ base: false, md: true });
 
   return (
     <Box layerStyle={'header'} boxShadow='lg'>
-      <HoverButton
-        icon={<Icon as={RiHome2Line} fontSize={'2xl'} />}
+      {/* <Show above='md'>
+        <HoverButton
+          icon={<Icon as={RiHome2Line} fontSize={'2xl'} />}
+          onClick={jumpToHome}
+          areaLabel={'Home button'}
+        >
+          <Text textStyle={'h1'}>ホーム</Text>
+        </HoverButton>
+      </Show> */}
+      <Center
+        layerStyle={'blogTitle'}
+        as='button'
         onClick={jumpToHome}
-        areaLabel={'Home button'}
+        _hover={{ animation: `${animation}` }} // ぷるんってする
       >
-        {isnotMobile && <Text textStyle={'h1'}>ホーム</Text>}
-      </HoverButton>
-      <Center layerStyle={'blogTitle'}>もにょぶろぐ</Center>
+        もにょぶろぐ
+      </Center>
     </Box>
   );
 };
