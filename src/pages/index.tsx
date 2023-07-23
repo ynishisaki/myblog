@@ -3,7 +3,7 @@ import { FixedBackgroundImage } from '../components/small/FixedBackgroundImage';
 import { Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/medium/HomePosts';
 import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
-import { getAllPosts } from '../../lib/api';
+import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
 import { HoverButton } from '../components/small/HoverButton';
 
@@ -45,7 +45,7 @@ const Home = ({
       <FixedBackgroundImage />
       <HeaderAndFooter>
         <Box layerStyle={'base'}>
-          <Box layerStyle={'home_base'}>
+          <Box layerStyle={'home_display'}>
             {posts.slice(0, postCount + 1).map((post) => {
               return (
                 <HomePosts

@@ -75,25 +75,25 @@ export const theme = extendTheme({
       fontSize: { base: 'lg', md: '2xl' },
       fontWeight: 'bold',
     },
-    base: {},
-    home_base: {
-      mt: '40px',
-      p: { base: '3% 5%', md: '3% 20%' },
-      width: { md: '100%' },
+    base: {
+      mt: { base: '50px', md: '70px' },
+      pt: '16px',
+      mb: '16px',
+      width: '100%',
     },
     home_display: {
-      p: { base: '3%', md: '2%' },
-      my: '5',
+      mx: 'auto',
+      maxWidth: { base: '90%', md: '740px' },
     },
-    post_base: {
-      mt: '30px',
-      mb: '8px',
-      pt: { base: '20px', md: '50px' },
-      width: { base: '100%' },
+    home_post_display: {
+      my: '5', // post間の余白
+      p: '4',
+      bg: '#FAF7F2', // high color
     },
     post_display: {
-      p: { base: '3%' },
-      m: { base: '0% 5%', md: '0% 20%' },
+      mx: 'auto',
+      p: '4',
+      maxWidth: { base: '90%', md: '740px' },
       bg: '#FAF7F2', // high color
     },
     footer: {

@@ -37,39 +37,43 @@ export default function Post({ post, relatedPosts }) {
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={'post_base'}>
-          <Box layerStyle={'post_display'} position='relative'>
-            <PostTitle
-              title={post.title}
-              coverImagePath={post.coverImagePath}
-              coverImagePhotographer={post.coverImagePhotographer}
-              coverImageSrcUrl={post.coverImageSrcUrl}
-              date={post.date}
-              category={post.category}
-            />
-            <PostContent content={post.content} />
-            {relatedPosts[0] ? (
-              <Box mt='100' color='#4d5156'>
-                <Box borderTop='1px solid' borderColor='gray.300' />
-                <Center fontSize='3xl' p='5'>
-                  関連記事
-                </Center>
-                <Flex>
-                  {/* 関連記事を最大2つ表示する */}
-                  {relatedPosts.slice(0, 2).map((post) => (
-                    <LinkBox key={post.slug} as='article' mx='auto' w='40%'>
-                      <img src={post.coverImagePath} alt='' />
-                      <LinkOverlay href={`/posts/${post.slug}/`} title={post.title} target='_blank'>
-                        <Text my={'3'} fontSize='sm' lineHeight={1} noOfLines={3}>
-                          {post.title}
-                        </Text>
-                      </LinkOverlay>
-                    </LinkBox>
-                  ))}
-                </Flex>
-              </Box>
-            ) : null}
-          </Box>
+        <Box layerStyle={'base'}>
+            <Box layerStyle={'post_display'} position='relative'>
+              <PostTitle
+                title={post.title}
+                coverImagePath={post.coverImagePath}
+                coverImagePhotographer={post.coverImagePhotographer}
+                coverImageSrcUrl={post.coverImageSrcUrl}
+                date={post.date}
+                category={post.category}
+              />
+              <PostContent content={post.content} />
+              {relatedPosts[0] ? (
+                <Box mt='100' color='#4d5156'>
+                  <Box borderTop='1px solid' borderColor='gray.300' />
+                  <Center fontSize='3xl' p='5'>
+                    関連記事
+                  </Center>
+                  <Flex>
+                    {/* 関連記事を最大2つ表示する */}
+                    {relatedPosts.slice(0, 2).map((post) => (
+                      <LinkBox key={post.slug} as='article' mx='auto' w='40%'>
+                        <img src={post.coverImagePath} alt='' />
+                        <LinkOverlay
+                          href={`/posts/${post.slug}/`}
+                          title={post.title}
+                          target='_blank'
+                        >
+                          <Text my={'3'} fontSize='sm' lineHeight={1} noOfLines={3}>
+                            {post.title}
+                          </Text>
+                        </LinkOverlay>
+                      </LinkBox>
+                    ))}
+                  </Flex>
+                </Box>
+              ) : null}
+            </Box>
         </Box>
       </HeaderAndFooter>
     </>

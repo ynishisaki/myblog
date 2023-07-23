@@ -42,7 +42,7 @@ export default function About(props: Props): JSX.Element {
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={'post_base'}>
+        <Box layerStyle={'base'}>
           <Box layerStyle={'post_display'} position='relative'>
             <Text textStyle={'h1'}>About</Text>
             <Stack spacing={8} align='stretch'>
