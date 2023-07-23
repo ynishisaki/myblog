@@ -3,7 +3,7 @@ import { FixedBackgroundImage } from '../components/small/FixedBackgroundImage';
 import { Center, Box } from '@chakra-ui/react';
 import { HomePosts } from '../components/medium/HomePosts';
 import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
-import { getAllPosts } from '../lib/api';
+import { getAllPosts } from '../../lib/api';
 import { useState } from 'react';
 import { HoverButton } from '../components/small/HoverButton';
 
@@ -44,29 +44,31 @@ const Home = ({
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={'home_base'}>
-          {posts.slice(0, postCount + 1).map((post) => {
-            return (
-              <HomePosts
-                key={post.slug}
-                slug={post.slug}
-                title={post.title}
-                excerpt={post.excerpt}
-                coverImagePath={post.coverImagePath}
-                coverImagePhotographer={post.coverImagePhotographer}
-                coverImageSrcUrl={post.coverImageSrcUrl}
-                date={post.date}
-                category={post.category}
-              />
-            );
-          })}
-          {postCount + 1 !== posts.length && (
-            <Center>
-              <HoverButton onClick={ReadMorePosts} areaLabel='read more posts'>
-                <>前の記事</>
-              </HoverButton>
-            </Center>
-          )}
+        <Box layerStyle={'base'}>
+          <Box layerStyle={'home_base'}>
+            {posts.slice(0, postCount + 1).map((post) => {
+              return (
+                <HomePosts
+                  key={post.slug}
+                  slug={post.slug}
+                  title={post.title}
+                  excerpt={post.excerpt}
+                  coverImagePath={post.coverImagePath}
+                  coverImagePhotographer={post.coverImagePhotographer}
+                  coverImageSrcUrl={post.coverImageSrcUrl}
+                  date={post.date}
+                  category={post.category}
+                />
+              );
+            })}
+            {postCount + 1 !== posts.length && (
+              <Center>
+                <HoverButton onClick={ReadMorePosts} areaLabel='read more posts'>
+                  <>前の記事</>
+                </HoverButton>
+              </Center>
+            )}
+          </Box>
         </Box>
       </HeaderAndFooter>
     </>

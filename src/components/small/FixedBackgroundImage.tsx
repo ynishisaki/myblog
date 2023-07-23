@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import backgroundImage from '../../public/background-image.svg';
+import backgroundImage from '../../../public/background-image.svg';
 import { Box } from '@chakra-ui/react';
 
 export const FixedBackgroundImage = () => {
