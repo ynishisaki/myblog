@@ -83,17 +83,17 @@ export const theme = extendTheme({
     },
     home_display: {
       mx: 'auto',
-      maxWidth: { base: '90%', md: '740px' },
+      maxWidth: { base: '90%', sm: '600px', md: '800px' },
     },
     home_post_display: {
-      my: '5', // post間の余白
+      mb: '5', // post間の余白
       p: '4',
       bg: '#FAF7F2', // high color
     },
     post_display: {
       mx: 'auto',
-      p: '4',
-      maxWidth: { base: '90%', md: '740px' },
+      p: { base: '4', md: '8' },
+      maxWidth: { base: '90%', sm: '600px', md: '800px' },
       bg: '#FAF7F2', // high color
     },
     footer: {
