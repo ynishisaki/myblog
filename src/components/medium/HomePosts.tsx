@@ -75,7 +75,7 @@ export const HomePosts = ({
             </Heading>
             <Text
               textStyle={'p'}
-              mt={'1'} // override
+              mt={'5'} // override
               color={'gray.600'} // override
             >
               {date}
@@ -84,7 +84,6 @@ export const HomePosts = ({
             {/* md 以上の時だけ表示 */}
             <Text
               textStyle={'p'}
-              fontSize={'sm'} // override
               color={'gray.600'} // override
               mt={'5'} // override
               noOfLines={3}
