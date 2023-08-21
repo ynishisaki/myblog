@@ -35,7 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 ```
 
 # 解決方法
@@ -63,5 +62,4 @@ middleware = [
 ]
 
 app = FastAPI(middleware=middleware)
-
 ```
