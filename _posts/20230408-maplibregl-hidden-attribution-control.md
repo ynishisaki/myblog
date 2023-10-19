@@ -1,6 +1,6 @@
 ---
 title: '【MapLibre GL JS】地図の下に三角マークがあるけど、なんだこれは？'
-excerpt: 'MapLibre GL JSで地図の下にある三角マーク（attributionControl）を非表示にする方法を紹介する。'
+excerpt: 'MapLibre GL JSで地図の下にある三角マーク（attributionControl）について解説する。'
 coverImagePath: '/assets/blog/20230408-maplibregl-hidden-attribution-control/cover.jpg'
 coverImagePhotographer: 'Nick Seagrave'
 coverImageSrcUrl: 'https://unsplash.com/photos/1tpLdmxki-c'
@@ -22,16 +22,40 @@ category: 'Maplibre GL JS'
 
 `attributionControl: false`で非表示にすることができます。
 
-https://maplibre.org/maplibre-gl-js-docs/api/map/#:~:text=options.attributionControl
+https://maplibre.org/maplibre-gl-js/docs/API/classes/maplibregl.AttributionControl/
 
 ```diff js
-import maplibregl from 'maplibre-gl';
+  import maplibregl from 'maplibre-gl';
 
-const map = new maplibregl.Map({
+  const map = new maplibregl.Map({
 +   attributionControl: false,
     container: 'map',
     style: 'https://demotiles.maplibre.org/style.json',
     center: [-74.5, 40],
     zoom: 9
 });
+```
+
+## 出典を表示する
+
+OpenStreetMap 等マップタイルを使用している場合は、`AttributionControl`により出典を表示することができます。
+
+```diff js
+  import maplibregl from 'maplibre-gl';
+
+  const map = new maplibregl.Map({
+      attributionControl: false,
+      container: 'map',
+      style: 'https://demotiles.maplibre.org/style.json',
+      center: [-74.5, 40],
+      zoom: 9
+});
++ map.addControl(
++    new maplibregl.AttributionControl({
++        compact: true,
++        customAttribution:
++            '&copy; <a href="https://www.openstreetmap.org/copyright/ja" target="_blank">OpenStreetMap</a> contributors</p>',
++    }),
++    "bottom-left"
++  );
 ```
