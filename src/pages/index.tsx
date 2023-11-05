@@ -7,7 +7,7 @@ import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
 import { HoverButton } from '../components/small/HoverButton';
 
-const Home = ({
+export default function Home({
   posts,
 }: {
   posts: Array<{
@@ -20,7 +20,7 @@ const Home = ({
     date: string;
     category: string;
   }>;
-}) => {
+}) {
   const initialState = 2;
   const [postCount, setCount] = useState(initialState);
   const ReadMorePosts = () => {
@@ -73,7 +73,7 @@ const Home = ({
       </HeaderAndFooter>
     </>
   );
-};
+}
 
 export const getStaticProps = async () => {
   const posts = getAllPosts([
@@ -94,5 +94,3 @@ export const getStaticProps = async () => {
     },
   };
 };
-
-export default Home;

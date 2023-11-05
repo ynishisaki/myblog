@@ -1,30 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import {
-  Center,
-  Box,
-  Text,
-  List,
-  UnorderedList,
-  ListItem,
-  HStack,
-  VStack,
-  Stack,
-  Flex,
-  LinkBox,
-  LinkOverlay,
-  Link,
-} from '@chakra-ui/react';
-import { useState } from 'react';
+import { Box, Text, Stack, Flex, LinkBox, LinkOverlay, Link } from '@chakra-ui/react';
 import { FixedBackgroundImage } from '../../components/small/FixedBackgroundImage';
 import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
 import CategoryTag from '../../components/small/CategoryTag';
 
-interface Props {
-  //
-}
-
-export default function About(props: Props): JSX.Element {
+export default function About(): JSX.Element {
   return (
     <>
       <Head>

@@ -12,45 +12,13 @@ https://www.monyoblog.com/
 
 なぜ Qiita や Zenn を使わなかったかというと、「自分で作った方が面白そうだから」「勉強になるから」である。
 
-### 技術選定について
+### 技術
 
-当時は HTML や CSS すら知らない状態だったが、以下のことを考えた。
-
-- ブログといえば、WordPress というイメージがあったが、それではつまらないので、もっと本業の Web エンジニアが、アプリ開発で使っているような言語で開発したい（そのほうが自分の勉強にもなるから）
-- モダンで人気のある言語がよい（ネットでの情報量が多い言語のほうが制作しやすいから）
-- できれば、0 円でブログを作りたい（ブログを小さく始めて、軌道に乗ったら色々お金をかければ良いと思ったため）
-
-これら踏まえて、友人の Web エンジニアに相談し、
-
-- 言語は TypeScript
-- Next.js/React.js を使用
-- Vercel で Next.js をデプロイすれば、簡単だし無料
-
-ということを決めた。
-
-### 技術的特徴
-
-- Vercel の [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)をベースに作成。
-- Next.js/React.js を使用。
+- Next.js(TypeScript)
 - UI ライブラリとして、Chakra UI を使用。
-- [zenn-markdown-html](https://github.com/zenn-dev/zenn-editor) を使用しているので、Zenn と全く同じ記法で記事が書ける。
-  そのため、もともと Zenn で書いていた記事をそのままブログに移行することができた。
-- 練習として、Google アナリティクス の導入、BigQuery へのエクスポート・簡易的な集計も行っている。
+- [zenn-markdown-html](https://github.com/zenn-dev/zenn-editor) を使用しているので、Markdown + Zenn 独自記法で記事が書ける。
 
-### 苦労した点
+### 今後やること
 
-- Vercel の [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)の中でも、pages/posts/[slug].js の構造を理解するのに時間がかかった。
-- TypeScript の型がとにかくよくわからなかった（今でも困っている）。
-
-### 制作の感想など
-
-- Web アプリがどうやって制作されているか、自分で作りながら理解することができた。この時得た知識が、のちに Web スクレイピングする際に役立った。
-- TypeScript, Next.js/React.js での制作経験を積むことができた。いずれもドキュメントもしくは Qiita 等の技術記事が充実していて、調べれば大体の疑問は解決できた。
-- 最初の技術選定と環境構築は、友人に手伝ってもらったが、その後は自力でブログを完成させることができた。
-- Web アプリが作れるようになったことで、他にも作りたいものが出てきた（例えば、[10 進数-16 進数変換ツール](https://github.com/ynishisaki/Hex-Dec-Converter) ）。もっと勉強して、できることの幅を広げたい。
-
-### 今後の課題
-
-- ブラウザのアイコンがいまだに Vercel のままなので、変更したい。何にしようかな。
-- 記事に複数タグをつけて管理したい。
-- 記事の投稿を増やしたい。
+- [ ] ブラウザのアイコンがいまだに Vercel のままなので、変更したい。何にしようかな。
+- [ ] 記事に複数タグをつけて管理したい。
