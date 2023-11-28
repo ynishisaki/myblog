@@ -68,66 +68,6 @@ export default function About(): JSX.Element {
                     こちら
                   </Link>
                 </Text>
-
-                <LinkBox as='div' textAlign={'center'}>
-                  <CategoryTag color={'blue'} label={'Next.js'} />
-                  <LinkOverlay
-                    href={`https://www.hexdecconverter.com/`}
-                    textStyle={'p'}
-                    display={'block'}
-                  >
-                    16 進数-10 進数変換アプリ
-                  </LinkOverlay>
-                  <Image
-                    width={400}
-                    height={250}
-                    objectFit='cover'
-                    objectPosition={'Top'}
-                    src={`/assets/figure/hex-dec-converter.png`}
-                    alt='HEX-DEC Converter'
-                    onClick={() => {
-                      window.open('https://www.hexdecconverter.com/');
-                    }}
-                  />
-                </LinkBox>
-
-                <LinkBox as='div' textAlign={'center'} marginTop={8}>
-                  <CategoryTag color={'orange'} label={'Astro'} />
-                  <LinkOverlay
-                    href={`https://www.hexdecconverter.com/`}
-                    textStyle={'p'}
-                    display={'block'}
-                    alignItems={'center'}
-                  >
-                    LP制作（共同開発）
-                  </LinkOverlay>
-                  <Image
-                    width={400}
-                    height={250}
-                    objectFit='cover'
-                    objectPosition={'Top'}
-                    src={`/assets/figure/happiness-chain.png`}
-                    alt='HappinessChain'
-                    onClick={() => {
-                      window.open('https://happiness-chain.com/');
-                    }}
-                  />
-                </LinkBox>
-              </Box>
-
-              <Box>
-                <Text textStyle={'h3'}>興味</Text>
-                <Text textStyle={'p'}>地図や3Dを用いた情報の可視化、データの利活用</Text>
-                <Text textStyle={'p'}>防災のための災害予測技術、情報通達技術</Text>
-              </Box>
-
-              <Box>
-                <Text textStyle={'h3'}>現在取り組んでいること</Text>
-                <Text textStyle={'p'}>
-                  業務 : 災害対策支援システムの開発（Vue）
-                  <br />
-                  個人 : フェムテックのネイティブアプリ開発（React Native）
-                </Text>
               </Box>
             </Stack>
           </Box>

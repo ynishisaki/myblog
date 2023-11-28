@@ -1,5 +1,4 @@
 import { Box, Center, useBreakpointValue, keyframes } from '@chakra-ui/react';
-import { RiHome2Line } from 'react-icons/ri';
 import React from 'react';
 import { NextRouter, useRouter } from 'next/router';
 import { HoverButton } from '../small/HoverButton';
@@ -28,6 +27,9 @@ export const Header = () => {
   const jumpToAbout = () => {
     router.push(`/about/`);
   };
+  const jumpToProfile = () => {
+    router.push(`/profile/`);
+  };
 
   const animation = `${bump}  0.3s ease-in-out`;
 
@@ -35,21 +37,23 @@ export const Header = () => {
 
   return (
     <Box layerStyle={'header'} boxShadow='lg'>
-      <Center
-        layerStyle={'blogTitle'}
-        as='button'
-        onClick={jumpToHome}
-        _hover={{ animation: `${animation}` }} // ぷるんってする
-      >
-        もにょぶろぐ
-      </Center>
-      {isnotMobile && (
-        <Box margin={'0 0 0 auto'}>
-          <HoverButton onClick={jumpToAbout} areaLabel={'About button'}>
-            <>About</>
-          </HoverButton>
-        </Box>
-      )}
+      <Box layerStyle={'header_inner'}>
+        <Center
+          layerStyle={'blogTitle'}
+          as='button'
+          onClick={jumpToHome}
+          _hover={{ animation: `${animation}` }} // ぷるんってする
+        >
+          もにょぶろぐ
+        </Center>
+        {isnotMobile && (
+          <Box margin={'0 0 0 auto'}>
+            <HoverButton onClick={jumpToAbout} areaLabel={'About button'}>
+              <>About</>
+            </HoverButton>
+          </Box>
+        )}
+      </Box>
     </Box>
   );
 };

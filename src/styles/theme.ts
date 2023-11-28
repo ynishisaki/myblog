@@ -62,10 +62,15 @@ export const theme = extendTheme({
       zIndex: 'banner', //1200
       height: { base: '50px', md: '70px' },
       width: '100vw',
-      px: { base: '0', md: '20%' },
       display: 'flex',
       alignItems: 'center',
       bgColor: '#FAF7F2', // high color
+    },
+    header_inner: {
+      margin: '0 auto',
+      width: { base: '90%', sm: '600px', md: '800px' },
+      display: 'flex',
+      alignItems: 'center',
     },
     blogTitle: {
       position: 'absolute',
