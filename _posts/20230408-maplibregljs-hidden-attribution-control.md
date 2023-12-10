@@ -5,7 +5,7 @@ coverImagePath: '/assets/blog/20230408-maplibregl-hidden-attribution-control/cov
 coverImagePhotographer: 'Nick Seagrave'
 coverImageSrcUrl: 'https://unsplash.com/photos/1tpLdmxki-c'
 date: '2023-04-08'
-category: 'Maplibre GL JS'
+category: 'MapLibre GL JS'
 ---
 
 # 本記事について

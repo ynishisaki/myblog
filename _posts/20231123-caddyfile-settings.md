@@ -31,23 +31,20 @@ Web サーバ Caddy を用いた SPA の配信と API サーバのリバース�
 
 ```:Caddyfile
 http://localhost {
-	log {
-		output file /var/log/access.log
-	}
-
- 	encode gzip
-
-	# frontend(SPA)
-	handle {
-		root * /srv
-		try_files {path} /index.html
-		file_server
-	}
-
-	# backend
-	handle_path /api/* {
-		reverse_proxy localhost:8000
-	}
+  log {
+    output file /var/log/access.log
+  }
+  encode gzip
+  # frontend(SPA)
+  handle {
+    root * /srv
+	  try_files {path} /index.html
+    file_server
+  }
+  # backend
+  handle_path /api/* {
+    reverse_proxy localhost:8000
+  }
 }
 ```
 
@@ -60,10 +57,10 @@ Caddy はデフォルトで自動 HTTPS が有効になっている。つまり 
 今回 HTTPS は不要なので、HTTP の使用を明示する必要がある。
 
 ```diff js:Caddyfile
--    localhost {
-+    http://localhost {
-	(省略）
-}
+- localhost {
++ http://localhost {
+    (省略）
+  }
 ```
 
 https://caddyserver.com/docs/caddyfile/options#tls-options
