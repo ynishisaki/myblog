@@ -1,8 +1,8 @@
-import { Box, Text, Icon, Link, Stack, Center, Flex } from '@chakra-ui/react';
+import { Box, Center, Flex, Icon, Link, Stack, Text } from '@chakra-ui/react';
+import React from 'react';
+import { AiFillGithub } from 'react-icons/ai';
 import { FcBusinesswoman } from 'react-icons/fc';
 import { FiExternalLink } from 'react-icons/fi';
-import { AiFillGithub } from 'react-icons/ai';
-import React from 'react';
 
 export const Footer = () => {
   return (
