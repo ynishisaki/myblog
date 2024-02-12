@@ -1,11 +1,11 @@
+import { Box, Center } from '@chakra-ui/react';
 import Head from 'next/head';
-import { FixedBackgroundImage } from '../components/small/FixedBackgroundImage';
-import { Center, Box } from '@chakra-ui/react';
-import { HomePosts } from '../components/medium/HomePosts';
-import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
-import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
+import { HeaderAndFooter } from '../components/large/HeaderAndFooter';
+import { HomePosts } from '../components/medium/HomePosts';
+import { FixedBackgroundImage } from '../components/small/FixedBackgroundImage';
 import { HoverButton } from '../components/small/HoverButton';
+import { getAllPosts } from '../lib/api';
 
 export default function Home({
   posts,
@@ -24,7 +24,7 @@ export default function Home({
   const initialState = 2;
   const [postCount, setCount] = useState(initialState);
   const ReadMorePosts = () => {
-    setCount(postCount + 2);
+    setCount(postCount + 3);
   };
 
   return (
