@@ -1,6 +1,6 @@
 import { Box, Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
-import { NextRouter, useRouter } from 'next/router';
 import Image from 'next/image';
+import { NextRouter, useRouter } from 'next/router';
 
 export const HomePosts = ({
   title,
@@ -50,10 +50,10 @@ export const HomePosts = ({
             <Image
               width={400}
               height={300}
-              objectFit='cover'
               src={coverImagePath}
               alt='coverimage from Unsplash'
               style={{
+                objectFit: 'cover',
                 borderRadius: '0.375rem', // md
               }}
             />

@@ -1,15 +1,15 @@
+import { Box, Center, Flex, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import ErrorPage from 'next/error';
+import Head from 'next/head';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 import 'zenn-content-css';
 import markdownHtml from 'zenn-markdown-html';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import ErrorPage from 'next/error';
-import { Box, Center, Flex, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
 import { HeaderAndFooter } from '../../components/large/HeaderAndFooter';
-import { PostTitle } from '../../components/medium/PostTitle';
 import { PostContent } from '../../components/medium/PostContent';
+import { PostTitle } from '../../components/medium/PostTitle';
 import { FixedBackgroundImage } from '../../components/small/FixedBackgroundImage';
-import Image from 'next/image';
+import { getAllPosts, getPostBySlug } from '../../lib/api';
 
 export default function Post({ post, relatedPosts }) {
   const router = useRouter();
@@ -62,9 +62,9 @@ export default function Post({ post, relatedPosts }) {
                       <Image
                         width={400}
                         height={300}
-                        objectFit='cover'
                         src={post.coverImagePath}
-                        alt=''
+                        alt='cover image'
+                        style={{ objectFit: 'cover' }}
                       />
                       <LinkOverlay href={`/posts/${post.slug}/`} title={post.title} target='_blank'>
                         <Text my={'3'} fontSize='sm' lineHeight={1} noOfLines={3}>

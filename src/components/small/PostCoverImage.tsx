@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { Box, Link, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 type ChildCompProps = {
   coverImagePath: string;
@@ -15,9 +15,11 @@ export const PostCoverImage = (props: ChildCompProps) => {
         <Image
           src={props.coverImagePath}
           alt='cover image from Unsplash'
-          layout='fill'
-          objectFit='cover'
+          fill
           priority
+          style={{
+            objectFit: 'cover',
+          }}
         />
       </Box>
       <Text textStyle={'p'} align={'right'}>
