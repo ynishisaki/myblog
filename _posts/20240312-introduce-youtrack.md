@@ -31,11 +31,16 @@ https://www.jetbrains.com/youtrack/buy/
 
 ## おすすめポイントその２：ガントチャート機能
 
-[![Image from Gyazo](https://i.gyazo.com/27ab8df6e2918184c8eaffb2c14d9685.png)](https://gyazo.com/27ab8df6e2918184c8eaffb2c14d9685)_（YouTrack HP(https://www.jetbrains.com/youtrack/features/gantt_chart.html )より)_
+ガントチャートはタスクの進行状況とチームの作業分担を把握するのに適している。
+
+issue毎に作業日数と開始日を指定するのだが、作業期間が週末にまたがる場合は土日が作業日としてカウントされず、その分issueの完了日が後ろに延びるようになっている。  
+また、issueの作業期間はしばしば変更する必要があるが、その際はガントチャート上のバーの長さをドラッグすることで期間の変更が可能である。
+
+[![Image from Gyazo](https://i.gyazo.com/1e44e6e23e64c79435331ae49018f097.jpg)](https://gyazo.com/1e44e6e23e64c79435331ae49018f097)_（YouTrack HP(https://www.jetbrains.com/youtrack/features/gantt_chart.html )より)_
 
 ## おすすめポイントその３：豊富な機能
 
-私はガントチャートをメインで使用しているが、YouTrackでは他にも以下のような機能がある。
+私はガントチャートをメインに使っているが、YouTrackには他にも以下の機能がある。
 
 - タスク管理
 - スクラムボードとカンバンボード
