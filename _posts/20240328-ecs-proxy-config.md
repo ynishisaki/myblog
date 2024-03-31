@@ -32,11 +32,11 @@ https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/launch_contain
 
 3. ECSでコンテナインスタンスが利用可能であることを確認する
    クラスターのコンテナインスタンスタブで登録されていることを確認する。
-   ![](/assets/blog/20240326-ecs-proxy-config/container-instance.png)_コンテナインスタンスの登録を確認できる画面例。_
+   ![Image from Gyazo](https://i.gyazo.com/91a086358f06036ae269ceee5201b27e.png)_コンテナインスタンスの登録を確認できる画面例。_
 
 4. ECSでサービスorタスク起動
    コンピューティングオプションで起動タイプを選択、起動タイプはEC2を選択する。
-   ![](/assets/blog/20240326-ecs-proxy-config/new-service.png)_サービス新規作成時の画面。_
+   ![Image from Gyazo](https://i.gyazo.com/ef433ca637aa90e3cc0e826e2d2f03cd.png)_サービス新規作成時の画面。_
 
 ## 注意点
 
