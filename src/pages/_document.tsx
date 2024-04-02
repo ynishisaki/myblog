@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <Script
-            strategy='beforeInteractive'
+            strategy='lazyOnload'
             src='https://embed.zenn.studio/js/listen-embed-event.js'
           ></Script>
         </body>
