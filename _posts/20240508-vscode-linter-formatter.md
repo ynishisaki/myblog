@@ -20,7 +20,7 @@ https://github.com/antfu/eslint-config
 
 VueやNuxtのコアチームのメンバーであるAnthony Fuさんが開発されている。  
 prettierを使わず、ESLintと[VSCodeのESLint拡張機能](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)、VSCodeの設定ファイルを使ってコードフォーマット(auto fix)を行う。  
-新規設定用のコマンドが用意されており、コマンドを実行しいくつか質問に答えるとパッケージのインストールと`eslint.config.mjs`とauto fix用の`.vscode/settings.json`ファイルの自動生成をしてもらえる。便利。  
+新規設定用のコマンドが用意されており、コマンドを実行しいくつか質問に答えるとパッケージのインストールが行われ、`eslint.config.mjs`ファイル、auto fix用の`.vscode/settings.json`ファイルが自動生成される。便利。  
 flat config対応。
 
 ### eslint-plugin-simple-import-sort(ESLint)
