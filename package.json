@@ -1,13 +1,5 @@
 {
   "name": "myblog",
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "printWidth": 100
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -25,9 +17,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
-    "zenn-content-css": "^0.1.141",
-    "zenn-embed-elements": "^0.1.141",
-    "zenn-markdown-html": "^0.1.141"
+    "zenn-content-css": "^0.1.153",
+    "zenn-embed-elements": "^0.1.153",
+    "zenn-markdown-html": "^0.1.153"
   },
   "devDependencies": {
     "@types/node": "20",
