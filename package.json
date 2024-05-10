@@ -1,33 +1,32 @@
 {
-  "name": "myblog",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@vercel/og": "^0.0.18",
-    "framer-motion": "^6.5.1",
-    "fs": "^0.0.1-security",
-    "gray-matter": "4.0.3",
-    "next": "13.5.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.0.0",
-    "react-icons": "^4.4.0",
-    "zenn-content-css": "^0.1.153",
-    "zenn-embed-elements": "^0.1.153",
-    "zenn-markdown-html": "^0.1.153"
-  },
-  "devDependencies": {
-    "@types/node": "20",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "eslint": "8.20.0",
-    "eslint-config-next": "13.5.6",
-    "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
-  }
+	"name": "myblog",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.2",
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
+		"@vercel/og": "^0.0.18",
+		"framer-motion": "^6.5.1",
+		"gray-matter": "4.0.3",
+		"next": "13.5.6",
+		"react": "^18.2.0",
+		"react-dom": "^18.0.0",
+		"react-icons": "^4.4.0",
+		"zenn-content-css": "^0.1.153",
+		"zenn-embed-elements": "^0.1.153",
+		"zenn-markdown-html": "^0.1.153"
+	},
+	"devDependencies": {
+		"@types/node": "20",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"eslint": "8.20.0",
+		"eslint-config-next": "13.5.6",
+		"prettier": "^3.2.5",
+		"typescript": "^5.3.3"
+	}
 }
