@@ -1,55 +1,53 @@
-import { Box, Center, Flex, Icon, Link, Stack, Text } from '@chakra-ui/react';
-import React from 'react';
-import { AiFillGithub } from 'react-icons/ai';
-import { FcBusinesswoman } from 'react-icons/fc';
-import { FiExternalLink } from 'react-icons/fi';
+import Link from "next/link";
+import { AiFillGithub } from "react-icons/ai";
+import { FcBusinesswoman } from "react-icons/fc";
+import { FiExternalLink } from "react-icons/fi";
 
 export const Footer = () => {
   return (
-    <Box layerStyle={'footer'}>
-      <Box layerStyle={'profile'}>
-        <Flex alignItems={'flex-end'}>
-          <Icon as={FcBusinesswoman} fontSize={'30px'} />
-          <Text textStyle={'h3'}>もにょ</Text>
-        </Flex>
-        <Text fontSize={{ base: 'sm', md: 'md' }} textStyle={'p'} my={'3'}>
+    <div className="relative z-[100] bg-[#efece7] p-8">
+      <div className="flex max-w-xl flex-col justify-center md:mx-auto">
+        <div className="flex items-end">
+          <FcBusinesswoman className="text-3xl" />
+          <span className="text-md font-bold text-slate-900">もにょ</span>
+        </div>
+        <div className="my-3 text-sm text-slate-900">
           海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
-          なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。<br></br>
+          なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。
+          <br></br>
           主な使用言語はTypeScriptとPython。
-        </Text>
-      </Box>
-      <Box layerStyle={'borderLine'} />
-      <Stack
-        textStyle={'p'}
-        direction={{ base: 'column', md: 'row' }}
-        width={{ base: '100%', md: '70%' }}
-      >
-        <Center width={{ base: '100%', md: '50%' }}>
-          <Link
-            fontSize={'sm'}
-            href='/posts/20220215-privacy-policy/'
-            textDecoration={'underline'}
-            _hover={{ textDecoration: 'none' }}
-          >
-            プライバシーポリシー/免責事項
-          </Link>
-        </Center>
-        <Center width={{ base: '100%', md: '50%' }}>
-          <Link
-            fontSize={'sm'}
-            alignItems={'center'}
-            href='https://github.com/ynishisaki/myblog.git'
-            textDecoration='underline'
-            _hover={{ textDecoration: 'none' }}
-            isExternal
-          >
-            <Icon as={AiFillGithub} /> お問い合わせはGitHubにて <Icon as={FiExternalLink} />
-          </Link>
-        </Center>
-      </Stack>
-      <Center textStyle={'p'} my={'3'} fontSize={'sm'}>
-        © 2022 もにょ
-      </Center>
-    </Box>
+        </div>
+
+        <div className="my-5 border-t border-slate-300" />
+
+        <ul>
+          <li>
+            <Link
+              href="/posts/20220215-privacy-policy/"
+              className="text-sm text-slate-900 hover:underline"
+            >
+              プライバシーポリシー/免責事項
+            </Link>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/ynishisaki/myblog.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-x-1 text-sm text-slate-900 hover:underline"
+            >
+              <AiFillGithub />
+              お問い合わせはGitHubにて
+              <FiExternalLink />
+            </a>
+          </li>
+        </ul>
+
+        <div className="mx-auto mt-4 text-sm text-slate-700">
+          © 2022 もにょ
+        </div>
+      </div>
+    </div>
   );
 };
