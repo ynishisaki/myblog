@@ -1,5 +1,3 @@
-import { Tag } from '@chakra-ui/react';
-
 interface Props {
   label: string;
   color?: string;
@@ -7,8 +5,8 @@ interface Props {
 
 export default function CategoryTag(props: Props) {
   return (
-    <Tag colorScheme={props.color} size={'md'} borderRadius='full' variant='solid' my={2}>
+    <span className="my-1 inline-block rounded-full bg-gray-500 px-3 py-1 text-sm font-semibold text-slate-100">
       {props.label}
-    </Tag>
+    </span>
   );
 }

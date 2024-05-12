@@ -1,6 +1,6 @@
-import { Box, Text } from '@chakra-ui/react';
-import { PostCoverImage } from '../small/PostCoverImage';
-import CategoryTag from '../small/CategoryTag';
+import { Box, Text } from "@chakra-ui/react";
+import CategoryTag from "../posts/CategoryTag";
+import PostCoverImage from "../posts/PostCoverImage";
 
 export const PostTitle = ({
   title,
@@ -18,12 +18,17 @@ export const PostTitle = ({
   category: string;
 }) => {
   return (
-    <Box mb={50} alignItems={'center'}>
+    <Box mb={50} alignItems={"center"}>
       <CategoryTag label={category} />
-      <Text textStyle={'p'} fontSize={'4xl'} fontWeight={'bold'} lineHeight={1.3}>
+      <Text
+        textStyle={"p"}
+        fontSize={"4xl"}
+        fontWeight={"bold"}
+        lineHeight={1.3}
+      >
         {title}
       </Text>
-      <Text textStyle={'p'}>{date}</Text>
+      <Text textStyle={"p"}>{date}</Text>
       <PostCoverImage
         coverImagePath={coverImagePath}
         coverImagePhotographer={coverImagePhotographer}
