@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FcBusinesswoman } from "react-icons/fc";
 import { FiExternalLink } from "react-icons/fi";
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <div className="relative z-[100] bg-[#efece7] p-8">
       <div className="flex max-w-xl flex-col justify-center md:mx-auto">
@@ -50,4 +50,4 @@ export const Footer = () => {
       </div>
     </div>
   );
-};
+}

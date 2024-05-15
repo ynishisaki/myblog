@@ -1,7 +1,7 @@
 import { Box, Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
-import { HeaderAndFooter } from "../components/large/HeaderAndFooter";
+import HeaderAndFooter from "../components/common/HeaderAndFooter";
 import { HomePosts } from "../components/medium/HomePosts";
 import FixedBackgroundImage from "../components/common/FixedBackgroundImage";
 import HoverButton from "../components/common/HoverButton";

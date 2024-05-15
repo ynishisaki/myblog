@@ -1,7 +1,7 @@
 import { Box, Flex, Link, Stack, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
-import { HeaderAndFooter } from "../../components/large/HeaderAndFooter";
+import HeaderAndFooter from "../../components/common/HeaderAndFooter";
 
 export default function About(): JSX.Element {
   return (

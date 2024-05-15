@@ -60,22 +60,6 @@ export const theme = extendTheme({
   },
 
   layerStyles: {
-    header: {
-      position: "fixed",
-      top: "0px",
-      zIndex: "banner", //1200
-      height: { base: "50px", md: "70px" },
-      width: "100vw",
-      display: "flex",
-      alignItems: "center",
-      bgColor: "#FAF7F2", // high color
-    },
-    header_inner: {
-      margin: "0 auto",
-      width: { base: "90%", sm: "600px", md: "800px" },
-      display: "flex",
-      alignItems: "center",
-    },
     blogTitle: {
       position: "absolute",
       left: "calc(50% - 3em)",

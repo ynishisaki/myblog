@@ -13,7 +13,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { FiExternalLink } from "react-icons/fi";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
-import { HeaderAndFooter } from "../../components/large/HeaderAndFooter";
+import HeaderAndFooter from "../../components/common/HeaderAndFooter";
 import happinessChainImage from "/public/public-productions/happiness-chain.png";
 import hexDecConverterImage from "/public/public-productions/hex-dec-converter.png";
 import pillmeImage from "/public/public-productions/pillme.png";

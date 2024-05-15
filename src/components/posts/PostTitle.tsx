@@ -1,6 +1,5 @@
-import { Box, Text } from "@chakra-ui/react";
-import CategoryTag from "../posts/CategoryTag";
-import PostCoverImage from "../posts/PostCoverImage";
+import CategoryTag from "./CategoryTag";
+import PostCoverImage from "./PostCoverImage";
 
 export const PostTitle = ({
   title,
@@ -18,22 +17,15 @@ export const PostTitle = ({
   category: string;
 }) => {
   return (
-    <Box mb={50} alignItems={"center"}>
+    <div className="mb-4 items-center">
       <CategoryTag label={category} />
-      <Text
-        textStyle={"p"}
-        fontSize={"4xl"}
-        fontWeight={"bold"}
-        lineHeight={1.3}
-      >
-        {title}
-      </Text>
-      <Text textStyle={"p"}>{date}</Text>
+      <h1 className="mb-4 text-4xl font-bold">{title}</h1>
+      <span className="text-slate-900">{date}</span>
       <PostCoverImage
         coverImagePath={coverImagePath}
         coverImagePhotographer={coverImagePhotographer}
         coverImageSrcUrl={coverImageSrcUrl}
       />
-    </Box>
+    </div>
   );
 };

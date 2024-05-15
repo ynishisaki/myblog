@@ -3,9 +3,22 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,md,mdx}"],
   theme: {
     fontFamily: {
+      blogtitle: '"Kosugi Maru", sans-serif',
       body: 'メイリオ, "Hiragino Sans", "ＭＳ Ｐゴシック", "Helvetica W01", sans-serif;',
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        bump: {
+          "0%, 100%": { transform: "scale(1, 1)" },
+          "25%": { transform: "scale(0.9, 1.1)" },
+          "50%": { transform: "scale(1.1, 0.9)" },
+          "75%": { transform: "scale(0.95, 1.05)" },
+        },
+      },
+      animation: {
+        bump: "bump 0.3s ease-in-out",
+      },
+    },
   },
   plugins: [],
 };
