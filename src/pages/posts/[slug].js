@@ -1,14 +1,7 @@
-import {
-  Box,
-  Center,
-  Flex,
-  LinkBox,
-  LinkOverlay,
-  Text,
-} from "@chakra-ui/react";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import "zenn-content-css";
 import markdownHtml from "zenn-markdown-html";
@@ -51,8 +44,8 @@ export default function Post({ post, relatedPosts }) {
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={"base"}>
-          <Box layerStyle={"post_display"} position="relative">
+        <main className="mb-4 mt-[50px] w-full pt-4 md:mt-[70px]">
+          <div className="relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
             <PostTitle
               title={post.title}
               coverImagePath={post.coverImagePath}
@@ -62,44 +55,35 @@ export default function Post({ post, relatedPosts }) {
               category={post.category}
             />
             <PostContent content={post.content} />
-            {relatedPosts[0] ? (
-              <Box mt="100" color="#4d5156">
-                <Box borderTop="1px solid" borderColor="gray.300" />
-                <Center fontSize="3xl" p="5">
+            {relatedPosts[0] && (
+              <aside>
+                <div className="my-5 border-t border-gray-300" />
+                <h2 className="my-5 text-center text-2xl font-bold">
                   関連記事
-                </Center>
-                <Flex>
+                </h2>
+                <div className="flex">
                   {/* 関連記事を最大2つ表示する */}
                   {relatedPosts.slice(0, 2).map((post) => (
-                    <LinkBox key={post.slug} as="article" mx="auto" w="40%">
-                      <Image
-                        width={400}
-                        height={300}
-                        src={post.coverImagePath}
-                        alt="cover image"
-                        style={{ objectFit: "cover" }}
-                      />
-                      <LinkOverlay
-                        href={`/posts/${post.slug}/`}
-                        title={post.title}
-                        target="_blank"
-                      >
-                        <Text
-                          my={"3"}
-                          fontSize="sm"
-                          lineHeight={1}
-                          noOfLines={3}
-                        >
+                    <Link key={post.slug} href={`/posts/${post.slug}`} passHref>
+                      <article className="mx-auto w-4/5">
+                        <Image
+                          width={400}
+                          height={300}
+                          src={post.coverImagePath}
+                          alt="cover image"
+                          style={{ objectFit: "cover" }}
+                        />
+                        <h3 className="my-3 line-clamp-3 text-sm">
                           {post.title}
-                        </Text>
-                      </LinkOverlay>
-                    </LinkBox>
+                        </h3>
+                      </article>
+                    </Link>
                   ))}
-                </Flex>
-              </Box>
-            ) : null}
-          </Box>
-        </Box>
+                </div>
+              </aside>
+            )}
+          </div>
+        </main>
       </HeaderAndFooter>
     </>
   );

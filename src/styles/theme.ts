@@ -78,11 +78,11 @@ export const theme = extendTheme({
       mx: "auto",
       maxWidth: { base: "90%", sm: "600px", md: "800px" },
     },
-    home_post_display: {
-      mb: "5", // post間の余白
-      p: "4",
-      bg: "#FAF7F2", // high color
-    },
+    // home_post_display: {
+    //   mb: "5", // post間の余白
+    //   p: "4",
+    //   bg: "#FAF7F2", // high color
+    // },
     post_display: {
       mx: "auto",
       p: { base: "4", md: "8" },

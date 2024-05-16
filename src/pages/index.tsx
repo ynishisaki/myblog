@@ -1,10 +1,9 @@
-import { Box, Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState } from "react";
-import HeaderAndFooter from "../components/common/HeaderAndFooter";
-import { HomePosts } from "../components/medium/HomePosts";
 import FixedBackgroundImage from "../components/common/FixedBackgroundImage";
+import HeaderAndFooter from "../components/common/HeaderAndFooter";
 import HoverButton from "../components/common/HoverButton";
+import { HomePosts } from "../components/home/HomePosts";
 import { getAllPosts } from "../lib/api";
 
 export default function Home({
@@ -44,8 +43,8 @@ export default function Home({
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={"base"}>
-          <Box layerStyle={"home_display"}>
+        <main className="mb-4 mt-[50px] w-full pt-4 md:mt-[70px]">
+          <div className="mx-auto w-[90%] sm:w-[600px] md:w-[800px]">
             {posts.slice(0, postCount + 1).map((post) => {
               return (
                 <HomePosts
@@ -62,16 +61,16 @@ export default function Home({
               );
             })}
             {postCount + 1 !== posts.length && (
-              <Center>
+              <div className="text-center">
                 <HoverButton
                   textContent="前の記事"
                   areaLabel="read more posts"
                   onClick={ReadMorePosts}
                 />
-              </Center>
+              </div>
             )}
-          </Box>
-        </Box>
+          </div>
+        </main>
       </HeaderAndFooter>
     </>
   );

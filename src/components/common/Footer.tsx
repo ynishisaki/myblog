@@ -5,7 +5,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <div className="relative z-[100] bg-[#efece7] p-8">
+    <footer className="relative z-[100] bg-[#efece7] p-8">
       <div className="flex max-w-xl flex-col justify-center md:mx-auto">
         <div className="flex items-end">
           <FcBusinesswoman className="text-3xl" />
@@ -48,6 +48,6 @@ export default function Footer() {
           © 2022 もにょ
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -12,10 +12,10 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed top-0 z-[100] flex h-[50px] w-screen items-center bg-[#FAF7F2] md:h-[70px]">
-      <div className="mx-auto flex w-[90%] items-center justify-between sm:w-[600px] md:w-[800px]">
+    <header className="fixed top-0 z-[100] flex h-[50px] w-screen items-center bg-[#FAF7F2] shadow md:h-[70px]">
+      <nav className="mx-auto flex w-[90%] items-center justify-between sm:w-[600px] md:w-[800px]">
         <button
-          className="font-blogtitle hover:animate-bump absolute left-[calc(50%-3em)] text-lg font-bold text-slate-900 md:text-2xl"
+          className="absolute left-[calc(50%-3em)] font-blogtitle text-lg font-bold text-slate-900 hover:animate-bump md:text-2xl"
           onClick={jumpToHome}
         >
           もにょぶろぐ
@@ -27,7 +27,7 @@ export default function Header() {
             onClick={jumpToAbout}
           />
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
