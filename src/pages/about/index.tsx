@@ -1,25 +1,52 @@
-import {
-  Box,
-  Flex,
-  Icon,
-  Link,
-  LinkBox,
-  LinkOverlay,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
 import HeaderAndFooter from "../../components/common/HeaderAndFooter";
-import happinessChainImage from "/public/public-productions/happiness-chain.png";
 import hexDecConverterImage from "/public/public-productions/hex-dec-converter.png";
 import pillmeImage from "/public/public-productions/pillme.png";
 import rainForecastMapImage from "/public/public-productions/rain-forecast-map.png";
 
-export default function About(): JSX.Element {
+export default function About() {
+  const careerHistory = [
+    {
+      date: "2019.04",
+      content: "千葉大学大学院 融合理工学府 地球環境科学専攻 修了",
+    },
+    {
+      date: "2021.04",
+      content:
+        "地質調査・コンサルティング企業に入社 地質調査、解析、評価を担当",
+    },
+    {
+      date: "2023.01",
+      content:
+        "SIer企業に入社 防災や社会インフラ分野を対象としたシステム開発を担当",
+    },
+  ];
+
+  const publicProductions = [
+    {
+      title: "16 進数-10 進数変換アプリ",
+      repositoryUrl: "https://github.com/ynishisaki/Hex-Dec-Converter",
+      productionUrl: "https://www.hexdecconverter.com/",
+      imageUrl: hexDecConverterImage,
+    },
+    {
+      title: "雨が降りそうかがわかるサイト",
+      repositoryUrl: "https://github.com/ynishisaki/rain-forecast-map",
+      productionUrl: "https://rain-forecast-map.vercel.app/",
+      imageUrl: rainForecastMapImage,
+    },
+    {
+      title: "ピルミー（低用量ピル服薬管理アプリ）",
+      repositoryUrl: "https://github.com/ynishisaki/pill-me",
+      productionUrl: "https://github.com/ynishisaki/pill-me",
+      imageUrl: pillmeImage,
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -37,208 +64,69 @@ export default function About(): JSX.Element {
       </Head>
       <FixedBackgroundImage />
       <HeaderAndFooter>
-        <Box layerStyle={"base"}>
-          <Box layerStyle={"post_display"} position="relative">
-            <Box maxW="500" mx="auto">
-              <Text textStyle={"h1"}>About</Text>
-              <Stack spacing={8} align="stretch">
-                <Box paddingTop={2}>
-                  <Text textStyle={"p"}>
-                    地質・測量をバックグラウンドに持つwebエンジニアです。
-                  </Text>
-                </Box>
-                <Box>
-                  <Text textStyle={"h3"}>経歴</Text>
+        <main className="mb-4 mt-[50px] w-full pt-4 md:mt-[70px]">
+          <div className="relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
+            <div className="mx-auto max-w-[500px]">
+              <h1 className="text-3xl font-bold text-slate-900">About</h1>
+              <div className="flex flex-col gap-y-8">
+                <p className="text-slate-900">
+                  地質・測量をバックグラウンドに持つwebエンジニアです。
+                </p>
 
-                  <Flex
-                    textStyle={"p"}
-                    style={{ margin: "8px 0", gap: "1rem" }}
-                  >
-                    <Text>2019.04</Text>
-                    <Box>
-                      <Text>
-                        千葉大学大学院 融合理工学府 地球環境科学専攻 修了
-                      </Text>
-                    </Box>
-                  </Flex>
-                  <Flex
-                    textStyle={"p"}
-                    style={{ margin: "8px 0", gap: "1rem" }}
-                  >
-                    <Text>2021.04</Text>
-                    <Box>
-                      <Text>地質コンサルティング 入社</Text>
-                      <Text fontSize={"sm"} color={"gray.600"}>
-                        物理探査手法を用いた地形・地質情報の取得、解析、評価
-                      </Text>
-                    </Box>
-                  </Flex>
-                  <Flex
-                    textStyle={"p"}
-                    style={{ margin: "8px 0", gap: "1rem" }}
-                  >
-                    <Text>2023.01</Text>
-                    <Box>
-                      <Text>ITコンサルティング・SIer 入社</Text>
-                      <Text fontSize={"sm"} color={"gray.600"}>
-                        防災や社会インフラを対象としたコンサルティング、システム開発
-                      </Text>
-                    </Box>
-                  </Flex>
-                </Box>
+                <section>
+                  <h2 className="py-2 text-xl font-bold text-slate-900">
+                    経歴
+                  </h2>
+                  <div className="flex flex-col gap-y-2 text-slate-900">
+                    {careerHistory.map((history) => (
+                      <div key={history.date} className="flex gap-x-4">
+                        <span>{history.date}</span>
+                        <span>{history.content}</span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
 
-                <Box>
-                  <Text textStyle={"h3"}>公開制作物</Text>
+                <section>
+                  <h2 className="py-2 text-xl font-bold text-slate-900">
+                    公開制作物
+                  </h2>
 
-                  <Flex mt={2} mb={8}>
-                    <Link
-                      alignItems={"center"}
-                      href="https://github.com/ynishisaki"
-                      textDecoration="underline"
-                      _hover={{ textDecoration: "none" }}
-                      isExternal
-                    >
-                      もにょのGitHubアカウント <Icon as={FiExternalLink} />
-                    </Link>
-                  </Flex>
-
-                  <SimpleGrid columns={1} spacing={10}>
-                    <LinkBox as="div" maxW="500">
-                      <Flex
-                        alignItems={"center"}
-                        justifyContent={"space-between"}
-                      >
-                        <LinkOverlay
-                          textStyle={"h4"}
-                          href={`https://www.hexdecconverter.com/`}
-                        >
-                          16 進数-10 進数変換アプリ
-                        </LinkOverlay>
-                        <Link
-                          fontSize={"sm"}
-                          alignItems={"center"}
-                          href="https://github.com/ynishisaki"
-                          textDecoration="underline"
-                          _hover={{ textDecoration: "none" }}
-                          isExternal
+                  <div className="flex flex-col gap-y-8">
+                    {publicProductions.map((production) => (
+                      <div key={production.title} className="max-w-[500px]">
+                        <h3 className="text-lg text-slate-900">
+                          {production.title}
+                        </h3>
+                        <a
+                          href={production.repositoryUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-x-1 text-sm text-slate-900 hover:underline"
                         >
                           GitHubレポジトリ
+                          <FiExternalLink />
+                        </a>
+
+                        <Link href={production.productionUrl} passHref>
+                          <Image
+                            src={production.imageUrl}
+                            alt={production.title}
+                            style={{
+                              objectPosition: "top",
+                              objectFit: "cover",
+                              border: "8px solid white",
+                            }}
+                          />
                         </Link>
-                      </Flex>
-
-                      <Image
-                        src={hexDecConverterImage}
-                        alt="HEX-DEC Converter"
-                        style={{
-                          objectPosition: "top",
-                          objectFit: "cover",
-                          border: "8px solid white",
-                        }}
-                      />
-                    </LinkBox>
-
-                    <LinkBox as="div" maxW="500">
-                      <Flex
-                        alignItems={"center"}
-                        justifyContent={"space-between"}
-                      >
-                        <LinkOverlay
-                          textStyle={"h4"}
-                          href={`https://rain-forecast-map.vercel.app/`}
-                        >
-                          雨が降りそうかがわかるサイト
-                        </LinkOverlay>
-                        <Link
-                          fontSize={"sm"}
-                          alignItems={"center"}
-                          href="https://github.com/ynishisaki"
-                          textDecoration="underline"
-                          _hover={{ textDecoration: "none" }}
-                          isExternal
-                        >
-                          GitHubレポジトリ
-                        </Link>
-                      </Flex>
-
-                      <Image
-                        src={rainForecastMapImage}
-                        alt="Rain Forecast Map"
-                        style={{
-                          objectPosition: "top",
-                          objectFit: "cover",
-                          border: "8px solid white",
-                        }}
-                      />
-                    </LinkBox>
-
-                    <LinkBox as="div" maxW="500">
-                      <LinkOverlay
-                        textStyle={"h4"}
-                        href={`https://happiness-chain.com/`}
-                      >
-                        LP制作のお手伝い
-                      </LinkOverlay>
-                      <Image
-                        src={happinessChainImage}
-                        alt="Happiness Chain"
-                        style={{
-                          objectPosition: "top",
-                          objectFit: "contain",
-                          border: "8px solid white",
-                        }}
-                      />
-                    </LinkBox>
-                  </SimpleGrid>
-                </Box>
-
-                <Box>
-                  <Text textStyle={"h3"}>現在取り組んでいること</Text>
-
-                  <Box maxW="500">
-                    <Flex
-                      alignItems={"center"}
-                      justifyContent={"space-between"}
-                    >
-                      <Text textStyle={"p"}>
-                        フェムテックのネイティブアプリ開発
-                      </Text>
-                      <Link
-                        fontSize={"sm"}
-                        alignItems={"center"}
-                        href="https://github.com/ynishisaki/pill-me"
-                        textDecoration="underline"
-                        _hover={{ textDecoration: "none" }}
-                        isExternal
-                      >
-                        GitHubレポジトリ
-                      </Link>
-                    </Flex>
-
-                    <Image
-                      src={pillmeImage}
-                      alt="pillme"
-                      style={{
-                        objectPosition: "top",
-                        objectFit: "contain",
-                        border: "8px solid white",
-                      }}
-                    />
-                  </Box>
-                </Box>
-
-                <Box>
-                  <Text textStyle={"h3"}>興味</Text>
-                  <Text textStyle={"p"}>
-                    地図や3Dを用いた情報の可視化、データの利活用
-                  </Text>
-                  <Text textStyle={"p"}>
-                    防災のための災害予測技術、情報通達技術
-                  </Text>
-                </Box>
-              </Stack>
-            </Box>
-          </Box>
-        </Box>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
       </HeaderAndFooter>
     </>
   );
