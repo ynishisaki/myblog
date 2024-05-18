@@ -8,7 +8,7 @@ date: '2022-12-05'
 category: 'MFA'
 ---
 
-# 本記事について
+## 本記事について
 
 AWS の多要素認証（MFA）といえば、スマホアプリ（Google Authenticator 等）を利用するケースを多く見かけるが、デスクトップ版アプリに対応したものもいくつか発見したので、試してみる。
 
@@ -17,7 +17,7 @@ AWS の多要素認証（MFA）といえば、スマホアプリ（Google Authen
 - [Authy](https://authy.com/download/) by Twilio(Window, Mac, Linux)
 - [Authenticator](https://authenticator.2stable.com/) by 2Stable(Mac)
 
-# デスクトップアプリを利用するメリット
+## デスクトップアプリを利用するメリット
 
 - デスクトップ一つで認証が完結する
 - 認証コードをコピペできる
@@ -28,9 +28,9 @@ AWS の多要素認証（MFA）といえば、スマホアプリ（Google Authen
 ただし上記の使い方で OK なのかはケースバイケースでしょうから、そこは注意していただきたい。
 :::
 
-# Authy by Twilio（Window, Mac, Linux）
+## Authy by Twilio（Window, Mac, Linux）
 
-![Image from Gyazo](https://i.gyazo.com/296712bf2cab526fd0dfb7871cccf4a5.jpg)_ダウンロードはこちらから。<https://authy.com/download/>_
+![Image from Gyazo](https://i.gyazo.com/296712bf2cab526fd0dfb7871cccf4a5.jpg)_ダウンロードはこちらから。https://authy.com/download/_
 
 OS の種類を問わず、スマホ、デスクトップ版の両方がある。
 UI/UX もシンプルで良い感じ。
@@ -38,9 +38,9 @@ UI/UX もシンプルで良い感じ。
 最大のメリットは、スマホアプリとデスクトップアプリで、同一の MFA を共有できる点。
 デバイス間の連携方法も大変簡単だった。これおすすめ。
 
-# Authenticator by 2Stable(Mac)
+## Authenticator by 2Stable(Mac)
 
-![Image from Gyazo](https://gyazo.com/b8fd1d31b769d8e3e804ff2c7da21f50.png)_ダウンロードはこちらから。<https://authenticator.2stable.com/>_
+![Image from Gyazo](https://gyazo.com/b8fd1d31b769d8e3e804ff2c7da21f50.png)_ダウンロードはこちらから。https://authenticator.2stable.com/_
 
 iPhone はもちろん、Apple Watch でも使用できるらしい。すごいな。
 
@@ -52,7 +52,7 @@ Authy にはない特徴として、Chrome や Firefox などに対応したブ�
 
 ![](/assets/blog/20221205-mfa-desktop-apps/autofill_example.svg)_Autofill の使用例。_
 
-# どっちがおすすめ？
+## どっちがおすすめ？
 
 どっちも同じくらい使いやすい。笑
 

@@ -8,14 +8,14 @@ date: '2023-03-29'
 category: 'WSL'
 ---
 
-# 本記事について
+## 本記事について
 
 WSL2 での Fig インストール時のエラーを解消する方法を紹介する。
 
 ## インストールコマンド
 
 最近、Windows でも Fig が使えるようになった。公式に、WSL2 でのインストール方法が記載されている。
-<https://fig.io/download>
+https://fig.io/download
 
 ```bash
 bash <(curl -fSsL https://fig.io/headless.sh) && exec $SHELL
@@ -32,10 +32,10 @@ error: Unsupported init system: <unknown>
 
 失敗しました。
 
-# 対処法
+## 対処法
 
 github で issue と解決策が挙がっていた。
-<https://github.com/withfig/fig/issues/2333>
+https://github.com/withfig/fig/issues/2333
 
 /etc/wsl.conf ファイルに、以下の設定を追加する。
 

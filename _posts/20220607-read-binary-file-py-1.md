@@ -8,14 +8,14 @@ date: '2022-06-07'
 category: 'Python'
 ---
 
-# 本記事の内容
+## 本記事の内容
 
 Python でバイナリファイルを読む方法を紹介する。
 具体的には、WAV（Waveform Audio File Format）ファイルから、サンプリングレートと時系列データを取得することを目指す。
 
 本記事は前編にあたる。後編は[こちら](https://www.monyoblog.com/posts/20220710-read-binary-file-py-2/)。
 
-# 目次
+## 目次
 
 （前編）
 1 WAV ファイルの作成
@@ -31,13 +31,13 @@ Python でバイナリファイルを読む方法を紹介する。
 5 バイト列を ndarray に変換
 6 WAV ファイルから、サンプリングレートと時系列データを取得
 
-# 0. WAV ファイルの作成
+## 0. WAV ファイルの作成
 
 まずは、読み込みの練習に用いる WAV ファイルを作成する。
 WAV ファイルの作成には、pysoundfile を用いる。
 
 pysoundfile の詳細はこちら。
-<https://pysoundfile.readthedocs.io/en/latest/>
+https://pysoundfile.readthedocs.io/en/latest/
 
 ```python:sin波作成、WAVファイルに変換
 import numpy as np
@@ -76,21 +76,21 @@ _出力結果。_
 
 WAV ファイル（new_file.wav）が作成された。
 
-# 1. WAV ファイルのフォーマットについて大まかに説明
+## 1. WAV ファイルのフォーマットについて大まかに説明
 
 WAV ファイルのフォーマットについては、これらを参考にした。
-<https://ja.wikipedia.org/wiki/WAV>
-<https://www.youfit.co.jp/archives/1418>
-<https://docs.fileformat.com/audio/wav/>
+https://ja.wikipedia.org/wiki/WAV
+https://www.youfit.co.jp/archives/1418
+https://docs.fileformat.com/audio/wav/
 
 作成した WAV ファイル（new_file.wav）を、バイナリエディタで開いてみる。
 
 ブラウザなら、こちらが便利。
-<https://www.oh-benri-tools.com/tools/programming/hex-editor>
+https://www.oh-benri-tools.com/tools/programming/hex-editor
 
 開いてみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/a0d7260ccaa3f6f7546527ce9379b336.png)
-_（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WAV ファイル（new_file.wav）を開いた状態。_
+_（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV ファイル（new_file.wav）を開いた状態。_
 
 「バイナリ（=2 進数）」だから、実際のファイルの中身は「0」か「1」なのだが、エディタ上では 16 進数で表現される。
 エディタ上では、以下の 4 つのチャンク ID が確認できる。
@@ -102,10 +102,10 @@ _（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WA
 | 13-16 | "fmt "                    |
 | 37-40 | "data"                    |
 
-# 2. バイナリモードでファイルを開く
+## 2. バイナリモードでファイルを開く
 
 open 関数の mode 引数に'b'を追加すればよい。
-<https://docs.python.org/ja/3/library/functions.html?highlight=open#open>
+https://docs.python.org/ja/3/library/functions.html?highlight=open#open
 
 試しに、4 つのチャンク ID を狙ってデータを読み込んでみる。
 
@@ -135,7 +135,7 @@ data 37-40 byte = b'data'
 バイナリモードで開かれたファイルでは、読み込んだデータはデコードされずに bytes 型として返される。
 bytes 型は、slice によるデータの切り出しが可能。
 
-# 3. バイナリファイルのランダムアクセス
+## 3. バイナリファイルのランダムアクセス
 
 ランダムアクセスとは、ファイルの読み込み位置を自由に移動することである。
 効率の良いファイルの読み書きには必須。
@@ -154,7 +154,7 @@ fin.seek(x, os.SEEK_END)  # ファイル終了位置から、x byte
 ```
 
 詳細はこちら。
-<https://docs.python.org/ja/3/library/os.html?highlight=seek#os.lseek>
+https://docs.python.org/ja/3/library/os.html?highlight=seek#os.lseek
 
 以下にランダムアクセスの一例を示す。
 read()または write()すると、読み込みまたは書き込みした分だけ現在位置が移動することに注意したい。
@@ -198,9 +198,9 @@ data 36-40 byte = b'data'
 
 長くなったので、今日はここまで。
 
-# 今日のまとめ
+## 今日のまとめ
 
-## バイナリモードでファイルを開く
+### バイナリモードでファイルを開く
 
 open 関数の mode 引数に'b'を追加すればよい。
 
@@ -208,7 +208,7 @@ open 関数の mode 引数に'b'を追加すればよい。
 with open('hoge', mode='rb') as fin:
 ```
 
-## ランダムアクセス
+### ランダムアクセス
 
 シークの指定には、以下の 3 種類がある。
 
@@ -218,6 +218,6 @@ fin.seek(x, os.SEEK_SET)  # ファイル先頭位置から、x byte
 fin.seek(x, os.SEEK_END)  # ファイル終了位置から、x byte
 ```
 
-# 後編はこちら
+## 後編はこちら
 
-<https://www.monyoblog.com/posts/20220710-read-binary-file-py-2/>
+https://www.monyoblog.com/posts/20220710-read-binary-file-py-2/

@@ -8,14 +8,14 @@ date: '2022-07-10'
 category: 'Python'
 ---
 
-# 本記事の内容
+## 本記事の内容
 
 Python でバイナリファイルを読む方法を紹介する。
 具体的には、WAV（Waveform Audio File Format）ファイルから、サンプリングレートと時系列データを取得することを目指す。
 
 本記事は後編にあたる。前編は[こちら](https://www.monyoblog.com/posts/20220607-read-binary-file-py-1/)。
 
-# 目次
+## 目次
 
 （前編）
 1 WAV ファイルの作成
@@ -31,7 +31,7 @@ Python でバイナリファイルを読む方法を紹介する。
 5 バイト列を ndarray に変換
 6 WAV ファイルから、サンプリングレートと時系列データを取得
 
-# 1. WAV ファイルの準備
+## 1. WAV ファイルの準備
 
 今回も、[前編](https://www.monyoblog.com/posts/20220607-read-binary-file-py-1/)で作成した WAV ファイル（new_file.wav）を使用する。
 確認のため、pysoundfile を用いて、WAV ファイルのサンプリングレートと時系列データを調べる。
@@ -68,21 +68,21 @@ _出力結果。_
 時系列データとサンプリングレートが格納されていることがわかる。
 これを、pysoundfile を用いず、取得できるようになることを目指す。
 
-# 2. WAV ファイルのフォーマットについて
+## 2. WAV ファイルのフォーマットについて
 
 WAV ファイルのフォーマットについては、これらを参考にした。
-<https://ja.wikipedia.org/wiki/WAV>
-<https://www.youfit.co.jp/archives/1418>
-<https://docs.fileformat.com/audio/wav/>
+https://ja.wikipedia.org/wiki/WAV
+https://www.youfit.co.jp/archives/1418
+https://docs.fileformat.com/audio/wav/
 
 作成した WAV ファイル（new_file.wav）を、バイナリエディタで開いてみる。
 
 ブラウザなら、こちらが便利。
-<https://www.oh-benri-tools.com/tools/programming/hex-editor>
+https://www.oh-benri-tools.com/tools/programming/hex-editor
 
 開いてみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/a0d7260ccaa3f6f7546527ce9379b336.png)
-_（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WAV ファイル（new_file.wav）を開いた状態。_
+_（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV ファイル（new_file.wav）を開いた状態。_
 
 エディタ上では、以下の 4 つのチャンク ID が確認できる。
 
@@ -113,7 +113,7 @@ _（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WA
 | 33-34     | 2    | 02 00         | 2      | ブロックサイズ。チャンネル数 \* 1 サンプルあたりのバイト数                             |
 | 35-36     | 2    | 10 00         | 16     | ☆ 1 サンプルあたりのビット数。16 bit = 2 byte                                          |
 
-[1] PCM については、こちらをどうぞ。 <https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF>
+[1] PCM については、こちらをどうぞ。 https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF
 
 ### data チャンク
 
@@ -126,7 +126,7 @@ _（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WA
 ★ が、今回読み取るデータ、
 ☆ が、読み取り前に確認しておくべきデータである。
 
-# 3. サンプリングレートと時系列データをバイト列で取得
+## 3. サンプリングレートと時系列データをバイト列で取得
 
 [前編](https://www.monyoblog.com/posts/20220607-read-binary-file-py-1/)で紹介したように、ランダムアクセスでバイナリファイルを読み込み、
 サンプリングレートと時系列データをバイト列で取得する。
@@ -153,16 +153,16 @@ sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\
 
 あとはこれらを適宜 int 型等に変換すればオッケーである。
 
-# 4. バイト列を int に変換
+## 4. バイト列を int に変換
 
 サンプリングレートは 整数値で格納されているので、int 型に変換することになる。
 
 変換には、主に 2 種類の方法がある。
 `int.from_bytes(bytes, byteorder, *, signed=False)`
-<https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes>
+https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes
 
 `struct.unpack(format, buffer)`
-<https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack>
+https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack
 
 上記２種類の方法で、サンプリングレートを int 型に変換してみる。
 
@@ -203,14 +203,14 @@ sampling_rate_int2[0] = 1000
 
 後者の`struct.unpack()`は、値が tuple 型で返ってくることからわかるように、複数の値を同時に変換することが可能である。また、[書式指定文字](https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#format-characters)（引数の`<h`部）を変えることで float 型への変換も可能である。
 
-# 5. バイト列を ndarray に変換
+## 5. バイト列を ndarray に変換
 
 時系列データも整数値で格納されているが、
 後の処理などを考えると、ndarray で取得するのが最も扱いやすいだろう。
 
 `numpy.frombuffer(buffer, dtype=float, count=- 1, offset=0, *, like=None)`で、一次元の ndarray に直接変換することができる。
 
-<https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html>
+https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html
 
 ```python:バイト列をndarrayに変換
 import numpy as np
@@ -242,7 +242,7 @@ sampling_data type : <class 'numpy.ndarray'>
 
 `dtype`の指定で、float にも、integer にも変換可能である。
 
-# 6. WAV ファイルから、サンプリングレートと時系列データを取得
+## 6. WAV ファイルから、サンプリングレートと時系列データを取得
 
 最終的なコードは、こんな感じ。
 
@@ -284,9 +284,9 @@ sampling_data = [     0     32     65 ... -17744 -17772 -17799]
 
 ![Image from Gyazo](https://i.gyazo.com/569039e1f184733135230ea99e1ed9cc.png)_出力結果。_
 
-# 今日のまとめ
+## 今日のまとめ
 
-## バイト列を int に変換
+### バイト列を int に変換
 
 `int.from_bytes(bytes, byteorder, *, signed=False)`または、`struct.unpack(format, buffer)`の２種類がある。
 `struct.unpack(format, buffer)`は、書式指定文字を変えることで float 型への変換も可能。
@@ -302,7 +302,7 @@ data_to_int1 = int.from_bytes(byte, byteorder='little', signed=False)
 data_to_int2 = struct.unpack('<i', sampling_rate_bytes)
 ```
 
-## バイト列を ndarray に変換
+### バイト列を ndarray に変換
 
 `numpy.frombuffer(buffer, dtype=float, count=- 1, offset=0, *, like=None)`を用いる。
 

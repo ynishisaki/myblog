@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "zenn-content-css";
 
-export const PostContent = ({ content }: { content: string }) => {
+export default function PostContent({ content }: { content: string }) {
   useEffect(() => {
     import("zenn-embed-elements");
   }, []);
@@ -14,4 +14,4 @@ export const PostContent = ({ content }: { content: string }) => {
       }}
     />
   );
-};
+}

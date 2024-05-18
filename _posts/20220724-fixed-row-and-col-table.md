@@ -8,7 +8,7 @@ date: '2022-07-24'
 category: 'React'
 ---
 
-# 本記事の内容
+## 本記事の内容
 
 react-table を使う際に、
 
@@ -18,24 +18,24 @@ react-table を使う際に、
 方法を紹介する。
 
 なお、列の固定には、react-table-sticky というライブラリを使用する方法もあるが、今回はライブラリを使用しない方法を紹介する。
-<https://www.npmjs.com/package/react-table-sticky>
+https://www.npmjs.com/package/react-table-sticky
 
-# 実装環境
+## 実装環境
 
 react-table 7.8.0
-<https://www.npmjs.com/package/react-table>
+https://www.npmjs.com/package/react-table
 
-# ソースコード
+## ソースコード
 
 コードは、react-table 公式ドキュメントにある Exaples/Basic をそのまま使用した。
 ソースコードと CodeSandbox は、以下リンクからどうぞ。
 
-<https://react-table-v7.tanstack.com/docs/examples/basic>
+https://react-table-v7.tanstack.com/docs/examples/basic
 
 CodeSandbox で確認してみると、こんな感じ。
-![Image from Gyazo](https://i.gyazo.com/4779a377bb6402237026f745b6ba1172.gif)_元のコード。(<https://codesandbox.io/s/laughing-glade-hw5vwm?file=/src/App.js> より。)_
+![Image from Gyazo](https://i.gyazo.com/4779a377bb6402237026f745b6ba1172.gif)_元のコード。(https://codesandbox.io/s/laughing-glade-hw5vwm?file=/src/App.js より。)_
 
-# コード追記後
+## コード追記後
 
 ![Image from Gyazo](https://i.gyazo.com/ddb4ac4aeafd0843aebfc48115f03eba.gif)_追記後。_
 
@@ -210,7 +210,7 @@ CodeSandbox で確認してみると、こんな感じ。
 +     }
 ```
 
-# 参考サイト
+## 参考サイト
 
-<https://cpoint-lab.co.jp/article/202110/21158/>
-<https://css-tricks.com/a-table-with-both-a-sticky-header-and-a-sticky-first-column/>
+https://cpoint-lab.co.jp/article/202110/21158/
+https://css-tricks.com/a-table-with-both-a-sticky-header-and-a-sticky-first-column/

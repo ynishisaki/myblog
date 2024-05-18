@@ -8,7 +8,7 @@ date: '2023-05-03'
 category: 'Next.js'
 ---
 
-# 本記事について
+## 本記事について
 
 あなたは現在 Next.js で開発を行っている。
 そこで以下の機能が必要になった。
@@ -22,9 +22,9 @@ category: 'Next.js'
 
 ### 参考
 
-<https://nextjs.org/docs/advanced-features/middleware>
+https://nextjs.org/docs/advanced-features/middleware
 
-# 基本実装
+## 基本実装
 
 Middleware が実行されたパスを確認するために、`console.log`を追加している。
 
@@ -51,7 +51,7 @@ export function middleware(request: NextRequest) {
 }
 ```
 
-# 特定のページパスだけ Middleware を走らせたい
+## 特定のページパスだけ Middleware を走らせたい
 
 `console.log`の出力を確認するとわかるが、Middleware はデフォルトでプロジェクト内のすべてのルートに対して呼び出される。
 つまりページだけでなく静的なファイルでも逐一実行される。
@@ -77,7 +77,7 @@ export const config = {
 &emsp;
 
 また、Next.js のドキュメントでは api と静的コンテンツを除外する正規表現が紹介されている。
-<https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A>
+https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A
 
 ```ts:middleware.ts
 // https://nextjs.org/docs/advanced-features/middleware より
@@ -99,7 +99,7 @@ export const config = {
 
 プロジェクトのページ数がそこまで多くないのであれば、先ほどのように配列にページパスを一つづつ記述していく方が楽だと思う。
 
-# 完成形はこちら
+## 完成形はこちら
 
 ```ts:src/middleware.ts
 import { NextResponse } from "next/server";

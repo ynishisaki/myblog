@@ -1,7 +1,7 @@
 import CategoryTag from "./CategoryTag";
 import PostCoverImage from "./PostCoverImage";
 
-export const PostTitle = ({
+export default function PostTitle({
   title,
   date,
   coverImagePath,
@@ -15,7 +15,7 @@ export const PostTitle = ({
   coverImagePhotographer: string;
   coverImageSrcUrl: string;
   category: string;
-}) => {
+}) {
   return (
     <div className="mb-4 items-center">
       <CategoryTag label={category} />
@@ -30,4 +30,4 @@ export const PostTitle = ({
       />
     </div>
   );
-};
+}

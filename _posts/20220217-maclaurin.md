@@ -9,12 +9,12 @@ date: '2022-02-17'
 category: 'Python'
 ---
 
-# 本記事の内容
+## 本記事の内容
 
 Python の sympy を用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 得られた式を matplotlib でグラフ表示する。
 
-# マクローリン展開する関数
+## マクローリン展開する関数
 
 指数関数$f(x)=e^{x}$のマクローリン展開を、以下に示す。
 
@@ -25,16 +25,16 @@ e^{x} &= \displaystyle\sum_{n=0}^\infin{x^{n} \above{1pt} n!} \\
 \end{aligned}
 $$
 
-# sympy でマクローリン展開
+## sympy でマクローリン展開
 
 sympy のドキュメントはこちら。
 Symbol について
-<https://docs.sympy.org/dev/tutorial/gotchas.html#symbols>
+https://docs.sympy.org/dev/tutorial/gotchas.html#symbols
 
 series（級数展開）について
-<https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion>
+https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion
 
-#### コード
+### コード
 
 ```python
 from sympy import *
@@ -48,7 +48,7 @@ print(maclaurin)
 print(maclaurin.removeO())
 ```
 
-#### 出力結果
+### 出力結果
 
 ```
 1 + x + x**2/2 + x**3/6 + x**4/24 + O(x**5)
@@ -58,11 +58,11 @@ x**4/24 + x**3/6 + x**2/2 + x + 1
 4 次の第 5 項までのマクローリン展開結果が出力された。
 O(x\*\*5)は、5 次以降の剰余項であり、.remove()で取り除くことができる。
 
-# マクローリン展開で得られた式を、グラフ表示する
+## マクローリン展開で得られた式を、グラフ表示する
 
 上記の計算結果が$f(x)=e^{x}$の近似になっているか確かめるために、numpy.exp()による計算結果も同一グラフ上にプロットする。
 
-#### コード
+### コード
 
 ```python
 from sympy import *
@@ -90,7 +90,7 @@ plt.legend()
 plt.show()
 ```
 
-#### 出力結果
+### 出力結果
 
 第 10 項(n=10)までマクローリン展開した結果を以下に示す。
 ![](https://storage.googleapis.com/zenn-user-upload/f467775e7619-20211218.jpeg)
@@ -99,6 +99,6 @@ plt.show()
 例として、第 50 項(n=50)までマクローリン展開した結果を以下に示す。
 ![](https://storage.googleapis.com/zenn-user-upload/ad0bfbd6161a-20211218.jpeg)
 
-# あとがき
+## あとがき
 
 アイキャッチ画像の緑のヘビさん、SymPy のヘビに似てないですか。世の中にはこんな可愛いらしいヘビもいるんですね。今後 SymPy 関連の記事を書くことがあれば、また使おうと思います。

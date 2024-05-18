@@ -8,16 +8,16 @@ date: '2022-05-04'
 category: 'Next.js'
 ---
 
-# 本記事の内容
+## 本記事の内容
 
 自分のブログ（Next.js）に Open Graph Protocol（OGP）を設定し、Twitter でブログ記事へのリンクがカード表示されることを確かめる。
 
-# 事の発端
+## 事の発端
 
 先日、自分のブログ用のドメインを取得したので、Twitter でツイートした時のこと。
 
 ![Image from Gyazo](https://i.gyazo.com/5f5937a110e7cdbfe18d12a03aace776.jpg)
-_（出所：<https://twitter.com/> ）OGP 設定前。_
+_（出所：https://twitter.com/ ）OGP 設定前。_
 
 あれ、物寂しいな？
 
@@ -27,13 +27,13 @@ _（出所：<https://twitter.com/> ）OGP 設定前。_
 
 ということで、今日は、OGP の設定をして、Twitter でリンクカードが表示されるようにしていきます。
 
-# OGP の設定方法
+## OGP の設定方法
 
 OGP については、こちらをどうぞ。
-<https://ogp.me/>
+https://ogp.me/
 
 日本語サイトも参考にしつつ。
-<https://growthseed.jp/experts/sns/ogp/#Twitter>
+https://growthseed.jp/experts/sns/ogp/#Twitter
 
 私のブログは、Next.js で書いているので、こんな感じになりました。
 
@@ -62,34 +62,34 @@ function HogePage() {
 }
 ```
 
-ホントは、html タグに以下の記述をするみたいなんだけど（参考：<https://ogp.me/> ）、なくてもちゃんと動いた。
+ホントは、html タグに以下の記述をするみたいなんだけど（参考：https://ogp.me/ ）、なくてもちゃんと動いた。
 んー、よくわからない。
 
 ```typescript
 <html prefix="og: https://ogp.me/ns#">
 ```
 
-# 出力結果
+## 出力結果
 
 テストには、Twitter の「Card validator」を使います。
-<https://cards-dev.twitter.com/validator>
+https://cards-dev.twitter.com/validator
 
 ブログの URL を打つと、
 ![Image from Gyazo](https://i.gyazo.com/61f948c36694f2b2ecfeee1bf41fed64.png)
-_（出所：<https://cards-dev.twitter.com/validator> ）OGP 設定後。_
+_（出所：https://cards-dev.twitter.com/validator ）OGP 設定後。_
 
 おー！カードでてきた！
 
 いい感じ！
 
-# 今日のまとめ
+## 今日のまとめ
 
 今日は、自分のブログに Open Graph Protocol（OGP）を設定し、Twitter でカード表示されることを確かめるところまでできた。
 
 html タグの記述に関しては、今後問題が起きたら調べてみますね。
 
-# 参考サイトまとめ
+## 参考サイトまとめ
 
-<https://ogp.me/>
-<https://growthseed.jp/experts/sns/ogp/#Twitter>
-<https://cards-dev.twitter.com/validator>
+https://ogp.me/
+https://growthseed.jp/experts/sns/ogp/#Twitter
+https://cards-dev.twitter.com/validator

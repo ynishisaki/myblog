@@ -8,7 +8,7 @@ date: '2022-09-01'
 category: 'Python'
 ---
 
-# 本記事について
+## 本記事について
 
 本記事は，Python で相互相関（numpy.correlate(), scipy.signal.correlate()）を行いたいが，そもそも相互相関をよく知らない人を対象に，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。
 
@@ -74,7 +74,7 @@ ax[2].set_xlim(0, 2*2*np.pi)
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/fdf52d2c3aa6215f735ece90e5bad3b7.png> =400x)
+![出力結果](https://i.gyazo.com/fdf52d2c3aa6215f735ece90e5bad3b7.png =400x)
 _出力結果。_
 
 ### 2-2. 正弦波（3 周期）
@@ -112,7 +112,7 @@ ax[2].set_xlim(0, 2*(3*(2*np.pi)))
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/3379e46672a954e1f4efb9a25c25d54f.png> =400x)
+![出力結果](https://i.gyazo.com/3379e46672a954e1f4efb9a25c25d54f.png =400x)
 _出力結果。_
 
 ### 2-3. チャープ波
@@ -149,7 +149,7 @@ ax[2].set_xlim(0, 2*2*np.pi)
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/5e0a32da1079bf3fa3f188717f3f37ba.png> =400x)
+![出力結果](https://i.gyazo.com/5e0a32da1079bf3fa3f188717f3f37ba.png =400x)
 _出力結果。_
 
 ### 2-4. チャープ波（3 周期）
@@ -188,7 +188,7 @@ ax[2].set_xlim(0, 3*(2*2*np.pi))
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/96b100fd2f0dfc351f8b843165880051.png> =400x)
+![出力結果](https://i.gyazo.com/96b100fd2f0dfc351f8b843165880051.png =400x)
 _出力結果。_
 
 ### 2-5. ランダム波
@@ -225,7 +225,7 @@ ax[2].set_xlim(0, 2*n)
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/b3503471b7b8f6dbb259813a10f70875.png> =400x)
+![出力結果](https://i.gyazo.com/b3503471b7b8f6dbb259813a10f70875.png =400x)
 _出力結果。_
 
 ### 2-6. 正弦波（1 周期）に，ホワイトノイズが乗っている場合
@@ -263,7 +263,7 @@ ax[2].set_xlim(0, 2*2*np.pi)
 fig.show()
 ```
 
-![出力結果](<https://i.gyazo.com/2c9b84bf4bad826972dd24602baa7e90.png> =400x)
+![出力結果](https://i.gyazo.com/2c9b84bf4bad826972dd24602baa7e90.png =400x)
 _出力結果。_
 
 ## 3. 相互相関って，具体的にどんな計算しているの？

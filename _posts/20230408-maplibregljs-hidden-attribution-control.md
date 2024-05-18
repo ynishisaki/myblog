@@ -8,13 +8,13 @@ date: '2023-04-08'
 category: 'MapLibre GL JS'
 ---
 
-# 本記事について
+## 本記事について
 
 これです。
 
-![](<https://i.gyazo.com/da986b000564556eaee8ee882f468b44.png> =400x)_地図の下、左端に三角がいます。_
+![](https://i.gyazo.com/da986b000564556eaee8ee882f468b44.png =400x)_地図の下、左端に三角がいます。_
 
-![](<https://i.gyazo.com/146d7168b3bb4aac5f035b92b9aec0e8.png> =400x)_開発者ツールで選択するとこんな感じ。_
+![](https://i.gyazo.com/146d7168b3bb4aac5f035b92b9aec0e8.png =400x)_開発者ツールで選択するとこんな感じ。_
 
 開発者ツールで選択すると、maplibregl-ctrl-attrib-button と書いてある。
 
@@ -22,7 +22,7 @@ category: 'MapLibre GL JS'
 
 `attributionControl: false`で非表示にすることができます。
 
-<https://maplibre.org/maplibre-gl-js/docs/API/classes/maplibregl.AttributionControl/>
+https://maplibre.org/maplibre-gl-js/docs/API/classes/maplibregl.AttributionControl/
 
 ```diff js
   import maplibregl from 'maplibre-gl';

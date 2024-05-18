@@ -32,7 +32,7 @@ export default function PostCoverImage(props: ChildCompProps) {
         >
           {props.coverImagePhotographer}
         </a>
-        on{" "}
+        {" "}on{" "}
         <a
           href="https://unsplash.com/"
           target="_blank"

@@ -8,11 +8,11 @@ date: '2023-08-22'
 category: 'FastAPI'
 ---
 
-# 本記事について
+## 本記事について
 
 FastAPI で CORS (Cross-Origin Resource Sharing)の設定をしたが、依然フロントエンドの CORS エラーが消えなくて困ったので、その際の対処方法を紹介する。
 
-# 問題のコード
+## 問題のコード
 
 [公式ドキュメント](https://fastapi.tiangolo.com/tutorial/cors/)にならって middleware を設定した。
 けれどもフロントエンドの CORS エラーは解消せず。
@@ -37,7 +37,7 @@ app.add_middleware(
 )
 ```
 
-# 解決方法
+## 解決方法
 
 ミドルウェアのライブラリを`Starlette`に差し替えることで、CORS エラーが解消された。
 

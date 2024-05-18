@@ -17,7 +17,7 @@ YouTrackについてはあんまり日本語の解説記事を見かけないが
 
 チーム開発のためのプロジェクト管理ツールである。
 
-[![Image from Gyazo](https://i.gyazo.com/0742e81eae520c12fa5441a880529779.jpg)](https://gyazo.com/0742e81eae520c12fa5441a880529779)_（YouTrack HP(<https://www.jetbrains.com/youtrack/> )より)_
+[![Image from Gyazo](https://i.gyazo.com/0742e81eae520c12fa5441a880529779.jpg)](https://gyazo.com/0742e81eae520c12fa5441a880529779)_（YouTrack HP(https://www.jetbrains.com/youtrack/ )より)_
 
 ## おすすめポイントその１：無料で10人まで使える
 
@@ -27,7 +27,7 @@ YouTrackについてはあんまり日本語の解説記事を見かけないが
 有料プランも安く、１ユーザにつき約500円/月（2024年3月現在）である。
 公式サイトで価格の計算ができるので、以下のURLから確認してみてほしい。
 
-<https://www.jetbrains.com/youtrack/buy/>
+https://www.jetbrains.com/youtrack/buy/
 
 ## おすすめポイントその２：ガントチャート機能
 
@@ -36,7 +36,7 @@ YouTrackについてはあんまり日本語の解説記事を見かけないが
 issue毎に作業日数と開始日を指定するのだが、作業期間が週末にまたがる場合は土日が作業日としてカウントされず、その分issueの完了日が後ろに延びるようになっている。  
 また、issueの作業期間はしばしば変更する必要があるが、その際はガントチャート上のバーの長さをドラッグすることで期間の変更が可能である。
 
-[![Image from Gyazo](https://i.gyazo.com/1e44e6e23e64c79435331ae49018f097.jpg)](https://gyazo.com/1e44e6e23e64c79435331ae49018f097)_（YouTrack HP(<https://www.jetbrains.com/youtrack/features/gantt_chart.html> )より)_
+[![Image from Gyazo](https://i.gyazo.com/1e44e6e23e64c79435331ae49018f097.jpg)](https://gyazo.com/1e44e6e23e64c79435331ae49018f097)_（YouTrack HP(https://www.jetbrains.com/youtrack/features/gantt_chart.html )より)_
 
 ## おすすめポイントその３：豊富な機能
 

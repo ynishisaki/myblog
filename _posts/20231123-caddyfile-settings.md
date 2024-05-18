@@ -63,16 +63,16 @@ Caddy はデフォルトで自動 HTTPS が有効になっている。つまり 
   }
 ```
 
-<https://caddyserver.com/docs/caddyfile/options#tls-options>
+https://caddyserver.com/docs/caddyfile/options#tls-options
 
 ## SPA
 
 Caddy 公式ドキュメントに紹介されているので、こちらを参照していただきたい。
-<https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas>
+https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas
 
 ## /api を省いてリバースプロキシ
 
 `handle_path` が有効。
 `handle` と役割は同じだが、リクエスト URL からマッチした部分を取り除いて渡すことができる。
 
-<https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives>
+https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives

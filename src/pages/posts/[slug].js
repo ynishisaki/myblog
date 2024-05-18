@@ -7,8 +7,8 @@ import "zenn-content-css";
 import markdownHtml from "zenn-markdown-html";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
 import HeaderAndFooter from "../../components/common/HeaderAndFooter";
-import { PostContent } from "../../components/medium/PostContent";
-import { PostTitle } from "../../components/posts/PostTitle";
+import PostContent from "../../components/posts/PostContent";
+import PostTitle from "../../components/posts/PostTitle";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 
 export default function Post({ post, relatedPosts }) {

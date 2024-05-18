@@ -8,46 +8,46 @@ date: '2023-03-08'
 category: 'MongoDB'
 ---
 
-# 本記事について
+## 本記事について
 
 MongoDB をはじめて触る人を対象とした MongoDB におけるドキュメントの構造とスキーマ設計の考え方。
 
 ## 参考サイト
 
-<https://docs.mongodb.com/manual/core/data-modeling-introduction/>
+https://docs.mongodb.com/manual/core/data-modeling-introduction/
 
 &nbsp;
 
-# はじめに用語解説
+## はじめに用語解説
 
-## docment
+### docment
 
 RDB における record に相当。  
 JSON Object とほぼ同じ形式。
 
-## collection
+### collection
 
 RDB における table に相当。  
 collection 内の docment は、デフォルトで同じフィールドや同じデータ型を持つ必要がない。
 
 Scheme Validation を使用すると、許可されるデータ型や値の範囲などの制約を設定できる。
 
-## field
+### field
 
 RDB における column に相当。
 
-## Atomicity
+### Atomicity
 
 「トランザクション内のすべての操作が完了する」か、「すべて失敗する」かのどちらかしかないということを保証する。  
 トランザクションを定義する 4 つの重要な特性、Atomicity（原子性）、Consistency（一貫性）、Isolation（独立性）、Durability（永続性）のうちの一つ。
 
 &nbsp;
 
-# 2 種類の document 構造
+## 2 種類の document 構造
 
 スキーマ設計をするにあたり、document の構造をどうするか、データ間の関係をどう示すかは以下の二つから選択することになる。
 
-## 1. Embedded Data Models（denormalized）
+### 1. Embedded Data Models（denormalized）
 
 以下の例では、ブログ記事の情報に加えて、記事の著者（author）とコメント（comments）も埋め込まれている。
 
@@ -83,7 +83,7 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 大抵のケースでは、このモデルが適しているらしい。  
 ただし、document にはデータサイズの上限がある点には注意。
 
-## 2. Normalized Data Models
+### 2. Normalized Data Models
 
 正規化もできる。
 
@@ -108,7 +108,7 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 
 &nbsp;
 
-# Atomicity が保証される範囲に注意
+## Atomicity が保証される範囲に注意
 
 単一 document の操作は、atomicity が保たれている。
 
@@ -120,18 +120,18 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 
 &nbsp;
 
-# スキーマ設計の考え方
+## スキーマ設計の考え方
 
 問題は Embedded Data Models と Normalized Data Models をどう使い分けるかだが、明確な答えはないようだ。
 
 ...と言われても困るので、MongoDB のドキュメントで挙げられている、ざっくりした指針を以下に示す。
 
-## Embedded Data Models がよい場合
+### Embedded Data Models がよい場合
 
 - 一対一（一方が他方を「含む」関係）
 - 一対多
 
-## Normalized Data Models がよい場合
+### Normalized Data Models がよい場合
 
 - 仮に Embedded Data Models を採用した場合、データの重複が発生し、かつ重複の影響を上回るほどの十分な読み取りパフォーマンスの利点が得られない場合
 - 複雑な多対多
@@ -145,7 +145,7 @@ Embedded Data Models は、一回の DB 操作で関連データを取得でき�
 
 &nbsp;
 
-# まとめ
+## まとめ
 
 - MongoDB には二つのデータモデルがある。
   1. Embedded Data Models
