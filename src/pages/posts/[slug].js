@@ -45,7 +45,7 @@ export default function Post({ post, relatedPosts }) {
       <FixedBackgroundImage />
       <HeaderAndFooter>
         <main className="mb-4 mt-[50px] w-full pt-4 md:mt-[70px]">
-          <div className="relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
+          <article className=" relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
             <PostTitle
               title={post.title}
               coverImagePath={post.coverImagePath}
@@ -82,7 +82,7 @@ export default function Post({ post, relatedPosts }) {
                 </div>
               </aside>
             )}
-          </div>
+          </article>
         </main>
       </HeaderAndFooter>
     </>

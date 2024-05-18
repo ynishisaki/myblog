@@ -10,14 +10,9 @@ https://www.monyoblog.com/
 
 そこで、私もいちエンジニアとして、技術ブログを通して人の役に立つような情報を発信していきたいと思い、ブログ制作を開始した。
 
-なぜ Qiita や Zenn を使わなかったかというと、「自分で作った方が面白そうだから」「勉強になるから」である。
-
 ### 技術
 
-- Next.js(TypeScript)
-- UI ライブラリとして、Chakra UI を使用。
-- [zenn-markdown-html](https://github.com/zenn-dev/zenn-editor) を使用しているので、Markdown + Zenn 独自記法で記事が書ける。
-
-### 今後やること
-
-- [ ] 記事に複数タグをつけて管理したい。
+- Next.js
+- Tailwind CSS
+- [zenn-markdown-html](https://github.com/zenn-dev/zenn-editor) 
+- Vercel

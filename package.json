@@ -7,11 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
     "@vercel/og": "^0.0.18",
-    "framer-motion": "^6.5.1",
     "gray-matter": "4.0.3",
     "next": "13.5.6",
     "react": "^18.2.0",
@@ -22,6 +18,7 @@
     "zenn-markdown-html": "^0.1.153"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
     "@types/node": "20",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
