@@ -4,7 +4,7 @@ excerpt: 'ECSからプロキシ経由でインターネットに接続する方�
 coverImagePath: '/assets/blog/20240328-ecs-proxy-config/cover.jpg'
 coverImagePhotographer: 'Wolfgang Hasselmann'
 coverImageSrcUrl: 'https://unsplash.com/photos/a-white-and-yellow-flower-in-a-pond-of-water-lilies-C_p73VZemp0'
-date: '2024-3-27'
+date: '2024-03-27'
 category: 'AWS'
 ---
 

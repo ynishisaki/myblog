@@ -4,7 +4,7 @@ excerpt: '仕事における「報・連・相」について、私が多様な�
 coverImagePath: '/assets/blog/20240316-reporting-management/cover.jpg'
 coverImagePhotographer: 'Wynand van Poortvliet'
 coverImageSrcUrl: 'https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc'
-date: '2024-3-16'
+date: '2024-03-16'
 category: 'マネジメント'
 ---
 

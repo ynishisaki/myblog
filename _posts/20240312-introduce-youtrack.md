@@ -4,7 +4,7 @@ excerpt: 'JetBrains製プロジェクト管理ツールYouTrackを紹介する�
 coverImagePath: '/assets/blog/20240312-introduce-youtrack/cover.jpg'
 coverImagePhotographer: 'Lala Azizli'
 coverImageSrcUrl: 'https://unsplash.com/photos/people-using-laptop-tfNyTfJpKvc'
-date: '2024-3-12'
+date: '2024-03-12'
 category: 'マネジメント'
 ---
 

@@ -4,7 +4,7 @@ excerpt: 'VSCodeで拡張機能と組み合わせて簡単に利用できるお�
 coverImagePath: '/assets/blog/20240508-vscode-linter-formatter/cover.jpg'
 coverImagePhotographer: 'Viktor Talashuk'
 coverImageSrcUrl: 'https://unsplash.com/photos/brown-snail-on-black-wooden-surface-PxfeNQTKrng'
-date: '2024-5-8'
+date: '2024-05-08'
 category: 'VSCode'
 ---
 
