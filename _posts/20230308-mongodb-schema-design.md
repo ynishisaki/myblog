@@ -1,7 +1,7 @@
 ---
 title: 'MongoDBのスキーマ設計入門'
 excerpt: 'MongoDB をはじめて触る人を対象としたMongoDB におけるドキュメントの構造とスキーマ設計の考え方。'
-coverImagePath: '/assets/blog/20230308-mongodb-schema-design/cover.jpg'
+coverImagePath: '/assets/blog/20230308-mongodb-schema-design/cover.webp'
 coverImagePhotographer: 'Kwang Javier'
 coverImageSrcUrl: 'https://unsplash.com/photos/qcRMfoIWxRo'
 date: '2023-03-08'
@@ -14,7 +14,7 @@ MongoDB をはじめて触る人を対象とした MongoDB におけるドキュ
 
 ## 参考サイト
 
-https://docs.mongodb.com/manual/core/data-modeling-introduction/
+<https://docs.mongodb.com/manual/core/data-modeling-introduction/>
 
 &nbsp;
 

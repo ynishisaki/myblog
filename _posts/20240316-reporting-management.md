@@ -1,7 +1,7 @@
 ---
 title: '「報・連・相」が少ない人、多い人、それと私'
 excerpt: '仕事における「報・連・相」について、私が多様なメンバーとの関わりから感じたこと、メンバーごとにどう関わるようにしているかについて紹介する。'
-coverImagePath: '/assets/blog/20240316-reporting-management/cover.jpg'
+coverImagePath: '/assets/blog/20240316-reporting-management/cover.webp'
 coverImagePhotographer: 'Wynand van Poortvliet'
 coverImageSrcUrl: 'https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc'
 date: '2024-03-16'

@@ -3,7 +3,7 @@ title: 'プライバシーポリシー/免責事項'
 excerpt: '当サイトからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
 当サイトに掲載されている情報について、できる限り正確な情報を提供するよう努めておりますが、正確性や安全性を保証するものではありません。
 情報の正確性について問題がある場合、告知なしに情報を変更・削除することがあります。また、情報が古くなっていることもあります。'
-coverImagePath: '/assets/blog/20220215-privacy-policy/cover.jpg'
+coverImagePath: '/assets/blog/20220215-privacy-policy/cover.webp'
 coverImagePhotographer: 'Jan Kahánek'
 coverImageSrcUrl: 'https://unsplash.com/photos/fVUl6kzIvLg'
 date: '2022-02-15'
@@ -31,4 +31,4 @@ category: 'プライバシーポリシー/免責事項'
 
 #### Google アナリティクス利用規約
 
-https://marketingplatform.google.com/about/analytics/terms/jp/
+<https://marketingplatform.google.com/about/analytics/terms/jp/>

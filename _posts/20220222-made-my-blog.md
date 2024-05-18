@@ -1,7 +1,7 @@
 ---
 title: 'TypeScript（およびJavaScript）未経験者が、2ヶ月勉強してブログをつくった話'
 excerpt: 'このブログは、TypeScriptの勉強を始めて２か月で完成・開設したものである。なぜ２か月でブログを開設することができたのか、振り返ってまとめた。'
-coverImagePath: '/assets/blog/20220222-made-my-blog/cover.jpg'
+coverImagePath: '/assets/blog/20220222-made-my-blog/cover.webp'
 coverImagePhotographer: 'Lautaro Andreani'
 coverImageSrcUrl: 'https://unsplash.com/photos/xkBaqlcqeb4'
 date: '2022-02-22'
@@ -46,11 +46,11 @@ TypeScript を始めたての頃、アロー関数とその省略形に苦戦し
 ## 使えるものは何でも使う。全部イチからやろうとしない
 
 このブログは、Vercel で用意されているブログ用のテンプレート blog-starter をもとに作成している。
-https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript
+<https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript>
 これをもとに、自分の好みに合わせて中身を変更すれば OK である。デプロイなるものも、非常に簡単であった。
 
 あと、Chakra UI にはとてもお世話になった。
-https://chakra-ui.com/
+<https://chakra-ui.com/>
 これのおかげで、スマホ画面対応も丸一日でできてしまった。
 
 ## 知識のあるウェブエンジニアから、教えてもらうことができた
@@ -59,8 +59,8 @@ https://chakra-ui.com/
 
 # まとめ
 
-- #### TypeScript 未経験でも、2 か月でブログを作ることが可能であることを示した。だから、これを読んでるあなたも、自信や希望をもってプログラミングの勉強をして欲しい。
+- #### TypeScript 未経験でも、2 か月でブログを作ることが可能であることを示した。だから、これを読んでるあなたも、自信や希望をもってプログラミングの勉強をして欲しい
 
-- #### 言語はなんでも良いから、気楽にプログラミングの勉強をはじめてみよう！勉強で得られた知識や経験は、ほかの言語でも生かすことができる。
+- #### 言語はなんでも良いから、気楽にプログラミングの勉強をはじめてみよう！勉強で得られた知識や経験は、ほかの言語でも生かすことができる
 
-- #### 新しい技術に触れられる環境にいると、学習スピードがアップする！私のように、ウェブエンジニアのリア友をつくる必要はない。SNS（Twitter、Youtube）、エンジニア向けの情報発信・情報共有サイト（Qiita、Zenn、note、個人ブログ）、プログラミングの質問サイト（teratail、Stack Overflow）などを活用しよう！
+- #### 新しい技術に触れられる環境にいると、学習スピードがアップする！私のように、ウェブエンジニアのリア友をつくる必要はない。SNS（Twitter、Youtube）、エンジニア向けの情報発信・情報共有サイト（Qiita、Zenn、note、個人ブログ）、プログラミングの質問サイト（teratail、Stack Overflow）などを活用しよう

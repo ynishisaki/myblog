@@ -1,5 +1,5 @@
 import Image from "next/image";
-import backgroundImage from "/public/background/background-image.png";
+import backgroundImage from "/public/background/background-image.webp";
 
 export default function FixedBackgroundImage() {
   return (

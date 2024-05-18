@@ -1,7 +1,7 @@
 ---
 title: 'Pythonでバイナリファイルを読んでみよう（前編）'
 excerpt: 'Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。'
-coverImagePath: '/assets/blog/20220607-read-binary-file-py-1/cover.jpg'
+coverImagePath: '/assets/blog/20220607-read-binary-file-py-1/cover.webp'
 coverImagePhotographer: 'Christian Englmeier'
 coverImageSrcUrl: 'https://unsplash.com/photos/QwIgqvA4-go'
 date: '2022-06-07'
@@ -17,7 +17,7 @@ Python でバイナリファイルを読む方法を紹介する。
 
 # 目次
 
-（前編）　
+（前編）
 1 WAV ファイルの作成
 2 WAV ファイルのフォーマットについて大まかに説明
 3 バイナリモードでファイルを開く
@@ -37,7 +37,7 @@ Python でバイナリファイルを読む方法を紹介する。
 WAV ファイルの作成には、pysoundfile を用いる。
 
 pysoundfile の詳細はこちら。
-https://pysoundfile.readthedocs.io/en/latest/
+<https://pysoundfile.readthedocs.io/en/latest/>
 
 ```python:sin波作成、WAVファイルに変換
 import numpy as np
@@ -79,18 +79,18 @@ WAV ファイル（new_file.wav）が作成された。
 # 1. WAV ファイルのフォーマットについて大まかに説明
 
 WAV ファイルのフォーマットについては、これらを参考にした。
-https://ja.wikipedia.org/wiki/WAV
-https://www.youfit.co.jp/archives/1418
-https://docs.fileformat.com/audio/wav/
+<https://ja.wikipedia.org/wiki/WAV>
+<https://www.youfit.co.jp/archives/1418>
+<https://docs.fileformat.com/audio/wav/>
 
 作成した WAV ファイル（new_file.wav）を、バイナリエディタで開いてみる。
 
 ブラウザなら、こちらが便利。
-https://www.oh-benri-tools.com/tools/programming/hex-editor
+<https://www.oh-benri-tools.com/tools/programming/hex-editor>
 
 開いてみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/a0d7260ccaa3f6f7546527ce9379b336.png)
-_（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV ファイル（new_file.wav）を開いた状態。_
+_（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WAV ファイル（new_file.wav）を開いた状態。_
 
 「バイナリ（=2 進数）」だから、実際のファイルの中身は「0」か「1」なのだが、エディタ上では 16 進数で表現される。
 エディタ上では、以下の 4 つのチャンク ID が確認できる。
@@ -105,7 +105,7 @@ _（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV 
 # 2. バイナリモードでファイルを開く
 
 open 関数の mode 引数に'b'を追加すればよい。
-https://docs.python.org/ja/3/library/functions.html?highlight=open#open
+<https://docs.python.org/ja/3/library/functions.html?highlight=open#open>
 
 試しに、4 つのチャンク ID を狙ってデータを読み込んでみる。
 
@@ -154,7 +154,7 @@ fin.seek(x, os.SEEK_END)  # ファイル終了位置から、x byte
 ```
 
 詳細はこちら。
-https://docs.python.org/ja/3/library/os.html?highlight=seek#os.lseek
+<https://docs.python.org/ja/3/library/os.html?highlight=seek#os.lseek>
 
 以下にランダムアクセスの一例を示す。
 read()または write()すると、読み込みまたは書き込みした分だけ現在位置が移動することに注意したい。
@@ -220,4 +220,4 @@ fin.seek(x, os.SEEK_END)  # ファイル終了位置から、x byte
 
 # 後編はこちら
 
-https://www.monyoblog.com/posts/20220710-read-binary-file-py-2/
+<https://www.monyoblog.com/posts/20220710-read-binary-file-py-2/>

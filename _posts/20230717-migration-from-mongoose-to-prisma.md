@@ -1,7 +1,7 @@
 ---
 title: 'Mongoose から Prisma に移行して得た恩恵、思わぬつまづきについて'
 excerpt: 'Prisma への移行作業を行ってわかった、Prismaのメリットと移行時のつまづきについて紹介する。'
-coverImagePath: '/assets/blog/20230717-migration-from-mongoose-to-prisma/cover.jpg'
+coverImagePath: '/assets/blog/20230717-migration-from-mongoose-to-prisma/cover.webp'
 coverImagePhotographer: 'Tyler Casey'
 coverImageSrcUrl: 'https://unsplash.com/photos/4uCdG0scCJ0'
 date: '2023-07-17'
@@ -21,7 +21,7 @@ MongoDB とそのほか RDB(PostgreSQL, MySQL)を使用したプロジェクト�
 # Prisma への移行方法
 
 Prisma の公式ドキュメントにて、移行手順が示されている。  
-https://www.prisma.io/docs/guides/migrate-to-prisma/migrate-from-mongoose
+<https://www.prisma.io/docs/guides/migrate-to-prisma/migrate-from-mongoose>
 
 Prisma での型定義・CRUD 操作の記述は直感的でわかりやすく、Prisma 初心者の筆者でも苦労なく実装することができた。
 
@@ -31,7 +31,7 @@ Prisma での型定義・CRUD 操作の記述は直感的でわかりやすく�
 
 Prisma で MongoDB を使用するには、Replica set の設定が必要である。
 
-https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/mongodb-node-mongodb#:~:text=on%20your%20machine-,Access%20to%20a%20MongoDB%204.2%2B%20server%20with%20a%20replica%20set%20deployment,.,-The%20MongoDB%20database
+<https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/mongodb-node-mongodb#:~:text=on%20your%20machine-,Access%20to%20a%20MongoDB%204.2%2B%20server%20with%20a%20replica%20set%20deployment,.,-The%20MongoDB%20database>
 
 今回のプロジェクトは docker を使用していたため、Replica set の設定を含めた docker コンテナの構築を試みるのだが、これが結構厄介で、構築にめちゃめちゃ時間がかかってしまった。
 結果的にはコンテナ一つで Replica set を構築した。~~意味あるのかこれ......~~

@@ -1,7 +1,7 @@
 ---
 title: '新しい職場に馴染むには、まず〇〇〇〇すべし'
 excerpt: '私の離島での滞在経験によって裏付けられた、新しい人間関係を構築するための私的ベストプラクティスをシェアする。'
-coverImagePath: '/assets/blog/20230205-adjust-to-a-new-environment/cover.jpg'
+coverImagePath: '/assets/blog/20230205-adjust-to-a-new-environment/cover.webp'
 coverImagePhotographer: 'Emre'
 coverImageSrcUrl: 'https://unsplash.com/photos/153_VPk1NZQ'
 date: '2023-02-05'

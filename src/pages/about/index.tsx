@@ -4,9 +4,9 @@ import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
 import HeaderAndFooter from "../../components/common/HeaderAndFooter";
-import hexDecConverterImage from "/public/public-productions/hex-dec-converter.png";
-import pillmeImage from "/public/public-productions/pillme.png";
-import rainForecastMapImage from "/public/public-productions/rain-forecast-map.png";
+import hexDecConverterImage from "/public/public-productions/hex-dec-converter.webp";
+import pillmeImage from "/public/public-productions/pillme.webp";
+import rainForecastMapImage from "/public/public-productions/rain-forecast-map.webp";
 
 export default function About() {
   const careerHistory = [

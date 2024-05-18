@@ -1,7 +1,7 @@
 ---
 title: 'Next.jsでページごとの認証チェック・リダイレクトを実装する'
 excerpt: 'Next.jsのMiddlewareでページごとの認証チェック、リダイレクトを実装する方法を紹介する。'
-coverImagePath: '/assets/blog/20230503-nextjs-middleware-auth/cover.jpg'
+coverImagePath: '/assets/blog/20230503-nextjs-middleware-auth/cover.webp'
 coverImagePhotographer: 'Mysaell Armendariz'
 coverImageSrcUrl: 'https://unsplash.com/photos/IPheOySCW7A'
 date: '2023-05-03'
@@ -22,7 +22,7 @@ category: 'Next.js'
 
 ### 参考
 
-https://nextjs.org/docs/advanced-features/middleware
+<https://nextjs.org/docs/advanced-features/middleware>
 
 # 基本実装
 
@@ -77,7 +77,7 @@ export const config = {
 &emsp;
 
 また、Next.js のドキュメントでは api と静的コンテンツを除外する正規表現が紹介されている。
-https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A
+<https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A>
 
 ```ts:middleware.ts
 // https://nextjs.org/docs/advanced-features/middleware より

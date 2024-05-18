@@ -1,7 +1,7 @@
 ---
 title: 'Docker で Intel Fortran 実行環境を構築する'
 excerpt: 'Docker を活用して Fortran 環境を簡単にセットアップし、コンパイルと実行を行う方法を紹介する。'
-coverImagePath: '/assets/blog/20231024-ifort-docker-setup/cover.jpg'
+coverImagePath: '/assets/blog/20231024-ifort-docker-setup/cover.webp'
 coverImagePhotographer: 'Mason Jones'
 coverImageSrcUrl: 'https://unsplash.com/photos/selective-focus-photography-of-green-iguana-eNulyu7PzZU'
 date: '2023-10-24'
@@ -36,7 +36,7 @@ end program hello
 FC = ifort
 
 hello: hello.f90
-	$(FC) -o hello hello.f90
+ $(FC) -o hello hello.f90
 ```
 
 Intel から oneAPI の公式 Docker イメージ[intel/oneapi-hpckit](https://hub.docker.com/r/intel/oneapi-hpckit/)が提供されているので、これを利用する。
@@ -59,7 +59,7 @@ CMD ["./hello"]
 ※ `intel/oneapi-hpckit`イメージの pull に結構時間かかります
 
 ```sh
-$ docker build -t ifort-hello .
+docker build -t ifort-hello .
 ```
 
 コンテナの起動。`./hello`が実行される。

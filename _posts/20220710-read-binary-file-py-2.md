@@ -1,7 +1,7 @@
 ---
 title: 'Pythonでバイナリファイルを読んでみよう（後編）'
 excerpt: 'Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。'
-coverImagePath: '/assets/blog/20220710-read-binary-file-py-2/cover.jpg'
+coverImagePath: '/assets/blog/20220710-read-binary-file-py-2/cover.webp'
 coverImagePhotographer: 'Nagara Oyodo'
 coverImageSrcUrl: 'https://unsplash.com/photos/kZvkjdcwJec'
 date: '2022-07-10'
@@ -17,7 +17,7 @@ Python でバイナリファイルを読む方法を紹介する。
 
 # 目次
 
-（前編）　
+（前編）
 1 WAV ファイルの作成
 2 WAV ファイルのフォーマットについて大まかに説明
 3 バイナリモードでファイルを開く
@@ -71,18 +71,18 @@ _出力結果。_
 # 2. WAV ファイルのフォーマットについて
 
 WAV ファイルのフォーマットについては、これらを参考にした。
-https://ja.wikipedia.org/wiki/WAV
-https://www.youfit.co.jp/archives/1418
-https://docs.fileformat.com/audio/wav/
+<https://ja.wikipedia.org/wiki/WAV>
+<https://www.youfit.co.jp/archives/1418>
+<https://docs.fileformat.com/audio/wav/>
 
 作成した WAV ファイル（new_file.wav）を、バイナリエディタで開いてみる。
 
 ブラウザなら、こちらが便利。
-https://www.oh-benri-tools.com/tools/programming/hex-editor
+<https://www.oh-benri-tools.com/tools/programming/hex-editor>
 
 開いてみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/a0d7260ccaa3f6f7546527ce9379b336.png)
-_（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV ファイル（new_file.wav）を開いた状態。_
+_（出所：<https://www.oh-benri-tools.com/tools/programming/hex-editor> ）WAV ファイル（new_file.wav）を開いた状態。_
 
 エディタ上では、以下の 4 つのチャンク ID が確認できる。
 
@@ -113,7 +113,7 @@ _（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV 
 | 33-34     | 2    | 02 00         | 2      | ブロックサイズ。チャンネル数 \* 1 サンプルあたりのバイト数                             |
 | 35-36     | 2    | 10 00         | 16     | ☆ 1 サンプルあたりのビット数。16 bit = 2 byte                                          |
 
-[1] PCM については、こちらをどうぞ。 https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF
+[1] PCM については、こちらをどうぞ。 <https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF>
 
 ### data チャンク
 
@@ -159,10 +159,10 @@ sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\
 
 変換には、主に 2 種類の方法がある。
 `int.from_bytes(bytes, byteorder, *, signed=False)`
-https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes
+<https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes>
 
 `struct.unpack(format, buffer)`
-https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack
+<https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack>
 
 上記２種類の方法で、サンプリングレートを int 型に変換してみる。
 
@@ -210,7 +210,7 @@ sampling_rate_int2[0] = 1000
 
 `numpy.frombuffer(buffer, dtype=float, count=- 1, offset=0, *, like=None)`で、一次元の ndarray に直接変換することができる。
 
-https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html
+<https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html>
 
 ```python:バイト列をndarrayに変換
 import numpy as np

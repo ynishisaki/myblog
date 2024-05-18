@@ -1,7 +1,7 @@
 ---
 title: 'FastAPIでCORSの設定をしたにもかかわらずなおCORSエラーが出る場合の対処法'
 excerpt: 'FastAPI での CORS (Cross-Origin Resource Sharing)の設定方法を紹介する。'
-coverImagePath: '/assets/blog/20230822-fastapi-cors-error/cover.jpg'
+coverImagePath: '/assets/blog/20230822-fastapi-cors-error/cover.webp'
 coverImagePhotographer: 'Migle Siauciulyte'
 coverImageSrcUrl: 'https://unsplash.com/photos/sSoreg4Lfyw'
 date: '2023-08-22'

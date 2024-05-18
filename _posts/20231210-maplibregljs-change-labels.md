@@ -1,7 +1,7 @@
 ---
 title: 'MapLibre GL JSのラベル表示の小技（単位をつける、数値の丸め）'
 excerpt: 'MapLibre GL JS のラベル表示において、よく使う式演算子を紹介する。'
-coverImagePath: '/assets/blog/20231210-maplibregljs-change-labels/cover.jpg'
+coverImagePath: '/assets/blog/20231210-maplibregljs-change-labels/cover.webp'
 coverImagePhotographer: 'Annie Williams'
 coverImageSrcUrl: 'https://unsplash.com/photos/traffic-signage-lvNUmFPev40'
 date: '2023-12-10'
@@ -105,7 +105,7 @@ MapLibre GL JS のラベル表示において、よく使う式演算子を紹�
 `concat`演算子でラベルの末尾に単位をつけることができる。  
 `area`プロパティは数値だが、`concat`で自動的に文字列に変換され、他の文字列と結合される。
 
-https://maplibre.org/maplibre-style-spec/expressions/#concat
+<https://maplibre.org/maplibre-style-spec/expressions/#concat>
 
 ```js:index.html
 // (省略)
@@ -127,7 +127,7 @@ map.addLayer({
 `round`演算子で整数に丸めることができる。  
 丸めた後は`to-string`で文字列に変換する必要があるので注意。
 
-https://maplibre.org/maplibre-style-spec/expressions/#round
+<https://maplibre.org/maplibre-style-spec/expressions/#round>
 
 ```js:index.html
 // (省略)

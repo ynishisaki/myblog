@@ -1,7 +1,7 @@
 ---
 title: '退職は失敗ではない vol.1 退職時に上司からかけられた言葉'
 excerpt: '退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験からいくつか紹介する。'
-coverImagePath: '/assets/blog/20230407-would-retirement-be-a-mistake/cover.jpg'
+coverImagePath: '/assets/blog/20230407-would-retirement-be-a-mistake/cover.webp'
 coverImagePhotographer: 'Vlad Sargu'
 coverImageSrcUrl: 'https://unsplash.com/photos/ItphH2lGzuI'
 date: '2023-04-07'
@@ -12,7 +12,7 @@ category: 'キャリア'
 
 今年の就活生は、転職を意識している割合が高いという。
 
-https://www.nikkei.com/article/DGXZQOUC20BPL0Q3A220C2000000/
+<https://www.nikkei.com/article/DGXZQOUC20BPL0Q3A220C2000000/>
 
 転職をポジティブに捉えるような風潮が強まりつつあるように感じる。
 とはいえ、いざ自分の目の前の仕事を手放そうと思うと怖くて行動を起こせない人も多いのではないだろうか。

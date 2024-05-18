@@ -1,7 +1,7 @@
 ---
 title: '【BigQuery × GA4】PV数の集計方法'
 excerpt: 'BigQuery を用いて Googleアナリティクス4のPV (page_view)数を集計する方法を紹介する。'
-coverImagePath: '/assets/blog/20221020-bigquery-ga4-pageview/cover.jpg'
+coverImagePath: '/assets/blog/20221020-bigquery-ga4-pageview/cover.webp'
 coverImagePhotographer: 'Andrew Neel'
 coverImageSrcUrl: 'https://unsplash.com/photos/A9Msi-vUNKg'
 date: '2022-10-20'
@@ -16,13 +16,13 @@ Google アナリティクス は、 BigQuery と連携することで集計前�
 
 # 前回はこちら
 
-https://www.monyoblog.com/posts/20221016-bigquery-ga4-timestamp/
+<https://www.monyoblog.com/posts/20221016-bigquery-ga4-timestamp/>
 
 # Google アナリティクス 4 における「表示回数」を集計する
 
 > ページビューとはブラウザにページが読み込まれる（再読み込される）ことです。ページビュー数は、閲覧されたページの合計数として定義される指標です。
 >
-> ページビュー - アナリティクス ヘルプ (https://support.google.com/analytics/answer/6086080 )より
+> ページビュー - アナリティクス ヘルプ (<https://support.google.com/analytics/answer/6086080> )より
 
 Google アナリティクス 4 の「表示回数」に相当するイベントには、page_view（ウェブ）と screen_view（アプリ）の２種類がある。
 これらのイベントは、GA4 で自動的に収集されるイベントデータの一つであり、収集されたイベントの種類はテーブルの event_name カラムで確認することができる。

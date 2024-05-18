@@ -2,7 +2,7 @@
 title: 'Pythonではじめてのマクローリン展開'
 excerpt: 'Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 得られた式をmatplotlibでグラフ表示する。'
-coverImagePath: '/assets/blog/20220217-maclaurin/cover.jpg'
+coverImagePath: '/assets/blog/20220217-maclaurin/cover.webp'
 coverImagePhotographer: 'uomo libero'
 coverImageSrcUrl: 'https://unsplash.com/photos/ONytz6ri4k4'
 date: '2022-02-17'
@@ -29,10 +29,10 @@ $$
 
 sympy のドキュメントはこちら。
 Symbol について
-https://docs.sympy.org/dev/tutorial/gotchas.html#symbols
+<https://docs.sympy.org/dev/tutorial/gotchas.html#symbols>
 
 series（級数展開）について
-https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion
+<https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion>
 
 #### コード
 

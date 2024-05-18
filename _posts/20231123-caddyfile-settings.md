@@ -1,7 +1,7 @@
 ---
 title: 'Caddy v2 で SPA と API サーバを同時に立ち上げる'
 excerpt: 'Web サーバ Caddy を用いた SPA の配信と API サーバのリバースプロキシの設定方法を紹介する。'
-coverImagePath: '/assets/blog/20231123-caddyfile-settings/cover.jpg'
+coverImagePath: '/assets/blog/20231123-caddyfile-settings/cover.webp'
 coverImagePhotographer: 'Maxim Zhgulev'
 coverImageSrcUrl: 'https://unsplash.com/photos/blue-padlock-5tmItJfHkIc'
 date: '2023-11-23'
@@ -38,7 +38,7 @@ http://localhost {
   # frontend(SPA)
   handle {
     root * /srv
-	  try_files {path} /index.html
+   try_files {path} /index.html
     file_server
   }
   # backend
@@ -63,16 +63,16 @@ Caddy はデフォルトで自動 HTTPS が有効になっている。つまり 
   }
 ```
 
-https://caddyserver.com/docs/caddyfile/options#tls-options
+<https://caddyserver.com/docs/caddyfile/options#tls-options>
 
 ## SPA
 
 Caddy 公式ドキュメントに紹介されているので、こちらを参照していただきたい。
-https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas
+<https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas>
 
 ## /api を省いてリバースプロキシ
 
 `handle_path` が有効。
 `handle` と役割は同じだが、リクエスト URL からマッチした部分を取り除いて渡すことができる。
 
-https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives
+<https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives>

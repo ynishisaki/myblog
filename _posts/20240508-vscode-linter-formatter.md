@@ -1,7 +1,7 @@
 ---
 title: '【TypeScript, Python, Docker】VSCodeで簡単おすすめリンター・フォーマッター紹介'
 excerpt: 'VSCodeで拡張機能と組み合わせて簡単に利用できるおすすめリンター・コードフォーマッターを紹介する。'
-coverImagePath: '/assets/blog/20240508-vscode-linter-formatter/cover.jpg'
+coverImagePath: '/assets/blog/20240508-vscode-linter-formatter/cover.webp'
 coverImagePhotographer: 'Viktor Talashuk'
 coverImageSrcUrl: 'https://unsplash.com/photos/brown-snail-on-black-wooden-surface-PxfeNQTKrng'
 date: '2024-05-08'
@@ -16,7 +16,7 @@ VSCodeで拡張機能と組み合わせて簡単に利用できるおすすめ�
 
 ### @antfu/eslint-config(ESLint)
 
-https://github.com/antfu/eslint-config
+<https://github.com/antfu/eslint-config>
 
 VueやNuxtのコアチームのメンバーであるAnthony Fuさんが開発されている。  
 prettierを使わず、ESLintと[VSCodeのESLint拡張機能](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)、VSCodeの設定ファイルを使ってコードフォーマット(auto fix)を行う。  
@@ -25,7 +25,7 @@ flat config対応。
 
 ### eslint-plugin-simple-import-sort(ESLint)
 
-https://github.com/lydell/eslint-plugin-simple-import-sort
+<https://github.com/lydell/eslint-plugin-simple-import-sort>
 
 import文のソートを行うESLintプラグイン。
 上記の`@antfu/eslint-config`に設定を追加して利用している。
@@ -35,7 +35,7 @@ import文のソートを行うESLintプラグイン。
 
 ### Ruff(Linter, Formatter)
 
-https://github.com/astral-sh/ruff
+<https://github.com/astral-sh/ruff>
 
 速さを売りにしているリンター兼フォーマッター。  
 個人的にはツールがこれ一つで済む点を高く評価している。
@@ -59,7 +59,7 @@ https://github.com/astral-sh/ruff
 
 ### hadolint(Linter)
 
-https://github.com/hadolint/hadolint
+<https://github.com/hadolint/hadolint>
 
 Dockerfileの書き方が、Docker公式のベストプラクティスに沿っているかを確認できるlintツール。  
 `Homebrew`などで`hadolint`をインストールし、[VSCode拡張機能](https://marketplace.visualstudio.com/items?itemName=exiasr.hadolint)を入れると、VSCode上でエラーを確認できる。

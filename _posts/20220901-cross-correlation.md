@@ -1,7 +1,7 @@
 ---
 title: '数式を使わず，相互相関を理解しよう（Pythonソースコード付き）'
 excerpt: '本記事は，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。'
-coverImagePath: '/assets/blog/20220901-cross-correlation/cover.jpg'
+coverImagePath: '/assets/blog/20220901-cross-correlation/cover.webp'
 coverImagePhotographer: 'Amir-abbas Abdolali'
 coverImageSrcUrl: 'https://unsplash.com/photos/_Tm4622z4Dg'
 date: '2022-09-01'
