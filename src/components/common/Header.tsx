@@ -7,9 +7,6 @@ export default function Header() {
   const jumpToHome = () => {
     router.push(`/`);
   };
-  const jumpToAbout = () => {
-    router.push(`/about/`);
-  };
 
   return (
     <header className="fixed top-0 z-[100] flex h-[50px] w-screen items-center bg-[#FAF7F2] shadow md:h-[70px]">
@@ -20,13 +17,6 @@ export default function Header() {
         >
           もにょぶろぐ
         </button>
-        <div className="ml-auto hidden sm:block">
-          <HoverButton
-            textContent="About"
-            areaLabel={"About button"}
-            onClick={jumpToAbout}
-          />
-        </div>
       </nav>
     </header>
   );
