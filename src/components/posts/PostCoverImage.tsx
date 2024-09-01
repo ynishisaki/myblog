@@ -22,26 +22,29 @@ export default function PostCoverImage(props: ChildCompProps) {
         />
       </div>
 
-      <p className="text-right text-sm">
-        Photo by{" "}
-        <a
-          href={props.coverImageSrcUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0f83fd] hover:underline"
-        >
-          {props.coverImagePhotographer}
-        </a>
-        {" "}on{" "}
-        <a
-          href="https://unsplash.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0f83fd] hover:underline"
-        >
-          Unsplash
-        </a>
-      </p>
+      {/* 画像の出展 */}
+      {props.coverImagePhotographer && props.coverImageSrcUrl && (
+        <p className="text-right text-sm">
+          Photo by{" "}
+          <a
+            href={props.coverImageSrcUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#0f83fd] hover:underline"
+          >
+            {props.coverImagePhotographer}
+          </a>{" "}
+          on{" "}
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#0f83fd] hover:underline"
+          >
+            Unsplash
+          </a>
+        </p>
+      )}
     </>
   );
 }
