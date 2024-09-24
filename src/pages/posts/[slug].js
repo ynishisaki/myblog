@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 import "zenn-content-css";
 import markdownHtml from "zenn-markdown-html";
 import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
-import HeaderAndFooter from "../../components/common/HeaderAndFooter";
+import Footer from "../../components/common/Footer";
+import Header from "../../components/common/Header";
 import PostContent from "../../components/posts/PostContent";
 import PostTitle from "../../components/posts/PostTitle";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
@@ -43,48 +44,46 @@ export default function Post({ post, relatedPosts }) {
         <meta name="twitter:title" content={post.title} />
       </Head>
       <FixedBackgroundImage />
-      <HeaderAndFooter>
-        <main className="mb-4 mt-[50px] w-full pt-4 md:mt-[70px]">
-          <article className=" relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
-            <PostTitle
-              title={post.title}
-              coverImagePath={post.coverImagePath}
-              coverImagePhotographer={post.coverImagePhotographer}
-              coverImageSrcUrl={post.coverImageSrcUrl}
-              date={post.date}
-              category={post.category}
-            />
-            <PostContent content={post.content} />
-            {relatedPosts[0] && (
-              <aside>
-                <div className="my-5 border-t border-gray-300" />
-                <h2 className="my-5 text-center text-2xl font-bold">
-                  関連記事
-                </h2>
-                <div className="flex">
-                  {/* 関連記事を最大2つ表示する */}
-                  {relatedPosts.slice(0, 2).map((post) => (
-                    <Link key={post.slug} href={`/posts/${post.slug}`} passHref>
-                      <article className="mx-auto w-4/5">
-                        <Image
-                          width={400}
-                          height={300}
-                          src={post.coverImagePath}
-                          alt="cover image"
-                          style={{ objectFit: "cover" }}
-                        />
-                        <h3 className="my-3 line-clamp-3 text-sm">
-                          {post.title}
-                        </h3>
-                      </article>
-                    </Link>
-                  ))}
-                </div>
-              </aside>
-            )}
-          </article>
-        </main>
-      </HeaderAndFooter>
+      <Header />
+      <main className="mb-4 mt-[50px] w-full pt-4">
+        <article className=" relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
+          <PostTitle
+            title={post.title}
+            coverImagePath={post.coverImagePath}
+            coverImagePhotographer={post.coverImagePhotographer}
+            coverImageSrcUrl={post.coverImageSrcUrl}
+            date={post.date}
+            category={post.category}
+          />
+          <PostContent content={post.content} />
+          {relatedPosts[0] && (
+            <aside>
+              <div className="my-5 border-t border-gray-300" />
+              <h2 className="my-5 text-center text-2xl font-bold">関連記事</h2>
+              <div className="flex">
+                {/* 関連記事を最大2つ表示する */}
+                {relatedPosts.slice(0, 2).map((post) => (
+                  <Link key={post.slug} href={`/posts/${post.slug}`} passHref>
+                    <article className="mx-auto w-4/5">
+                      <Image
+                        width={400}
+                        height={300}
+                        src={post.coverImagePath}
+                        alt="cover image"
+                        style={{ objectFit: "cover" }}
+                      />
+                      <h3 className="my-3 line-clamp-3 text-sm">
+                        {post.title}
+                      </h3>
+                    </article>
+                  </Link>
+                ))}
+              </div>
+            </aside>
+          )}
+        </article>
+      </main>
+      <Footer />
     </>
   );
 }

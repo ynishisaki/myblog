@@ -1,25 +1,11 @@
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
-import { FcBusinesswoman } from "react-icons/fc";
 import { FiExternalLink } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 h-60 bg-[#efece7] p-4">
+    <footer className="relative z-10 h-28 bg-[#efece7] p-4">
       <div className="flex max-w-xl flex-col justify-center md:mx-auto">
-        <div className="flex items-end">
-          <FcBusinesswoman className="text-3xl" />
-          <span className="text-md font-bold text-slate-900">もにょ</span>
-        </div>
-        <div className="mt-3 text-sm text-slate-900">
-          海なし岐阜県生まれ。今は東京に住んでいる。<br></br>
-          なぜあだ名がもにょなのかというと、「もにょっとしているから」とのこと。
-          <br></br>
-          主な使用言語はTypeScriptとPython。
-        </div>
-
-        <div className="my-3 border-t border-slate-300" />
-
         <ul>
           <li>
             <Link
