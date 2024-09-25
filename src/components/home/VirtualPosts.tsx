@@ -76,7 +76,7 @@ export const VirtualPosts = ({ props }: { props: Post[] }) => {
 
       <div
         ref={parentRef}
-        className="relative h-[calc(100vh_-_50px_-_112px)] w-full overflow-y-auto py-4"
+        className="relative h-[calc(100vh_-_50px_-_120px)] w-full overflow-y-auto py-4"
       >
         <div
           style={{
@@ -98,14 +98,13 @@ export const VirtualPosts = ({ props }: { props: Post[] }) => {
                   height: `${virtualItem.size}px`,
                   transform: `translateY(${virtualItem.start}px)`,
                 }}
-                className="py-1.5"
               >
                 <Link
                   href={`/posts/${slug}`}
                   passHref
-                  className="shadow hover:shadow-xl"
+                  className="mx-auto my-2 block w-[90%] shadow hover:shadow-xl md:w-[750px]"
                 >
-                  <article className="mx-auto flex h-full w-[90%] gap-x-4 rounded-md border-2 border-transparent bg-[#FAF7F2] p-4 shadow-xl transition-all hover:border-blue-500 sm:w-[600px] md:w-[750px]">
+                  <article className="flex h-full gap-x-4 rounded-md border-2 border-transparent bg-[#FAF7F2] p-4 shadow-xl transition-all hover:border-blue-500">
                     <div className="relative hidden h-[calc(260px_-_2*4*4px_-_2*4px)] w-[calc(320px_-_2*2*4px)] md:block">
                       <Image
                         fill={true}
