@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { useState } from "react";
-import FixedBackgroundImage from "../components/common/FixedBackgroundImage";
 import Header from "../components/common/Header";
 import MiniFooter from "../components/common/MiniFooter";
 import { VirtualPosts } from "../components/home/VirtualPosts";
 import { getAllPosts } from "../lib/api";
+import { COLORS } from "../styles/colors";
 
 export default function Home({
   posts,
@@ -14,10 +13,7 @@ export default function Home({
     title: string;
     excerpt: string;
     coverImagePath: string;
-    coverImagePhotographer: string;
-    coverImageSrcUrl: string;
     date: string;
-    category: string;
   }[];
 }) {
   return (
@@ -35,9 +31,13 @@ export default function Home({
         {/* twitter */}
         <meta name="twitter:title" content="もにょblog" />
       </Head>
-      <FixedBackgroundImage />
       <Header />
-      <main className="mt-[50px]">
+      <main
+        style={{
+          backgroundColor: COLORS.main.medium,
+        }}
+        className="mt-[50px]"
+      >
         <VirtualPosts props={posts} />
       </main>
       <MiniFooter />
@@ -51,11 +51,7 @@ export const getStaticProps = async () => {
     "title",
     "excerpt",
     "date",
-    "category",
     "coverImagePath",
-    "coverImagePhotographer",
-    "coverImageSrcUrl",
-    "content",
   ]);
 
   return {

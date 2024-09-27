@@ -2,10 +2,16 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { FcBusinesswoman } from "react-icons/fc";
 import { FiExternalLink } from "react-icons/fi";
+import { COLORS } from "../../styles/colors";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#efece7] p-8 shadow-xl shadow-black/10">
+    <footer
+      style={{
+        backgroundColor: COLORS.main.medium,
+      }}
+      className="relative p-8 shadow-xl shadow-black/10"
+    >
       <div className="mx-auto flex w-[90%] flex-col justify-center gap-4 md:w-[750px]">
         <div>
           <div className="flex items-end">

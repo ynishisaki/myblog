@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { COLORS } from "../../styles/colors";
 
 export const HomePosts = ({
   title,
@@ -22,7 +23,12 @@ export const HomePosts = ({
 }) => {
   return (
     <Link href={`/posts/${slug}`} passHref className="relative z-[10]">
-      <article className="mb-2 transform rounded-md bg-[#FAF7F2] p-4 shadow transition-shadow transition-transform duration-300 hover:translate-y-[-4px] hover:shadow-xl">
+      <article
+        style={{
+          backgroundColor: COLORS.main.light,
+        }}
+        className="mb-2 transform rounded-md p-4 shadow transition-shadow transition-transform duration-300 hover:translate-y-[-4px] hover:shadow-xl"
+      >
         <div className="flex flex-col md:flex-row">
           <div className="md:full h-1/2 pb-3 pr-0 md:w-1/2 md:pb-0 md:pr-3">
             <Image

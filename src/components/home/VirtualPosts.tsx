@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useRef } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { COLORS } from "../../styles/colors";
 
 function easeInOutQuint(t: number) {
   return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t;
@@ -17,10 +18,7 @@ interface Post {
   title: string;
   excerpt: string;
   coverImagePath: string;
-  coverImagePhotographer: string;
-  coverImageSrcUrl: string;
   date: string;
-  category: string;
 }
 
 export const VirtualPosts = ({ props }: { props: Post[] }) => {
@@ -65,7 +63,10 @@ export const VirtualPosts = ({ props }: { props: Post[] }) => {
     <div className="relative">
       <div className="absolute bottom-2 right-2 z-20 text-center">
         <button
-          className="rounded-full bg-[#FAF7F2] p-2 text-2xl shadow-xl hover:shadow-2xl"
+          style={{
+            backgroundColor: COLORS.main.light,
+          }}
+          className="rounded-full p-2 text-2xl shadow-xl hover:shadow-2xl"
           onClick={() => {
             virtualizer.scrollToIndex(0);
           }}
@@ -104,18 +105,23 @@ export const VirtualPosts = ({ props }: { props: Post[] }) => {
                   passHref
                   className="mx-auto my-2 block w-[90%] shadow hover:shadow-xl md:w-[750px]"
                 >
-                  <article className="flex h-full gap-x-4 rounded-md border-2 border-transparent bg-[#FAF7F2] p-4 shadow-xl transition-all hover:border-blue-500">
-                    <div className="relative hidden h-[calc(260px_-_2*4*4px_-_2*4px)] w-[calc(320px_-_2*2*4px)] md:block">
+                  <article
+                    style={{
+                      backgroundColor: COLORS.main.light,
+                    }}
+                    className="flex h-full gap-x-4 rounded-md border-2 border-transparent p-4 shadow-xl transition-all hover:border-blue-500"
+                  >
+                    <div className="relative hidden h-[calc(260px_-_2*4*4px_-_2*4px)] w-[calc(320px_-_2*2*4px)] sm:block">
                       <Image
-                        fill={true}
+                        width={320 - 2 * 2 * 4}
+                        height={260 - 2 * 4 * 4 - 2 * 4}
                         src={coverImagePath}
                         alt="coverimage from Unsplash"
-                        style={{
-                          borderRadius: "0.375rem", // md
-                        }}
+                        priority={virtualItem.index < 3}
+                        className="h-full rounded-md object-cover"
                       />
                     </div>
-                    <div className="my-auto flex flex-col md:w-[calc(100%_-_320px)]">
+                    <div className="my-auto flex flex-col sm:w-[calc(100%_-_320px)]">
                       <h2 className="text-xl font-bold text-slate-900">
                         {title}
                       </h2>

@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import "zenn-content-css";
 import markdownHtml from "zenn-markdown-html";
-import FixedBackgroundImage from "../../components/common/FixedBackgroundImage";
 import Footer from "../../components/common/Footer";
 import Header from "../../components/common/Header";
 import PostContent from "../../components/posts/PostContent";
 import PostTitle from "../../components/posts/PostTitle";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
+import { COLORS } from "../../styles/colors";
 
 export default function Post({ post, relatedPosts }) {
   const router = useRouter();
@@ -43,10 +43,19 @@ export default function Post({ post, relatedPosts }) {
         />
         <meta name="twitter:title" content={post.title} />
       </Head>
-      <FixedBackgroundImage />
       <Header />
-      <main className="mb-4 mt-[50px] w-full pt-4">
-        <article className=" relative mx-auto max-w-[90%] bg-[#FAF7F2] p-8 sm:max-w-[600px] md:max-w-[800px]">
+      <main
+        style={{
+          backgroundColor: COLORS.main.medium,
+        }}
+        className="mb-4 mt-[50px] w-full pt-4"
+      >
+        <article
+          style={{
+            backgroundColor: COLORS.main.light,
+          }}
+          className="relative mx-auto w-[90%] p-8 md:w-[750px]"
+        >
           <PostTitle
             title={post.title}
             coverImagePath={post.coverImagePath}
