@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: COLORS.header,
+        backgroundColor: COLORS.footer,
       }}
       className="relative p-8 shadow-xl"
     >

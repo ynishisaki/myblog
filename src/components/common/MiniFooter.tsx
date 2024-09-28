@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: COLORS.header,
+        backgroundColor: COLORS.footer,
       }}
       className="h-30 relative p-8 shadow-xl shadow-black/10"
     >
