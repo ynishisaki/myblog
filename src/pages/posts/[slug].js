@@ -21,7 +21,7 @@ export default function Post({ post, relatedPosts }) {
   return (
     <>
       <Head>
-        <title>{post.title}｜もにょblog</title>
+        <title>{`${post.title}｜もにょblog`}</title>
         <meta name="description" content={post.excerpt} />
         {/* og */}
         <meta property="og:site_name" content="もにょblog" />
@@ -48,13 +48,13 @@ export default function Post({ post, relatedPosts }) {
         style={{
           backgroundColor: COLORS.main.medium,
         }}
-        className="mb-4 mt-[50px] w-full pt-4"
+        className="mt-[50px] py-4"
       >
         <article
           style={{
             backgroundColor: COLORS.main.light,
           }}
-          className="relative mx-auto w-[90%] p-8 md:w-[750px]"
+          className="mx-auto w-[90%] p-8 md:w-[750px]"
         >
           <PostTitle
             title={post.title}

@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: COLORS.main.medium,
+        backgroundColor: COLORS.header,
       }}
-      className="relative p-8 shadow-xl shadow-black/10"
+      className="relative p-8 shadow-xl"
     >
       <div className="mx-auto flex w-[90%] flex-col justify-center gap-4 md:w-[750px]">
         <div>

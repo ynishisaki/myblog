@@ -19,8 +19,8 @@ export default function PostTitle({
   return (
     <div className="mb-4 items-center">
       <CategoryTag label={category} />
-      <h1 className="mb-4 text-4xl font-bold">{title}</h1>
-      <time dateTime={date} className="text-slate-900">
+      <h1 className="mb-4 text-3xl font-bold">{title}</h1>
+      <time dateTime={date} className="mt-4 text-sm italic text-slate-600">
         {date}
       </time>
       <PostCoverImage
