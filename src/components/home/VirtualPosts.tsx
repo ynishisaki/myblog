@@ -103,7 +103,7 @@ export const VirtualPosts = ({ props }: { props: Post[] }) => {
                 <Link
                   href={`/posts/${slug}`}
                   passHref
-                  className="mx-auto my-2 block w-[90%] shadow hover:shadow-xl md:w-[750px]"
+                  className="mx-auto my-2 block w-[90%] shadow hover:shadow-xl md:w-[750px] lg:w-[1000px]"
                 >
                   <article
                     style={{

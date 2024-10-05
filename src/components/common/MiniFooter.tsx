@@ -11,7 +11,7 @@ export default function Footer() {
       }}
       className="h-30 relative p-8 shadow-xl shadow-black/10"
     >
-      <div className="mx-auto flex  flex-col justify-center gap-4 md:w-[750px]">
+      <div className="mx-auto flex  flex-col justify-center gap-4 md:w-[750px] lg:w-[1000px]">
         <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-4">
           <div>
             <Link

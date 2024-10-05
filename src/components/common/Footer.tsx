@@ -12,7 +12,7 @@ export default function Footer() {
       }}
       className="relative p-8 shadow-xl"
     >
-      <div className="mx-auto flex w-[90%] flex-col justify-center gap-4 md:w-[750px]">
+      <div className="mx-auto flex w-[90%] flex-col justify-center gap-4 md:w-[750px] lg:w-[1000px]">
         <div>
           <div className="flex items-end">
             <FcBusinesswoman className="text-3xl" />

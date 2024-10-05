@@ -54,7 +54,7 @@ export default function Post({ post, relatedPosts }) {
           style={{
             backgroundColor: COLORS.main.light,
           }}
-          className="mx-auto w-[90%] p-8 md:w-[750px]"
+          className="mx-auto w-[90%] p-8 md:w-[750px] lg:w-[1000px]"
         >
           <PostTitle
             title={post.title}

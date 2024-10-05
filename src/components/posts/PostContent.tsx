@@ -8,7 +8,7 @@ export default function PostContent({ content }: { content: string }) {
 
   return (
     <section
-      className="znc prose prose-slate"
+      className="znc prose prose-slate max-w-none"
       dangerouslySetInnerHTML={{
         __html: content,
       }}
