@@ -52,7 +52,7 @@ end_header
 
 プロジェクトは`pnpm create vite@latest --template vue-ts`で作成した。
 
-```vue:App.vue
+```ts:App.vue
 <script setup lang="ts">
 import * as THREE from "three";
 import WebGL from "three/addons/capabilities/WebGL.js";
