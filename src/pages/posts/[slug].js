@@ -11,6 +11,7 @@ import PostContent from "../../components/posts/PostContent";
 import PostTitle from "../../components/posts/PostTitle";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import { COLORS } from "../../styles/colors";
+import { containerLayout } from "../../styles/variants";
 
 export default function Post({ post, relatedPosts }) {
   const router = useRouter();
@@ -54,7 +55,7 @@ export default function Post({ post, relatedPosts }) {
           style={{
             backgroundColor: COLORS.main.light,
           }}
-          className="mx-auto w-[90%] p-8 md:w-[750px] lg:w-[1000px]"
+          className={containerLayout()}
         >
           <PostTitle
             title={post.title}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { COLORS } from "../../styles/colors";
+import { containerLayout } from "../../styles/variants";
 
 export default function Footer() {
   return (
@@ -9,9 +10,9 @@ export default function Footer() {
       style={{
         backgroundColor: COLORS.footer,
       }}
-      className="h-30 relative p-8 shadow-xl shadow-black/10"
+      className="h-30 shadow-2xl"
     >
-      <div className="mx-auto flex  flex-col justify-center gap-4 md:w-[750px] lg:w-[1000px]">
+      <div className={containerLayout()}>
         <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-4">
           <div>
             <Link
