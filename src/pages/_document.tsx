@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -40,10 +39,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script
-            strategy="lazyOnload"
-            src="https://embed.zenn.studio/js/listen-embed-event.js"
-          ></Script>
         </body>
       </Html>
     );

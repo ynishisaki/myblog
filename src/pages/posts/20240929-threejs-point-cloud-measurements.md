@@ -1,11 +1,11 @@
 ---
-title: '【Three.js + Vue.js】点群データの距離を計測する'
-excerpt: 'Three.jsとVue.jsを使って、点群データの距離を計測するサンプルコードを紹介する。'
-coverImagePath: '/assets/blog/20240929-threejs-point-cloud-measurements/cover.webp'
-coverImagePhotographer: 'Karsten Winegeart'
-coverImageSrcUrl: 'https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-clouds-YYtYappKDWo'
-date: '2024-09-29'
-category: 'Three.js'
+title: "【Three.js + Vue.js】点群データの距離を計測する"
+excerpt: "Three.jsとVue.jsを使って、点群データの距離を計測するサンプルコードを紹介する。"
+coverImagePath: "/assets/blog/20240929-threejs-point-cloud-measurements/cover.webp"
+coverImagePhotographer: "Karsten Winegeart"
+coverImageSrcUrl: "https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-clouds-YYtYappKDWo"
+date: "2024-09-29"
+category: "Three.js"
 ---
 
 ## 本記事について
@@ -27,7 +27,7 @@ Three.jsとVue.jsを使って、点群データの距離を計測するサンプ
 
 1m四方の立方体の頂点からなるPLYファイルをサンプルとして使用した。
 
-```ply:sample.ply
+```ply filename="sample.ply"
 ply
 format ascii 1.0
 element vertex 8
@@ -52,7 +52,7 @@ end_header
 
 プロジェクトは`pnpm create vite@latest --template vue-ts`で作成した。
 
-```ts:App.vue
+```vue filename="App.vue"
 <script setup lang="ts">
 import * as THREE from "three";
 import WebGL from "three/addons/capabilities/WebGL.js";
