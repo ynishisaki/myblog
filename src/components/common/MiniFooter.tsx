@@ -1,18 +1,11 @@
 import Link from "next/link";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
-import { COLORS } from "../../styles/colors";
-import { containerLayout } from "../../styles/variants";
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: COLORS.footer,
-      }}
-      className="h-30 shadow-2xl"
-    >
-      <div className={containerLayout()}>
+    <footer className="mt-32">
+      <div>
         <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-4">
           <div>
             <Link
@@ -37,7 +30,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-sm text-slate-500">© 2022 もにょ</div>
+        <div className="text-sm text-slate-500">
+          © {new Date().getFullYear()} monyo.
+        </div>
       </div>
     </footer>
   );

@@ -1,12 +1,13 @@
 ---
-title: "【Three.js + Vue.js】点群データの距離を計測する"
-excerpt: "Three.jsとVue.jsを使って、点群データの距離を計測するサンプルコードを紹介する。"
-coverImagePath: "/assets/blog/20240929-threejs-point-cloud-measurements/cover.webp"
-coverImagePhotographer: "Karsten Winegeart"
-coverImageSrcUrl: "https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-clouds-YYtYappKDWo"
-date: "2024-09-29"
-category: "Three.js"
+title: 【Three.js + Vue.js】点群データの距離を計測する
+date: 2024-09-29
+description: Three.jsとVue.jsを使って、点群データの距離を計測するサンプルコードを紹介する。
+tag: Vue.js, Three.js, Point Cloud
 ---
+
+![cover image from Unsplash](/assets/blog/20240929-threejs-point-cloud-measurements/cover.webp)
+
+Photo by [Karsten Winegeart](https://unsplash.com/photos/a-view-of-a-mountain-range-covered-in-clouds-YYtYappKDWo) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -340,4 +341,4 @@ main {
 
 ## 参考
 
-https://sbcode.net/threejs/measurements/
+[Raycaster Measurements - Three.js Tutorials](https://sbcode.net/threejs/measurements/)

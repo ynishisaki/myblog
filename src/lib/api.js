@@ -1,6 +1,6 @@
-import { readdirSync, readFileSync } from "fs";
 import matter from "gray-matter";
-import { join } from "path";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 // const postsDirectory = join(process.cwd(), "_posts");
 const postsDirectory = join(process.cwd(), "src/pages/posts");
