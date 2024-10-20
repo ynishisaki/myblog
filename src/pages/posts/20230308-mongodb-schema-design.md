@@ -1,20 +1,21 @@
 ---
-title: 'MongoDBのスキーマ設計入門'
-excerpt: 'MongoDB をはじめて触る人を対象としたMongoDB におけるドキュメントの構造とスキーマ設計の考え方。'
-coverImagePath: '/assets/blog/20230308-mongodb-schema-design/cover.webp'
-coverImagePhotographer: 'Kwang Javier'
-coverImageSrcUrl: 'https://unsplash.com/photos/qcRMfoIWxRo'
-date: '2023-03-08'
-category: 'MongoDB'
+title: MongoDBのスキーマ設計入門
+description: MongoDB をはじめて触る人を対象としたMongoDB におけるドキュメントの構造とスキーマ設計の考え方。
+date: 2023-03-08
+tag: MongoDB
 ---
+
+![cover image from Unsplash](/assets/blog/20230308-mongodb-schema-design/cover.webp)
+
+Photo by [Kwang Javier](https://unsplash.com/photos/qcRMfoIWxRo) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
 MongoDB をはじめて触る人を対象とした MongoDB におけるドキュメントの構造とスキーマ設計の考え方。
 
-## 参考サイト
+## 参考
 
-https://docs.mongodb.com/manual/core/data-modeling-introduction/
+- [データモデリング - MongoDBマニュアル](https://docs.mongodb.com/manual/core/data-modeling-introduction/)
 
 &nbsp;
 

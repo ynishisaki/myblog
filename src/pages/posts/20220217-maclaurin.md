@@ -1,22 +1,22 @@
 ---
-title: 'Pythonではじめてのマクローリン展開'
-excerpt: 'Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
-得られた式をmatplotlibでグラフ表示する。'
-coverImagePath: '/assets/blog/20220217-maclaurin/cover.webp'
-coverImagePhotographer: 'uomo libero'
-coverImageSrcUrl: 'https://unsplash.com/photos/ONytz6ri4k4'
-date: '2022-02-17'
-category: 'Python'
+title: Pythonではじめてのマクローリン展開
+description: Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
+date: 2022-02-17
+tag: Python
 ---
+
+![cover image from Unsplash](/assets/blog/20220217-maclaurin/cover.webp)
+
+Photo by [uomo libero](https://unsplash.com/photos/ONytz6ri4k4) on [Unsplash](https://unsplash.com/)
 
 ## 本記事の内容
 
-Python の sympy を用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
+Python の sympy を用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。  
 得られた式を matplotlib でグラフ表示する。
 
 ## マクローリン展開する関数
 
-指数関数$f(x)=e^{x}$のマクローリン展開を、以下に示す。
+指数関数$f(x)=e^{x}$のマクローリン展開を以下に示す。
 
 $$
 \begin{aligned}
@@ -28,11 +28,12 @@ $$
 ## sympy でマクローリン展開
 
 sympy のドキュメントはこちら。
-Symbol について
-https://docs.sympy.org/dev/tutorial/gotchas.html#symbols
 
-series（級数展開）について
-https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion
+Symbol について  
+[Gotchas - SymPy 1.14.dev documentation](https://docs.sympy.org/dev/tutorial/gotchas.html#symbols)
+
+series（級数展開）について  
+[Calculus - SymPy 1.14.dev documentation](https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion)
 
 ### コード
 

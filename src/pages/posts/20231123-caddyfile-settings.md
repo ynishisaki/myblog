@@ -1,12 +1,13 @@
 ---
-title: 'Caddy v2 で SPA と API サーバを同時に立ち上げる'
-excerpt: 'Web サーバ Caddy を用いた SPA の配信と API サーバのリバースプロキシの設定方法を紹介する。'
-coverImagePath: '/assets/blog/20231123-caddyfile-settings/cover.webp'
-coverImagePhotographer: 'Maxim Zhgulev'
-coverImageSrcUrl: 'https://unsplash.com/photos/blue-padlock-5tmItJfHkIc'
-date: '2023-11-23'
-category: 'Caddy'
+title: Caddy v2でSPAとAPIサーバを同時に立ち上げる
+description: WebサーバCaddyを用いたSPAの配信とAPIサーバのリバースプロキシの設定方法を紹介する。
+date: 2023-11-23
+tag: Caddy
 ---
+
+![cover image from Unsplash](/assets/blog/20231123-caddyfile-settings/cover.webp)
+
+Photo by [Maxim Zhgulev](https://unsplash.com/photos/blue-padlock-5tmItJfHkIc) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -29,7 +30,7 @@ Web サーバ Caddy を用いた SPA の配信と API サーバのリバース�
 
 上記を実現するための Caddyfile は以下のようになる。
 
-```:Caddyfile
+```caddy
 http://localhost {
   log {
     output file /var/log/access.log
@@ -63,16 +64,17 @@ Caddy はデフォルトで自動 HTTPS が有効になっている。つまり 
   }
 ```
 
-https://caddyserver.com/docs/caddyfile/options#tls-options
+- [Global options (Caddyfile) — Caddy Documentation](https://caddyserver.com/docs/caddyfile/options#tls-options)
 
 ## SPA
 
 Caddy 公式ドキュメントに紹介されているので、こちらを参照していただきたい。
-https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas
+
+- [Common Caddyfile Patterns — Caddy Documentation](https://caddyserver.com/docs/caddyfile/patterns#single-page-apps-spas)
 
 ## /api を省いてリバースプロキシ
 
 `handle_path` が有効。
 `handle` と役割は同じだが、リクエスト URL からマッチした部分を取り除いて渡すことができる。
 
-https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives
+- [Common Caddyfile Patterns — Caddy Documentation](https://caddyserver.com/docs/caddyfile/directives/handle#similar-directives)

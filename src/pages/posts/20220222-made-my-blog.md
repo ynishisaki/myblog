@@ -1,12 +1,13 @@
 ---
-title: 'TypeScript（およびJavaScript）未経験者が、2ヶ月勉強してブログをつくった話'
-excerpt: 'このブログは、TypeScriptの勉強を始めて２か月で完成・開設したものである。なぜ２か月でブログを開設することができたのか、振り返ってまとめた。'
-coverImagePath: '/assets/blog/20220222-made-my-blog/cover.webp'
-coverImagePhotographer: 'Lautaro Andreani'
-coverImageSrcUrl: 'https://unsplash.com/photos/xkBaqlcqeb4'
-date: '2022-02-22'
-category: 'TypeScript'
+title: TypeScript（およびJavaScript）未経験者が、2ヶ月勉強してブログをつくった話
+description: このブログは、TypeScriptの勉強を始めて２か月で完成・開設したものである。なぜ２か月でブログを開設することができたのか、振り返ってまとめた。
+date: 2022-02-22
+tag: TypeScript, JavaScript
 ---
+
+![cover image from Unsplash](/assets/blog/20220222-made-my-blog/cover.webp)
+
+Photo by [Lautaro Andreani](https://unsplash.com/photos/xkBaqlcqeb4) on [Unsplash](https://unsplash.com/)
 
 ## 本記事の内容
 

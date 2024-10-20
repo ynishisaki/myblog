@@ -1,12 +1,13 @@
 ---
-title: '「報・連・相」が少ない人、多い人、それと私'
-excerpt: '仕事における「報・連・相」について、私が多様なメンバーとの関わりから感じたこと、メンバーごとにどう関わるようにしているかについて紹介する。'
-coverImagePath: '/assets/blog/20240316-reporting-management/cover.webp'
-coverImagePhotographer: 'Wynand van Poortvliet'
-coverImageSrcUrl: 'https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc'
-date: '2024-03-16'
-category: 'マネジメント'
+title: 「報・連・相」が少ない人、多い人、それと私
+description: 仕事における「報・連・相」について、私が多様なメンバーとの関わりから感じたこと、メンバーごとにどう関わるようにしているかについて紹介する。
+date: 2024-03-16
+tag: マネジメント, 人間関係
 ---
+
+![cover image from Unsplash](/assets/blog/20240316-reporting-management/cover.webp)
+
+Photo by [Wynand van Poortvliet](https://unsplash.com/photos/two-black-and-white-birds-4AmyOdXZAQc) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 

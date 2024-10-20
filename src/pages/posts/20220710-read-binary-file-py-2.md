@@ -1,12 +1,13 @@
 ---
-title: 'Pythonでバイナリファイルを読んでみよう（後編）'
-excerpt: 'Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。'
-coverImagePath: '/assets/blog/20220710-read-binary-file-py-2/cover.webp'
-coverImagePhotographer: 'Nagara Oyodo'
-coverImageSrcUrl: 'https://unsplash.com/photos/kZvkjdcwJec'
-date: '2022-07-10'
-category: 'Python'
+title: Pythonでバイナリファイルを読んでみよう（後編）
+description: Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。
+date: 2022-07-10
+tag: Python
 ---
+
+![cover image from Unsplash](/assets/blog/20220710-read-binary-file-py-2/cover.webp)
+
+Photo by [Nagara Oyodo](https://unsplash.com/photos/kZvkjdcwJec) on [Unsplash](https://unsplash.com/)
 
 ## 本記事の内容
 
@@ -36,7 +37,7 @@ Python でバイナリファイルを読む方法を紹介する。
 今回も、[前編](https://www.monyoblog.com/posts/20220607-read-binary-file-py-1/)で作成した WAV ファイル（new_file.wav）を使用する。
 確認のため、pysoundfile を用いて、WAV ファイルのサンプリングレートと時系列データを調べる。
 
-```python:WAVファイルの中身を確認
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import soundfile as sf  # WAVファイルの読み書きに使用
@@ -57,7 +58,7 @@ ax.set_ylabel('amplitude')
 fig.show()
 ```
 
-```:出力結果
+```
 sampling_data = [ 0.          0.00097656  0.00198364 ... -0.54150391 -0.5423584 -0.54318237]
 sampling_rate = 1000
 ```
@@ -71,14 +72,16 @@ _出力結果。_
 ## 2. WAV ファイルのフォーマットについて
 
 WAV ファイルのフォーマットについては、これらを参考にした。
-https://ja.wikipedia.org/wiki/WAV
-https://www.youfit.co.jp/archives/1418
-https://docs.fileformat.com/audio/wav/
+
+- [WAV - Wikipedia](https://ja.wikipedia.org/wiki/WAV)
+- [音ファイル（拡張子：WAVファイル）のデータ構造について - 福岡・東京のシステム開発会社 (株)ユーフィット](https://www.youfit.co.jp/archives/1418)
+- [WAV - Waveform Audio File Format](https://docs.fileformat.com/audio/wav/)
 
 作成した WAV ファイル（new_file.wav）を、バイナリエディタで開いてみる。
 
 ブラウザなら、こちらが便利。
-https://www.oh-benri-tools.com/tools/programming/hex-editor
+
+- [【WEBツール】バイナリエディタ](https://www.oh-benri-tools.com/tools/programming/hex-editor)
 
 開いてみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/a0d7260ccaa3f6f7546527ce9379b336.png)
@@ -113,7 +116,9 @@ _（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV 
 | 33-34     | 2    | 02 00         | 2      | ブロックサイズ。チャンネル数 \* 1 サンプルあたりのバイト数                             |
 | 35-36     | 2    | 10 00         | 16     | ☆ 1 サンプルあたりのビット数。16 bit = 2 byte                                          |
 
-[1] PCM については、こちらをどうぞ。 https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF
+[1] PCM については、こちらをどうぞ。
+
+- [パルス符号変調 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%AB%E3%82%B9%E7%AC%A6%E5%8F%B7%E5%A4%89%E8%AA%BF)
 
 ### data チャンク
 
@@ -131,7 +136,7 @@ _（出所：https://www.oh-benri-tools.com/tools/programming/hex-editor ）WAV 
 [前編](https://www.monyoblog.com/posts/20220607-read-binary-file-py-1/)で紹介したように、ランダムアクセスでバイナリファイルを読み込み、
 サンプリングレートと時系列データをバイト列で取得する。
 
-```python:WAVファイルを読み込む
+```python
 import os
 
 with open('new_file.wav', mode="rb") as fin:
@@ -159,14 +164,16 @@ sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\
 
 変換には、主に 2 種類の方法がある。
 `int.from_bytes(bytes, byteorder, *, signed=False)`
-https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes
+
+- [組み込み型 — Python 3.13.0 ドキュメント](https://docs.python.org/ja/3/library/stdtypes.html?highlight=from_bytes#int.from_bytes)
 
 `struct.unpack(format, buffer)`
-https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack
+
+- [struct --- バイト列をパックされたバイナリデータとして解釈する — Python 3.13.0 ドキュメント](https://docs.python.org/ja/3/library/struct.html?highlight=struct%20unpack#struct.unpack)
 
 上記２種類の方法で、サンプリングレートを int 型に変換してみる。
 
-```python:バイト列をint型に変換
+```python
 import struct
 
 sampling_rate_bytes = b'\xe8\x03\x00\x00'
@@ -189,7 +196,7 @@ print(f'sampling_rate_int2 = {sampling_rate_int2}')
 print(f'sampling_rate_int2[0] = {sampling_rate_int2[0]}')
 ```
 
-```:出力結果
+```
 変換前
 sampling_rate_bytes = b'\xe8\x03\x00\x00'
 
@@ -210,9 +217,9 @@ sampling_rate_int2[0] = 1000
 
 `numpy.frombuffer(buffer, dtype=float, count=- 1, offset=0, *, like=None)`で、一次元の ndarray に直接変換することができる。
 
-https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html
+- [numpy.frombuffer — NumPy v2.1 Manual](https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html)
 
-```python:バイト列をndarrayに変換
+```python
 import numpy as np
 
 sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\x06\x01&\x01G\x01h\x01\x89\x01\xa9\x01\xca\x01\xeb\x01\x0c\x02-\x02M\x02n\x02\x8f\x02\xb0\x02\xd0\x02\xf1\x02\x12\x033\x03S\x03t\x03\x95\x03\xb6\x03\xd6 ...(省略)'
@@ -231,7 +238,7 @@ print(f'sampling_data type : {type(sampling_data)}')
 
 ```
 
-```:出力結果
+```
 変換前
 sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\x06\x01&\x01G\x01h\x01\x89\x01\xa9\x01\xca\x01\xeb\x01\x0c\x02-\x02M\x02n\x02\x8f\x02\xb0\x02\xd0\x02\xf1\x02\x12\x033\x03S\x03t\x03\x95\x03\xb6\x03\xd6 ...(省略)'
 
@@ -246,7 +253,7 @@ sampling_data type : <class 'numpy.ndarray'>
 
 最終的なコードは、こんな感じ。
 
-```python:WAVファイルを読み込み、サンプリングレートと時系列データを取得
+```python
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -277,7 +284,7 @@ ax.set_ylabel('amplitude')
 fig.show()
 ```
 
-```:出力結果
+```
 sampling_rate = 1000 [Hz]
 sampling_data = [     0     32     65 ... -17744 -17772 -17799]
 ```

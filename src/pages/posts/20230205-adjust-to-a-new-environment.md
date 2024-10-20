@@ -1,12 +1,13 @@
 ---
-title: '新しい職場に馴染むには、まず〇〇〇〇すべし'
-excerpt: '私の離島での滞在経験によって裏付けられた、新しい人間関係を構築するための私的ベストプラクティスをシェアする。'
-coverImagePath: '/assets/blog/20230205-adjust-to-a-new-environment/cover.webp'
-coverImagePhotographer: 'Emre'
-coverImageSrcUrl: 'https://unsplash.com/photos/153_VPk1NZQ'
-date: '2023-02-05'
-category: '人間関係'
+title: 新しい職場に馴染むには、まず〇〇〇〇すべし
+description: 私の離島での滞在経験で発見した、新しい人間関係を構築するための私的ベストプラクティスをシェアする。
+date: 2023-02-05
+tag: キャリア, 人間関係
 ---
+
+![cover image from Unsplash](/assets/blog/20230205-adjust-to-a-new-environment/cover.webp)
+
+Photo by [Emre](https://unsplash.com/photos/153_VPk1NZQ) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 

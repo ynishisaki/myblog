@@ -1,12 +1,13 @@
 ---
-title: '【JetBrains製】プロジェクト管理ツールYouTrackが低コスト・多機能でおすすめ'
-excerpt: 'JetBrains製プロジェクト管理ツールYouTrackを紹介する。'
-coverImagePath: '/assets/blog/20240312-introduce-youtrack/cover.webp'
-coverImagePhotographer: 'Lala Azizli'
-coverImageSrcUrl: 'https://unsplash.com/photos/people-using-laptop-tfNyTfJpKvc'
-date: '2024-03-12'
-category: 'マネジメント'
+title: 【JetBrains製】プロジェクト管理ツールYouTrackが低コスト・多機能でおすすめ
+description: JetBrains製プロジェクト管理ツールYouTrackを紹介する。
+date: 2024-03-12
+tag: マネジメント, ツール紹介
 ---
+
+![cover image from Unsplash](/assets/blog/20240312-introduce-youtrack/cover.webp)
+
+Photo by [Lala Azizli](https://unsplash.com/photos/people-using-laptop-tfNyTfJpKvc) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -27,7 +28,7 @@ YouTrackについてはあんまり日本語の解説記事を見かけないが
 有料プランも安く、１ユーザにつき約500円/月（2024年3月現在）である。
 公式サイトで価格の計算ができるので、以下のURLから確認してみてほしい。
 
-https://www.jetbrains.com/youtrack/buy/
+- [Buy YouTrack: Pricing and Licensing, More Users](https://www.jetbrains.com/youtrack/buy/)
 
 ## おすすめポイントその２：ガントチャート機能
 

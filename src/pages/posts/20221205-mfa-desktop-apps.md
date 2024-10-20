@@ -1,12 +1,13 @@
 ---
-title: 'デスクトップ版 MFA 認証アプリを試してみる（Authy, Authenticator）'
-excerpt: 'AWS の多要素認証（MFA）用にデスクトップ版アプリをいくつか発見したので、試してみる。'
-coverImagePath: '/assets/blog/20221205-mfa-desktop-apps/cover.webp'
-coverImagePhotographer: 'Christina @ wocintechchat.com'
-coverImageSrcUrl: 'https://unsplash.com/photos/UTw3j_aoIKM'
-date: '2022-12-05'
-category: 'MFA'
+title: デスクトップ版 MFA 認証アプリを試してみる（Authy, Authenticator）
+description: AWS の多要素認証（MFA）用にデスクトップ版アプリをいくつか発見したので、試してみる。
+date: 2022-12-05
+tag: MFA, ツール紹介
 ---
+
+![cover image from Unsplash](/assets/blog/20221205-mfa-desktop-apps/cover.webp)
+
+Photo by [Christina @ wocintechchat.com](https://unsplash.com/photos/UTw3j_aoIKM) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 

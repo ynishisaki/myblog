@@ -1,12 +1,11 @@
 ---
-title: '【MapLibre GL JS】地図タイルを白から黒までのグレースケール（モノクロ）で表示する'
-excerpt: 'MapLibre GL JSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。'
-coverImagePath: '/assets/blog/20240901-maplibregljs-monochrome_map/cover.webp'
-coverImagePhotographer: ''
-coverImageSrcUrl: ''
-date: '2024-09-01'
-category: 'MapLibre GL JS'
+title: 【MapLibre GL JS】地図タイルを白から黒までのグレースケール（モノクロ）で表示する
+description: MapLibre GL JSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。
+date: 2024-09-01
+tag: MapLibre GL JS
 ---
+
+![cover image](/assets/blog/20240901-maplibregljs-monochrome_map/cover.webp)
 
 ## 本記事について
 
@@ -18,11 +17,12 @@ MapLibre GL JSを使って、地理院タイルの標準地図をグレースケ
 `raster-saturation`プロパティは、-1~1の範囲で指定することができ、-1だと彩度が0、すなわちグレースケールになる。
 
 `raster-saturation`プロパティの詳細は、以下のリンクを参照。  
-https://maplibre.org/maplibre-style-spec/layers/#raster-saturation
+
+- [Layers - MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/layers/#raster-saturation)
 
 ### サンプルコード
 
-```html:index.html
+```html
 <!DOCTYPE html>
 <html lang="ja">
  <head>

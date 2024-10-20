@@ -1,24 +1,25 @@
 ---
-title: '退職は失敗ではない vol.1 退職時に上司からかけられた言葉'
-excerpt: '退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験からいくつか紹介する。'
-coverImagePath: '/assets/blog/20230407-would-retirement-be-a-mistake/cover.webp'
-coverImagePhotographer: 'Vlad Sargu'
-coverImageSrcUrl: 'https://unsplash.com/photos/ItphH2lGzuI'
-date: '2023-04-07'
-category: 'キャリア'
+title: 退職は失敗ではない - 退職時に上司からかけられた言葉
+description: 退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験から紹介する。
+date: 2023-04-07
+tag: キャリア
 ---
+
+![cover image from Unsplash](/assets/blog/20230407-would-retirement-be-a-mistake/cover.webp)
+
+Photo by [Vlad Sargu](https://unsplash.com/photos/ItphH2lGzuI) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
 今年の就活生は、転職を意識している割合が高いという。
 
-https://www.nikkei.com/article/DGXZQOUC20BPL0Q3A220C2000000/
+- [就活生調査、半数が転職視野　「終身雇用信頼できず」　就活探偵団 - 日本経済新聞](https://www.nikkei.com/article/DGXZQOUC20BPL0Q3A220C2000000/)
 
 転職をポジティブに捉えるような風潮が強まりつつあるように感じる。
 とはいえ、いざ自分の目の前の仕事を手放そうと思うと怖くて行動を起こせない人も多いのではないだろうか。
 そこで、退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験からいくつか紹介していこうと思う。
 
-## vol1. 新卒で入社した会社を退職する時に、直属の上司からかけられた言葉
+## 新卒で入社した会社を退職する時に、直属の上司からかけられた言葉
 
 会社に退職届を出した際、いろんな人から「辞められたら困る」と言われたが、直属の上司だけは退職することを報告した際に「〇〇なら、どこに行っても十分やっていけるよ。」とだけ言ってくれた。
 

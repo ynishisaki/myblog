@@ -1,12 +1,13 @@
 ---
-title: 'ブログ用ドメインを取得したよ'
-excerpt: 'ブログを開設して、2か月ほど経過した。自分のブログに愛着が湧いてきたため、ブログ用のドメインを取得することにした。'
-coverImagePath: '/assets/blog/20220502-get-domain/cover.webp'
-coverImagePhotographer: 'Irina Blok'
-coverImageSrcUrl: 'https://unsplash.com/photos/RLR9AfOd5hw'
-date: '2022-05-02'
-category: 'Vercel'
+title: ブログ用ドメインを取得したよ
+description: ブログを開設して、2か月ほど経過した。自分のブログに愛着が湧いてきたため、ブログ用のドメインを取得することにした。
+date: 2022-05-02
+tag: 個人開発
 ---
+
+![cover image from Unsplash](/assets/blog/20220502-get-domain/cover.webp)
+
+Photo by [Irina Blok](https://unsplash.com/photos/RLR9AfOd5hw) on [Unsplash](https://unsplash.com/)
 
 ## 本記事の内容
 

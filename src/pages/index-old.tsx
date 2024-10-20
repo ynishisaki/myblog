@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../components/common/Header";
-import MiniFooter from "../components/common/MiniFooter";
+import MiniFooter from "../components/common/Footer";
 import { VirtualPosts } from "../components/home/VirtualPosts";
 import { getAllPosts } from "../lib/api";
 import { COLORS } from "../styles/colors";

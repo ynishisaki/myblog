@@ -1,12 +1,13 @@
 ---
-title: '【23年7月受験】AWS認定試験（テストセンター受験）の流れ'
-excerpt: 'AWS 認定試験をテストセンターにて受験したので、事前準備から当日までの流れについて実体験を元に紹介する。'
-coverImagePath: '/assets/blog/20230722-aws-training-and-certification-testcenter/cover.webp'
-coverImagePhotographer: 'Parrish Freeman'
-coverImageSrcUrl: 'https://unsplash.com/photos/0d-z8cJGIR4'
-date: '2023-07-22'
-category: 'AWS'
+title: 【23年7月受験】AWS認定試験（テストセンター受験）の流れ
+description: AWS 認定試験をテストセンターにて受験したので、事前準備から当日までの流れについて実体験を元に紹介する。
+date: 2023-07-22
+tag: AWS
 ---
+
+![cover image from Unsplash](/assets/blog/20230722-aws-training-and-certification-testcenter/cover.webp)
+
+Photo by [Parrish Freeman](https://unsplash.com/photos/0d-z8cJGIR4) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 

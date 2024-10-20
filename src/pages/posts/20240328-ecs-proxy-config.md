@@ -1,19 +1,20 @@
 ---
-title: 'AWS ECSをプロキシ経由でネットワーク接続する'
-excerpt: 'ECSからプロキシ経由でインターネットに接続する方法について、AWS公式ガイドを元に大まかな流れと注意点をまとめる。'
-coverImagePath: '/assets/blog/20240328-ecs-proxy-config/cover.webp'
-coverImagePhotographer: 'Wolfgang Hasselmann'
-coverImageSrcUrl: 'https://unsplash.com/photos/a-white-and-yellow-flower-in-a-pond-of-water-lilies-C_p73VZemp0'
-date: '2024-03-27'
-category: 'AWS'
+title: AWS ECSをプロキシ経由でネットワーク接続する
+description: ECSからプロキシ経由でインターネットに接続する方法について、AWS公式ガイドを元に大まかな流れと注意点をまとめる。
+date: 2024-03-27
+tag: AWS
 ---
+
+![cover image from Unsplash](/assets/blog/20240328-ecs-proxy-config/cover.webp)
+
+Photo by [Wolfgang Hasselmann](https://unsplash.com/photos/a-white-and-yellow-flower-in-a-pond-of-water-lilies-C_p73VZemp0) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
-ECSからプロキシ経由でインターネットに接続する方法について、AWS公式ガイドを元に大まかな流れと注意点をまとめる。
+ECSからプロキシ経由でインターネットに接続する方法について、下記のAWS公式ガイドを元に大まかな流れと注意点をまとめる。
 VPCエンドポイントやNATゲートウェイは使用しない。
 
-https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/http_proxy_config.html
+- [Amazon ECS Linux コンテナインスタンスに HTTP プロキシを使用する - Amazon Elastic Container Service](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/http_proxy_config.html)
 
 ## 作業の流れ
 
@@ -28,7 +29,7 @@ EC2インスタンスにプロキシ設定を追加し、ECS上でコンテナ�
    起動時のユーザーデータ設定にECSで利用するための設定とプロキシ設定を加える。
    あるいはインスタンス起動後に手動で設定してもよい。
 
-https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/launch_container_instance.html
+   [Amazon ECS Linux コンテナインスタンスの起動 - Amazon Elastic Container Service](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/launch_container_instance.html)
 
 3. ECSでコンテナインスタンスが利用可能であることを確認する
    クラスターのコンテナインスタンスタブで登録されていることを確認する。
@@ -46,8 +47,8 @@ https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/launch_contain
 - EC2インスタンスの作成は、AWSが用意するAmazon ECS 対応 AMIを利用するのが公式ガイドで紹介されている方法で、この通りにやるのが一番簡単。
   というのも、ECSコンテナインスタンスとして利用するには、EC2にAmazon ECSコンテナエージェントのインストールが必要なのだが、Amazon ECS 対応 AMIはECSコンテナエージェントがインストール済みだからである。
   上記AMI以外からEC2を立ち上げる場合は、ECSコンテナエージェントのインストール作業が別途必要となる。
-
-https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/ecs-agent-install.html
+  
+  [Amazon ECS コンテナエージェントをインストールする - Amazon Elastic Container Service](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/ecs-agent-install.html)
 
 - AWS SDKsを使用している場合、コード内にプロキシ設定を追加する必要がある。
   例えばAWS SDK for Python (Boto3)の場合、以下のようにプロキシ設定を追加することができる。

@@ -1,12 +1,11 @@
 ---
-title: '【CesiumJS】地図タイルを白から黒までのグレースケール（モノクロ）で表示する'
-excerpt: 'CesiumJSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。'
-coverImagePath: '/assets/blog/20240902-cesiumjs-monochrome_map/cover.webp'
-coverImagePhotographer: ''
-coverImageSrcUrl: ''
-date: '2024-09-02'
-category: 'CesiumJS'
+title: 【CesiumJS】地図タイルを白から黒までのグレースケール（モノクロ）で表示する
+description: CesiumJSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。
+date: 2024-09-02
+tag: CesiumJS
 ---
+
+![cover image](/assets/blog/20240902-cesiumjs-monochrome_map/cover.webp)
 
 ## 本記事について
 
@@ -16,12 +15,13 @@ CesiumJSを使って、地理院タイルの標準地図をグレースケール
 
 `ImageryLayer`のオプションのうち、`saturation`を`-1`にすれば良い。
 
-`saturation`オプションの詳細は、以下のリンクを参照。  
-https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=imageryL#saturation
+`saturation`オプションの詳細は、以下のリンクを参照。
+
+- [ImageryLayer - Cesium Documentation](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=imageryL#saturation)
 
 ### サンプルコード
 
-```html:index.html
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -77,6 +77,5 @@ https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=imageryL
 
 ## 参考
 
-https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/
-
-https://community.cesium.com/t/converting-images-loaded-by-imageryprovider-into-grayscale-color/4164
+- [CesiumJS Quickstart – Cesium](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)
+- [Converting images loaded by imageryprovider into grayscale color - CesiumJS - Cesium Community](https://community.cesium.com/t/converting-images-loaded-by-imageryprovider-into-grayscale-color/4164)

@@ -1,12 +1,13 @@
 ---
-title: 'Next.jsでページごとの認証チェック・リダイレクトを実装する'
-excerpt: 'Next.jsのMiddlewareでページごとの認証チェック、リダイレクトを実装する方法を紹介する。'
-coverImagePath: '/assets/blog/20230503-nextjs-middleware-auth/cover.webp'
-coverImagePhotographer: 'Mysaell Armendariz'
-coverImageSrcUrl: 'https://unsplash.com/photos/IPheOySCW7A'
-date: '2023-05-03'
-category: 'Next.js'
+title: Next.jsでページごとの認証チェック・リダイレクトを実装する
+description: Next.jsのMiddlewareでページごとの認証チェック、リダイレクトを実装する方法を紹介する。
+date: 2023-05-03
+tag: Next.js
 ---
+
+![cover image from Unsplash](/assets/blog/20230503-nextjs-middleware-auth/cover.webp)
+
+Photo by [Mysaell Armendariz](https://unsplash.com/photos/IPheOySCW7A) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -22,13 +23,13 @@ category: 'Next.js'
 
 ### 参考
 
-https://nextjs.org/docs/advanced-features/middleware
+- [Routing: Middleware | Next.js](https://nextjs.org/docs/advanced-features/middleware)
 
 ## 基本実装
 
 Middleware が実行されたパスを確認するために、`console.log`を追加している。
 
-```ts:src/middleware.ts
+```ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { checkAuth } from "これは認証用の関数です";
@@ -59,7 +60,7 @@ export function middleware(request: NextRequest) {
 
 配列の中に、Middleware を実行したいパスを記述していけば良い。
 
-```ts:src/middleware.ts
+```ts
 export function middleware(request: NextRequest) {
   ...
 }
@@ -77,9 +78,10 @@ export const config = {
 &emsp;
 
 また、Next.js のドキュメントでは api と静的コンテンツを除外する正規表現が紹介されている。
-https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A
 
-```ts:middleware.ts
+- [Routing: Middleware | Next.js](https://nextjs.org/docs/advanced-features/middleware#:~:text=The%20matcher%20config%20allows%20full%20regex%20so%20matching%20like%20negative%20lookaheads%20or%20character%20matching%20is%20supported.%20An%20example%20of%20a%20negative%20lookahead%20to%20match%20all%20except%20specific%20paths%20can%20be%20seen%20here%3A)
+
+```ts
 // https://nextjs.org/docs/advanced-features/middleware より
 export const config = {
   matcher: [
@@ -101,7 +103,7 @@ export const config = {
 
 ## 完成形はこちら
 
-```ts:src/middleware.ts
+```ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { checkAuth } from "これは認証用の関数です";

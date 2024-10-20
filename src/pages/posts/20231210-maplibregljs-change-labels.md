@@ -1,12 +1,13 @@
 ---
-title: 'MapLibre GL JSのラベル表示の小技（単位をつける、数値の丸め）'
-excerpt: 'MapLibre GL JS のラベル表示において、よく使う式演算子を紹介する。'
-coverImagePath: '/assets/blog/20231210-maplibregljs-change-labels/cover.webp'
-coverImagePhotographer: 'Annie Williams'
-coverImageSrcUrl: 'https://unsplash.com/photos/traffic-signage-lvNUmFPev40'
-date: '2023-12-10'
-category: 'MapLibre GL JS'
+title: MapLibre GL JSのラベル表示の小技（単位をつける、数値の丸め）
+description: MapLibre GL JS のラベル表示において、よく使う式演算子を紹介する。
+date: 2023-12-10
+tag: MapLibre GL JS
 ---
+
+![cover image from Unsplash](/assets/blog/20231210-maplibregljs-change-labels/cover.webp)
+
+Photo by [Annie Williams](https://unsplash.com/photos/traffic-signage-lvNUmFPev40) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -19,7 +20,7 @@ MapLibre GL JS のラベル表示において、よく使う式演算子を紹�
 ラベルは`symbol`タイプのレイヤの`text-field`プロパティで設定できる。
 今回表示する値は、`source`に指定した geojson の`area`プロパティとした。
 
-```html:index.html
+```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -105,9 +106,9 @@ MapLibre GL JS のラベル表示において、よく使う式演算子を紹�
 `concat`演算子でラベルの末尾に単位をつけることができる。  
 `area`プロパティは数値だが、`concat`で自動的に文字列に変換され、他の文字列と結合される。
 
-https://maplibre.org/maplibre-style-spec/expressions/#concat
+- [Expressions - MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/expressions/#concat)
 
-```js:index.html
+```js
 // (省略)
 map.addLayer({
   id: "rectangle-label",
@@ -127,9 +128,9 @@ map.addLayer({
 `round`演算子で整数に丸めることができる。  
 丸めた後は`to-string`で文字列に変換する必要があるので注意。
 
-https://maplibre.org/maplibre-style-spec/expressions/#round
+- [Expressions - MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/expressions/#round)
 
-```js:index.html
+```js
 // (省略)
 map.addLayer({
   id: "rectangle-label",

@@ -1,12 +1,13 @@
 ---
-title: 'react-tableで表の特定列・行を固定する方法'
-excerpt: 'react-tableで、表をスクロールしつつヘッダー部分のみ固定する、または、表の左一列のみ固定する方法を紹介する。'
-coverImagePath: '/assets/blog/20220724-fixed-row-and-col-table/cover.webp'
-coverImagePhotographer: 'Mika Baumeister'
-coverImageSrcUrl: 'https://unsplash.com/photos/Wpnoqo2plFA'
-date: '2022-07-24'
-category: 'React'
+title: react-tableで表の特定列・行を固定する方法
+description: react-tableで、表をスクロールしつつヘッダー部分のみ固定する、または、表の左一列のみ固定する方法を紹介する。
+date: 2022-07-24
+tag: React
 ---
+
+![cover image from Unsplash](/assets/blog/20220724-fixed-row-and-col-table/cover.webp)
+
+Photo by [Mika Baumeister](https://unsplash.com/photos/Wpnoqo2plFA) on [Unsplash](https://unsplash.com/)
 
 ## 本記事の内容
 
@@ -17,20 +18,20 @@ react-table を使う際に、
 
 方法を紹介する。
 
-なお、列の固定には、react-table-sticky というライブラリを使用する方法もあるが、今回はライブラリを使用しない方法を紹介する。
-https://www.npmjs.com/package/react-table-sticky
+なお、列の固定には、[react-table-sticky](https://www.npmjs.com/package/react-table-sticky) というライブラリを使用する方法もあるが、今回はライブラリを使用しない方法を紹介する。
 
 ## 実装環境
 
 react-table 7.8.0
-https://www.npmjs.com/package/react-table
+
+- [react-table - npm](https://www.npmjs.com/package/react-table)
 
 ## ソースコード
 
 コードは、react-table 公式ドキュメントにある Exaples/Basic をそのまま使用した。
 ソースコードと CodeSandbox は、以下リンクからどうぞ。
 
-https://react-table-v7.tanstack.com/docs/examples/basic
+- [React TanStack Table Basic Example | TanStack Table Docs](https://react-table-v7.tanstack.com/docs/examples/basic)
 
 CodeSandbox で確認してみると、こんな感じ。
 ![Image from Gyazo](https://i.gyazo.com/4779a377bb6402237026f745b6ba1172.gif)_元のコード。(https://codesandbox.io/s/laughing-glade-hw5vwm?file=/src/App.js より。)_
@@ -210,7 +211,7 @@ CodeSandbox で確認してみると、こんな感じ。
 +     }
 ```
 
-## 参考サイト
+## 参考
 
-https://cpoint-lab.co.jp/article/202110/21158/
-https://css-tricks.com/a-table-with-both-a-sticky-header-and-a-sticky-first-column/
+- [【React】table 上の左複数列を固定する方法│株式会社シーポイントラボ](https://cpoint-lab.co.jp/article/202110/21158/)
+- [A Table With Both A Sticky Header And A Sticky First Column | CSS-Tricks](https://css-tricks.com/a-table-with-both-a-sticky-header-and-a-sticky-first-column/)

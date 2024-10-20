@@ -1,12 +1,13 @@
 ---
-title: '【BigQuery × GA4】連携データの確認とevent_timestampのフォーマット変換'
-excerpt: 'BigQuery にエクスポートしたデータの詳細の確認方法と、event_timestamp のフォーマットを変換する方法を紹介する。'
-coverImagePath: '/assets/blog/20221016-bigquery-ga4-timestamp/cover.webp'
-coverImagePhotographer: 'Henry & Co.'
-coverImageSrcUrl: 'https://unsplash.com/photos/pjJdOE2XBRU'
-date: '2022-10-16'
-category: 'BigQuery'
+title: 【BigQuery × GA4】連携データの確認とevent_timestampのフォーマット変換
+description: BigQuery にエクスポートしたデータの詳細の確認方法と、event_timestamp のフォーマットを変換する方法を紹介する。
+date: 2022-10-16
+tag: BigQuery
 ---
+
+![cover image from Unsplash](/assets/blog/20221016-bigquery-ga4-timestamp/cover.webp)
+
+Photo by [Henry & Co.](https://unsplash.com/photos/pjJdOE2XBRU) on [Unsplash](https://unsplash.com/)
 
 ## 本記事について
 
@@ -18,7 +19,8 @@ Google アナリティクス は BigQuery と連携することで、集計前�
 ## BigQuery と Google アナリティクス 4 の連携方法
 
 これの手順通りにやるのが一番よい。
-https://support.google.com/analytics/answer/3416092#zippy=%2C%E3%81%93%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E5%86%85%E5%AE%B9
+
+- [BigQuery Export を設定する - アナリティクス ヘルプ](https://support.google.com/analytics/answer/3416092#zippy=%2C%E3%81%93%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E5%86%85%E5%AE%B9)
 
 他にも連携方法を丁寧に解説した日本語記事はいっぱいあるので、そちらも参考にされるとよい。
 
@@ -38,7 +40,7 @@ https://support.google.com/analytics/answer/3416092#zippy=%2C%E3%81%93%E3%81%AE%
 
 > 毎日のエクスポート オプションが有効になっている場合、各データセット内に events_YYYYMMDD という名前のテーブルが毎日作成されます。
 >
-> [GA4] BigQuery Export スキーマ - アナリティクス ヘルプ(https://support.google.com/analytics/answer/7029846?hl=ja )より
+> [GA4 BigQuery Export スキーマ - アナリティクス ヘルプ](https://support.google.com/analytics/answer/7029846?hl=ja )より
 
 テーブル名に(4)とついているが、これは 4 日分のテーブルが保存されているからである。
 
@@ -59,15 +61,17 @@ SQL 処理の手始めに event_timestamp のフォーマット変換を行う�
 今回は、２種類のフォーマット変換を紹介する。
 一つめは、マイクロ秒精度が必要な場合。
 `TIMESTAMP_MICROS` で、 INTEGER からマイクロ秒精度の TIMESTAMP を返す。
-https://cloud.google.com/bigquery/docs/reference/standard-sql/timestamp_functions?hl=ja#timestamp_micros
+
+- [Timestamp functions  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/reference/standard-sql/timestamp_functions?hl=ja#timestamp_micros)
 
 二つめは、年月日のみ欲しい場合。
 `DATE`で TIMESTAMP から DATE を抽出すればよい。
-https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions?hl=ja#date
+
+- [Date functions  |  BigQuery  |  Google Cloud](https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions?hl=ja#date)
 
 ## 実装例
 
-```SQL:event_timestampのフォーマット変換
+```sql
 SELECT
   event_timestamp,
   TIMESTAMP_MICROS(event_timestamp) AS event_timestamp_value,
