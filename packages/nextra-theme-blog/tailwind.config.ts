@@ -1,7 +1,7 @@
-import typography from '@tailwindcss/typography'
-import type { Config } from 'tailwindcss'
-import colors from 'tailwindcss/colors'
-import docsConfig from '../nextra-theme-docs/tailwind.config'
+import typography from "@tailwindcss/typography";
+import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
+import docsConfig from "../nextra-theme-docs/tailwind.config";
 
 export default {
   prefix: docsConfig.prefix,
@@ -9,9 +9,9 @@ export default {
   theme: {
     colors: {
       ...docsConfig.theme.colors,
-      primary: colors.blue
-    }
+      primary: colors.blue,
+    },
   },
   plugins: [typography],
-  darkMode: docsConfig.darkMode
-} satisfies Config
+  darkMode: docsConfig.darkMode,
+} satisfies Config;
