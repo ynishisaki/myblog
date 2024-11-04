@@ -49,8 +49,7 @@ export const rehypeParseCodeMeta: Plugin<
   ast => {
     visit(ast, { tagName: 'pre' }, (node: PreElement) => {
       const [codeEl] = node.children as Element[]
-      // @ts-expect-error fixme
-      const { meta = '' } = codeEl.data || {}
+      const { meta = '' } = (codeEl.data || {}) as { meta?: string }
 
       node.__filename = meta.match(CODE_BLOCK_FILENAME_REGEX)?.[1]
       node.properties['data-filename'] = node.__filename

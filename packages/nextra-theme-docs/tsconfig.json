@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "es2016",
     "module": "ESNext",
     "declaration": true,
     "noEmit": true,
@@ -8,13 +8,9 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "lib": ["es2023", "dom"],
     "moduleResolution": "node",
-    "types": ["vitest/globals"],
-    "allowImportingTsExtensions": /* for tests */ true,
-    "paths": {
-      "unified": ["./node_modules/unified"]
-    },
+    "lib": ["ESNext", "DOM"],
+    "types": ["vitest/globals"]
   },
   "exclude": ["dist"]
 }

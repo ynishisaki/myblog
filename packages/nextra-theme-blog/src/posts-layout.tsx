@@ -1,36 +1,36 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import type { ReactElement } from "react";
-import { useBlogContext } from "./blog-context";
-import { collectPostsAndNavs } from "./utils/collect";
-import getTags from "./utils/get-tags";
+import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import type { ReactElement } from 'react'
+import { useBlogContext } from './blog-context'
+import { collectPostsAndNavs } from './utils/collect'
+import getTags from './utils/get-tags'
 
 export function PostsLayout(): ReactElement {
-  const { config, opts } = useBlogContext();
-  const { posts } = collectPostsAndNavs({ config, opts });
-  const router = useRouter();
-  const { type } = opts.frontMatter;
-  const tagName = type === "tag" ? router.query.tag : null;
+  const { config, opts } = useBlogContext()
+  const { posts } = collectPostsAndNavs({ config, opts })
+  const router = useRouter()
+  const { type } = opts.frontMatter
+  const tagName = type === 'tag' ? router.query.tag : null
 
   const postList = posts.map((post, index) => {
     if (tagName) {
-      const tags = getTags(post);
+      const tags = getTags(post)
       if (!Array.isArray(tagName) && !tags.includes(tagName)) {
-        return null;
+        return null
       }
-    } else if (type === "tag") {
-      return null;
+    } else if (type === 'tag') {
+      return null
     }
 
-    const postName = post.route.split("/").pop();
-    const coverImagePath = `/assets/blog/${postName}/cover.webp`;
+    const postName = post.route.split('/').pop()
+    const coverImagePath = `/assets/blog/${postName}/cover.webp`
 
-    const postTitle = post.frontMatter?.title || post.name;
+    const postTitle = post.frontMatter?.title || post.name
     const date: Date | null = post.frontMatter?.date
       ? new Date(post.frontMatter.date)
-      : null;
-    const description = post.frontMatter?.description;
+      : null
+    const description = post.frontMatter?.description
 
     return (
       <div key={post.route}>
@@ -56,12 +56,12 @@ export function PostsLayout(): ReactElement {
                   dateTime={date.toISOString()}
                 >
                   {date
-                    .toLocaleDateString("ja-JP", {
-                      year: "numeric",
-                      month: "2-digit",
-                      day: "2-digit",
+                    .toLocaleDateString('ja-JP', {
+                      year: 'numeric',
+                      month: '2-digit',
+                      day: '2-digit'
                     })
-                    .replace(/\//g, "-")}
+                    .replace(/\//g, '-')}
                 </time>
               )}
               {description && (
@@ -78,7 +78,7 @@ export function PostsLayout(): ReactElement {
           </article>
         </Link>
       </div>
-    );
-  });
-  return <>{postList}</>;
+    )
+  })
+  return <>{postList}</>
 }

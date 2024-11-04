@@ -40,5 +40,8 @@ yarn-error.log*
 
 # packages
 packages/*/node_modules
+packages/*/dist
+packages/*/.next
 .next
 dist
+.turbo
