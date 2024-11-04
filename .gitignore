@@ -37,3 +37,11 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# packages
+packages/*/node_modules
+packages/*/dist
+packages/*/.next
+.next
+dist
+.turbo

@@ -1,0 +1,172 @@
+{
+  "name": "nextra",
+  "version": "3.0.4",
+  "type": "module",
+  "description": "Next.js and MDX based site generator.",
+  "repository": "https://github.com/shuding/nextra",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./dist/server/index.js",
+    "./loader": "./loader.cjs",
+    "./components": {
+      "import": "./dist/client/components/index.js",
+      "types": "./dist/client/components/index.d.ts"
+    },
+    "./remark-plugins": {
+      "import": "./dist/server/remark-plugins/index.js",
+      "types": "./dist/server/remark-plugins/index.d.ts"
+    },
+    "./hooks": {
+      "import": "./dist/client/hooks/index.js",
+      "types": "./dist/client/hooks/index.d.ts"
+    },
+    "./icons": {
+      "import": "./dist/client/icons/index.js",
+      "types": "./dist/client/icons/index.d.ts"
+    },
+    "./compile": {
+      "import": "./dist/server/compile.js",
+      "types": "./dist/server/compile.d.ts"
+    },
+    "./remote": {
+      "import": "./dist/server/remote.js",
+      "types": "./dist/server/remote.d.ts"
+    },
+    "./schemas": {
+      "import": "./dist/server/schemas.js",
+      "types": "./dist/server/schemas.d.ts"
+    },
+    "./fetch-filepaths-from-github": {
+      "import": "./dist/server/fetch-filepaths-from-github.js",
+      "types": "./dist/server/fetch-filepaths-from-github.d.ts"
+    },
+    "./page-map-dynamic": {
+      "import": "./dist/server/page-map-dynamic.js",
+      "types": "./dist/server/page-map-dynamic.d.ts"
+    },
+    "./*": {
+      "import": "./dist/client/*.js",
+      "types": "./dist/client/*.d.ts"
+    }
+  },
+  "types": "./dist/server/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "compile": [
+        "./dist/server/compile.d.ts"
+      ],
+      "remark-plugins": [
+        "./dist/server/remark-plugins/index.d.ts"
+      ],
+      "remote": [
+        "./dist/server/remote.d.ts"
+      ],
+      "fetch-filepaths-from-github": [
+        "./dist/server/fetch-filepaths-from-github.d.ts"
+      ],
+      "schemas": [
+        "./dist/server/schemas.d.ts"
+      ],
+      "catch-all": [
+        "./dist/client/catch-all.d.ts"
+      ],
+      "context": [
+        "./dist/client/context.d.ts"
+      ],
+      "icons": [
+        "./dist/client/icons/index.d.ts"
+      ],
+      "components": [
+        "./dist/client/components/index.d.ts"
+      ],
+      "hooks": [
+        "./dist/client/hooks/index.d.ts"
+      ],
+      "mdx": [
+        "./dist/client/mdx.d.ts"
+      ],
+      "remove-links": [
+        "./dist/client/remove-links.d.ts"
+      ],
+      "normalize-pages": [
+        "./dist/client/normalize-pages.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist/*",
+    "loader.cjs",
+    "styles/*"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf ./dist ./style.css",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm build",
+    "test": "vitest run",
+    "types": "tsup --dts-only",
+    "types:check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@mdx-js/mdx": "3.0.1",
+    "@mdx-js/react": "3.0.1",
+    "@napi-rs/simple-git": "^0.1.9",
+    "@shikijs/twoslash": "^1.0.0",
+    "@theguild/remark-mermaid": "^0.1.2",
+    "@theguild/remark-npm2yarn": "^0.3.2",
+    "better-react-mathjax": "^2.0.3",
+    "clsx": "^2.0.0",
+    "estree-util-to-js": "^2.0.0",
+    "estree-util-value-to-estree": "^3.0.1",
+    "github-slugger": "^2.0.0",
+    "graceful-fs": "^4.2.11",
+    "gray-matter": "^4.0.3",
+    "hast-util-to-estree": "^3.1.0",
+    "katex": "^0.16.9",
+    "p-limit": "^6.0.0",
+    "rehype-katex": "^7.0.0",
+    "rehype-pretty-code": "0.14.0",
+    "rehype-raw": "^7.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "remark-reading-time": "^2.0.1",
+    "remark-smartypants": "^3.0.0",
+    "shiki": "^1.0.0",
+    "slash": "^5.1.0",
+    "title": "^3.5.3",
+    "unist-util-remove": "^4.0.0",
+    "unist-util-visit": "^5.0.0",
+    "yaml": "^2.3.2",
+    "zod": "^3.22.3",
+    "zod-validation-error": "^3.0.0"
+  },
+  "devDependencies": {
+    "@svgr/babel-plugin-remove-jsx-attribute": "^8.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/estree": "1.0.5",
+    "@types/graceful-fs": "^4.1.9",
+    "@types/hast": "^3.0.4",
+    "@types/mdast": "^4.0.4",
+    "@types/react": "^18.3.3",
+    "@types/webpack": "^5.28.5",
+    "@vitejs/plugin-react": "^4.3.1",
+    "esbuild-plugin-svgr": "^2.1.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "unified": "^11.0.5",
+    "vitest": "^2.0.4"
+  },
+  "sideEffects": false
+}
