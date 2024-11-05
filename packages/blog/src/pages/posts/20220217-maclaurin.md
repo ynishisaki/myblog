@@ -3,6 +3,7 @@ title: Pythonではじめてのマクローリン展開
 description: Pythonのsympyを用い、指数関数$f(x)=e^{x}$のマクローリン展開を計算する。
 date: 2022-02-17
 tag: Python
+slug: 20220217-maclaurin
 ---
 
 ![cover image from Unsplash](/assets/blog/20220217-maclaurin/cover.webp)
@@ -35,7 +36,7 @@ Symbol について
 series（級数展開）について  
 [Calculus - SymPy 1.14.dev documentation](https://docs.sympy.org/dev/tutorial/calculus.html#series-expansion)
 
-### コード
+### コード1
 
 ```python
 from sympy import *
@@ -49,9 +50,9 @@ print(maclaurin)
 print(maclaurin.removeO())
 ```
 
-### 出力結果
+### 出力結果1
 
-```
+```txt
 1 + x + x**2/2 + x**3/6 + x**4/24 + O(x**5)
 x**4/24 + x**3/6 + x**2/2 + x + 1
 ```
@@ -63,7 +64,7 @@ O(x\*\*5)は、5 次以降の剰余項であり、.remove()で取り除くこと
 
 上記の計算結果が$f(x)=e^{x}$の近似になっているか確かめるために、numpy.exp()による計算結果も同一グラフ上にプロットする。
 
-### コード
+### コード2
 
 ```python
 from sympy import *
@@ -91,14 +92,14 @@ plt.legend()
 plt.show()
 ```
 
-### 出力結果
+### 出力結果2
 
 第 10 項(n=10)までマクローリン展開した結果を以下に示す。
-![](https://storage.googleapis.com/zenn-user-upload/f467775e7619-20211218.jpeg)
+![第 10 項(n=10)までマクローリン展開した結果](https://storage.googleapis.com/zenn-user-upload/f467775e7619-20211218.jpeg)
 
 コード内の変数 n を変えることで、より$f(x)=e^{x}$に近似した曲線グラフを得ることができる。
 例として、第 50 項(n=50)までマクローリン展開した結果を以下に示す。
-![](https://storage.googleapis.com/zenn-user-upload/ad0bfbd6161a-20211218.jpeg)
+![第 50 項(n=50)までマクローリン展開した結果](https://storage.googleapis.com/zenn-user-upload/ad0bfbd6161a-20211218.jpeg)
 
 ## あとがき
 

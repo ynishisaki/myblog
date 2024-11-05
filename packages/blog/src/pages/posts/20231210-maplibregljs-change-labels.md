@@ -3,6 +3,7 @@ title: MapLibre GL JSのラベル表示の小技（単位をつける、数値�
 description: MapLibre GL JS のラベル表示において、よく使う式演算子を紹介する。
 date: 2023-12-10
 tag: MapLibre GL JS
+slug: 20231210-maplibregljs-change-labels
 ---
 
 ![cover image from Unsplash](/assets/blog/20231210-maplibregljs-change-labels/cover.webp)

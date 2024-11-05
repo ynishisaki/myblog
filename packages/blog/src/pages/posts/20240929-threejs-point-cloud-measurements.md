@@ -3,6 +3,7 @@ title: 【Three.js + Vue.js】点群データの距離を計測する
 description: Three.jsとVue.jsを使って、点群データの距離を計測するサンプルコードを紹介する。
 date: 2024-09-29
 tag: Vue.js, Three.js, Point Cloud
+slug: 20240929-threejs-point-cloud-measurements
 ---
 
 ![cover image from Unsplash](/assets/blog/20240929-threejs-point-cloud-measurements/cover.webp)

@@ -3,6 +3,7 @@ title: ブログ用ドメインを取得したよ
 description: ブログを開設して、2か月ほど経過した。自分のブログに愛着が湧いてきたため、ブログ用のドメインを取得することにした。
 date: 2022-05-02
 tag: 個人開発
+slug: 20220502-get-domain
 ---
 
 ![cover image from Unsplash](/assets/blog/20220502-get-domain/cover.webp)

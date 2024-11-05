@@ -3,6 +3,7 @@ title: 数式を使わず，相互相関を理解しよう（Pythonソースコ�
 description: 本記事は，ややこしい（？）数式は使わず様々な波形を図示することで，相互相関のイメージを持ってもらうことを目指している。
 date: 2022-09-01
 tag: Python
+slug: 20220901-cross-correlation
 ---
 
 ![cover image from Unsplash](/assets/blog/20220901-cross-correlation/cover.webp)

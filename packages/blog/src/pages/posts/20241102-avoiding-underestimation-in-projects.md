@@ -3,6 +3,7 @@ title: 見積もりの過小算出を防ぎ、精度を高めるためのポイ�
 description: 私が見積もりの際に気をつけている、タスクの細分化と相対評価の活用について紹介する。
 date: 2024-11-02
 tag: 開発プロセス
+slug: 20241102-avoiding-underestimation-in-projects
 ---
 
 ![cover image from Unsplash](/assets/blog/20241102-avoiding-underestimation-in-projects/cover.webp)

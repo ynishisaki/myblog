@@ -3,6 +3,7 @@ title: プライバシーポリシー/免責事項
 description: 
 date: 2022-02-15
 tag: その他
+slug: 20220215-privacy-policy
 draft: true
 ---
 

@@ -3,6 +3,7 @@ title: GitHubで毎日草を生やす習慣を身に着けたいなら、欠か�
 description: 毎日草を生やす習慣を身につけるために、私が重要だと考えている「動機」について書いていく。
 date: 2023-04-02
 tag: GitHub
+slug: 20230402-contribute-everyday
 ---
 
 ![cover image from Unsplash](/assets/blog/20230402-contribute-everyday/cover.webp)

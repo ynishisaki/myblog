@@ -3,6 +3,7 @@ title: Pythonでバイナリファイルを読んでみよう（前編）
 description: Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。
 date: 2022-06-07
 tag: Python
+slug: 20220607-read-binary-file-py-1
 ---
 
 ![cover image from Unsplash](/assets/blog/20220607-read-binary-file-py-1/cover.webp)
@@ -68,7 +69,7 @@ fig.show()
 sf.write('new_file.wav', ft, sampling_rate)
 ```
 
-```
+```txt
 data = [ 0.          0.00097656  0.00198364 ... -0.54150391 -0.5423584 -0.54318237]
 sampling rate = 1000
 ```
@@ -127,7 +128,7 @@ print(f'data 13-16 byte = {data_all[12:16]}')
 print(f'data 37-40 byte = {data_all[36:40]}')
 ```
 
-```
+```txt
 data type: <class 'bytes'>
 data all = b'RIFFDN\x00\x00WAVEfmt \x10\x00\x00\x00\x01\x00\x01\x00\xe8\x03\x00\x00\xd0\x07\x00\x00\x02\x00\x10\x00data N\x00\x00\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\x06\x01&\x01G\x01h\x01\x89\x01\xa9\x01\xca ...(省略)'
 
@@ -195,7 +196,7 @@ print(f'data 13-16 byte = {data_13_16_byte}')
 print(f'data 37-40 byte = {data_37_40_byte}')
 ```
 
-```
+```txt
 data 0-4 byte = b'RIFF'
 data 8-12 byte = b'WAVE'
 data 12-16 byte = b'fmt '

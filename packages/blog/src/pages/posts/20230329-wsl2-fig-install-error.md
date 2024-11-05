@@ -3,6 +3,7 @@ title: WSL2でのFigインストール時に"error Unsupported init system <unkn
 description: WSL2でのFigインストール時のエラーを解消する方法を紹介する。
 date: 2023-03-29
 tag: WSL
+slug: 20230329-wsl2-fig-install-error
 ---
 
 ![cover image from Unsplash](/assets/blog/20230329-wsl2-fig-install-error/cover.webp)

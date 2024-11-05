@@ -3,6 +3,7 @@ title: Caddy v2でSPAとAPIサーバを同時に立ち上げる
 description: WebサーバCaddyを用いたSPAの配信とAPIサーバのリバースプロキシの設定方法を紹介する。
 date: 2023-11-23
 tag: Caddy
+slug: 20231123-caddyfile-settings
 ---
 
 ![cover image from Unsplash](/assets/blog/20231123-caddyfile-settings/cover.webp)

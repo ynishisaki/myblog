@@ -3,6 +3,7 @@ title: 【BigQuery × GA4】連携データの確認とevent_timestampのフォ�
 description: BigQuery にエクスポートしたデータの詳細の確認方法と、event_timestamp のフォーマットを変換する方法を紹介する。
 date: 2022-10-16
 tag: BigQuery
+slug: 20221016-bigquery-ga4-timestamp
 ---
 
 ![cover image from Unsplash](/assets/blog/20221016-bigquery-ga4-timestamp/cover.webp)
@@ -28,7 +29,7 @@ Google アナリティクス は BigQuery と連携することで、集計前�
 
 連携が成功すると、BigQuery のプロジェクト内に、データセットとテーブルが自動追加される。
 
-![](/assets/blog/20221016-bigquery-ga4-timestamp/page0.svg)_BigQuery 操作画面。_
+![BigQuery操作画面](/assets/blog/20221016-bigquery-ga4-timestamp/page0.svg)_BigQuery操作画面。_
 
 データセットとテーブルの名前は以下のように決定される。
 
@@ -44,19 +45,19 @@ Google アナリティクス は BigQuery と連携することで、集計前�
 
 テーブル名に(4)とついているが、これは 4 日分のテーブルが保存されているからである。
 
-![](/assets/blog/20221016-bigquery-ga4-timestamp/page1.svg)_BigQuery 操作画面より。_
+![BigQuery操作画面](/assets/blog/20221016-bigquery-ga4-timestamp/page1.svg)_BigQuery操作画面より。_
 
 テーブル名を選択すると、SCHEMA が開き、データ構造を確認することができる。
 
 日にちごとのテーブルの中身は、PREVIEW で表示することができる。便利。
-![](/assets/blog/20221016-bigquery-ga4-timestamp/page2.svg)_BigQuery 操作画面より。_
+![BigQuery操作画面](/assets/blog/20221016-bigquery-ga4-timestamp/page2.svg)_BigQuery操作画面より。_
 
 ## event_timestamp のフォーマットを変換する
 
 SQL 処理の手始めに event_timestamp のフォーマット変換を行う。
 まず、テーブル内の SCHEMA から event_timestamp が INTEGER であることが確認できる。
 
-![](/assets/blog/20221016-bigquery-ga4-timestamp/page4.svg)_BigQuery 操作画面より。_
+![BigQuery操作画面](/assets/blog/20221016-bigquery-ga4-timestamp/page4.svg)_BigQuery操作画面より。_
 
 今回は、２種類のフォーマット変換を紹介する。
 一つめは、マイクロ秒精度が必要な場合。

@@ -3,6 +3,7 @@ title: 【TypeScript, Python, Docker】VSCodeで簡単おすすめリンター�
 description: VSCodeで拡張機能と組み合わせて簡単に利用できるおすすめリンター・コードフォーマッターを紹介する。
 date: 2024-05-08
 tag: VSCode, TypeScript, Python, Docker
+slug: 20240508-vscode-linter-formatter
 ---
 
 

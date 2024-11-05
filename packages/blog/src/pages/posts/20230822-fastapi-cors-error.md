@@ -3,6 +3,7 @@ title: FastAPIでCORSの設定をしたにもかかわらずなおCORSエラー�
 description: FastAPI での CORS (Cross-Origbin Resource Sharing)の設定方法を紹介する。
 date: 2023-08-22
 tag: Python, FastAPI
+slug: 20230822-fastapi-cors-error
 ---
 
 ![cover image from Unsplash](/assets/blog/20230822-fastapi-cors-error/cover.webp)

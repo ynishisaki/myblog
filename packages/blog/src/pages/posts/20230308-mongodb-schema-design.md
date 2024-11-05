@@ -3,6 +3,7 @@ title: MongoDBのスキーマ設計入門
 description: MongoDB をはじめて触る人を対象としたMongoDB におけるドキュメントの構造とスキーマ設計の考え方。
 date: 2023-03-08
 tag: MongoDB
+slug: 20230308-mongodb-schema-design
 ---
 
 ![cover image from Unsplash](/assets/blog/20230308-mongodb-schema-design/cover.webp)

@@ -3,6 +3,7 @@ title: 【JetBrains製】プロジェクト管理ツールYouTrackが低コス�
 description: JetBrains製プロジェクト管理ツールYouTrackを紹介する。
 date: 2024-03-12
 tag: マネジメント, ツール紹介
+slug: 20240312-introduce-youtrack
 ---
 
 ![cover image from Unsplash](/assets/blog/20240312-introduce-youtrack/cover.webp)

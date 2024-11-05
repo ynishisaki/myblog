@@ -3,6 +3,7 @@ title: デスクトップ版 MFA 認証アプリを試してみる（Authy, Auth
 description: AWS の多要素認証（MFA）用にデスクトップ版アプリをいくつか発見したので、試してみる。
 date: 2022-12-05
 tag: MFA, ツール紹介
+slug: 20221205-mfa-desktop-apps
 ---
 
 ![cover image from Unsplash](/assets/blog/20221205-mfa-desktop-apps/cover.webp)
@@ -51,7 +52,7 @@ iPhone はもちろん、Apple Watch でも使用できるらしい。すごい�
 Authy にはない特徴として、Chrome や Firefox などに対応したブラウザ拡張版もあり、
 しかもなんと！ブラウザ拡張版では、**AutoFill 機能**が使用できる。
 
-![](/assets/blog/20221205-mfa-desktop-apps/autofill_example.svg)_Autofill の使用例。_
+![Autofill の使用例](/assets/blog/20221205-mfa-desktop-apps/autofill_example.svg)_Autofill の使用例。_
 
 ## どっちがおすすめ？
 

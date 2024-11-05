@@ -3,6 +3,7 @@ title: Next.jsでページごとの認証チェック・リダイレクトを実
 description: Next.jsのMiddlewareでページごとの認証チェック、リダイレクトを実装する方法を紹介する。
 date: 2023-05-03
 tag: Next.js
+slug: 20230503-nextjs-middleware-auth
 ---
 
 ![cover image from Unsplash](/assets/blog/20230503-nextjs-middleware-auth/cover.webp)

@@ -3,6 +3,7 @@ title:
 description: 
 date: 2024-10-30
 tag: CesiumJS, Vue.js
+slug: 20241030-cesiumjs-vue-render-error
 draft: true
 ---
 

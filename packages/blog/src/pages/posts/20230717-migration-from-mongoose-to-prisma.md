@@ -3,6 +3,7 @@ title: Mongoose から Prisma に移行して得た恩恵、思わぬつまづ�
 description: Prisma への移行作業を行ってわかった、Prismaのメリットと移行時のつまづきについて紹介する。
 date: 2023-07-17
 tag: MongoDB, Mongoose, Prisma
+slug: 20230717-migration-from-mongoose-to-prisma
 ---
 
 ![cover image from Unsplash](/assets/blog/20230717-migration-from-mongoose-to-prisma/cover.webp)

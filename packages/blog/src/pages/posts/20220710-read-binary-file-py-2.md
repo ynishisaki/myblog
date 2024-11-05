@@ -3,6 +3,7 @@ title: Pythonでバイナリファイルを読んでみよう（後編）
 description: Python でバイナリファイルを読む方法を紹介する。具体的には、WAVファイルからサンプリングレートと時系列データを取得することを目指す。
 date: 2022-07-10
 tag: Python
+slug: 20220710-read-binary-file-py-2
 ---
 
 ![cover image from Unsplash](/assets/blog/20220710-read-binary-file-py-2/cover.webp)
@@ -58,7 +59,7 @@ ax.set_ylabel('amplitude')
 fig.show()
 ```
 
-```
+```txt
 sampling_data = [ 0.          0.00097656  0.00198364 ... -0.54150391 -0.5423584 -0.54318237]
 sampling_rate = 1000
 ```
@@ -196,7 +197,7 @@ print(f'sampling_rate_int2 = {sampling_rate_int2}')
 print(f'sampling_rate_int2[0] = {sampling_rate_int2[0]}')
 ```
 
-```
+```txt
 変換前
 sampling_rate_bytes = b'\xe8\x03\x00\x00'
 
@@ -238,7 +239,7 @@ print(f'sampling_data type : {type(sampling_data)}')
 
 ```
 
-```
+```txt
 変換前
 sampling_data_bytes = b'\x00\x00 \x00A\x00b\x00\x83\x00\xa3\x00\xc4\x00\xe5\x00\x06\x01&\x01G\x01h\x01\x89\x01\xa9\x01\xca\x01\xeb\x01\x0c\x02-\x02M\x02n\x02\x8f\x02\xb0\x02\xd0\x02\xf1\x02\x12\x033\x03S\x03t\x03\x95\x03\xb6\x03\xd6 ...(省略)'
 
@@ -284,7 +285,7 @@ ax.set_ylabel('amplitude')
 fig.show()
 ```
 
-```
+```txt
 sampling_rate = 1000 [Hz]
 sampling_data = [     0     32     65 ... -17744 -17772 -17799]
 ```

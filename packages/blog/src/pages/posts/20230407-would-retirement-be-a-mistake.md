@@ -3,6 +3,7 @@ title: 退職は失敗ではない - 退職時に上司からかけられた言�
 description: 退職したいであろう（？）あなたの背中を押すような小話を、私自身の経験から紹介する。
 date: 2023-04-07
 tag: キャリア
+slug: 20230407-would-retirement-be-a-mistake
 ---
 
 ![cover image from Unsplash](/assets/blog/20230407-would-retirement-be-a-mistake/cover.webp)

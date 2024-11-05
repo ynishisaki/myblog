@@ -3,6 +3,7 @@ title: 【CesiumJS】地図タイルを白から黒までのグレースケー�
 description: CesiumJSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。
 date: 2024-09-02
 tag: CesiumJS
+slug: 20240902-cesiumjs-monochrome_map
 ---
 
 ![cover image](/assets/blog/20240902-cesiumjs-monochrome_map/cover.webp)

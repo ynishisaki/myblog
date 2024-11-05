@@ -3,6 +3,7 @@ title: 【BigQuery × GA4】PV数の集計方法
 description: BigQuery を用いて Googleアナリティクス4のPV (page_view)数を集計する方法を紹介する。
 date: 2022-10-20
 tag: BigQuery
+slug: 20221020-bigquery-ga4-pageview
 ---
 
 ![cover image from Unsplash](/assets/blog/20221020-bigquery-ga4-pageview/cover.webp)

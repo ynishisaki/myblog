@@ -3,6 +3,7 @@ title: 【MapLibre GL JS】地図タイルを白から黒までのグレース�
 description: MapLibre GL JSを使って、地理院タイルの標準地図をグレースケールで表示する方法を紹介する。
 date: 2024-09-01
 tag: MapLibre GL JS
+slug: 20240901-maplibregljs-monochrome_map
 ---
 
 ![cover image](/assets/blog/20240901-maplibregljs-monochrome_map/cover.webp)

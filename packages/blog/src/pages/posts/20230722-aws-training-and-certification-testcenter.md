@@ -3,6 +3,7 @@ title: 【23年7月受験】AWS認定試験（テストセンター受験）の�
 description: AWS 認定試験をテストセンターにて受験したので、事前準備から当日までの流れについて実体験を元に紹介する。
 date: 2023-07-22
 tag: AWS
+slug: 20230722-aws-training-and-certification-testcenter
 ---
 
 ![cover image from Unsplash](/assets/blog/20230722-aws-training-and-certification-testcenter/cover.webp)

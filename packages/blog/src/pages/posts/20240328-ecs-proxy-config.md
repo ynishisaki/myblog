@@ -3,6 +3,7 @@ title: AWS ECSをプロキシ経由でネットワーク接続する
 description: ECSからプロキシ経由でインターネットに接続する方法について、AWS公式ガイドを元に大まかな流れと注意点をまとめる。
 date: 2024-03-27
 tag: AWS
+slug: 20240328-ecs-proxy-config
 ---
 
 ![cover image from Unsplash](/assets/blog/20240328-ecs-proxy-config/cover.webp)

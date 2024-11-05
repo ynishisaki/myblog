@@ -3,6 +3,7 @@ title: 自分のブログにOpen Graph Protocol（OGP）を設定したよ
 description: 自分のブログ（Next.js）にOpen Graph Protocol（OGP）を設定し、Twitterでブログ記事へのリンクがカード表示されることを確かめる。
 date: 2022-05-04
 tag: 個人開発, Next.js, React
+slug: 20220504-open-graph-protocol
 ---
 
 ![cover image from Unsplash](/assets/blog/20220504-open-graph-protocol/cover.webp)

@@ -3,6 +3,7 @@ title: react-tableで表の特定列・行を固定する方法
 description: react-tableで、表をスクロールしつつヘッダー部分のみ固定する、または、表の左一列のみ固定する方法を紹介する。
 date: 2022-07-24
 tag: React
+slug: 20220724-fixed-row-and-col-table
 ---
 
 ![cover image from Unsplash](/assets/blog/20220724-fixed-row-and-col-table/cover.webp)

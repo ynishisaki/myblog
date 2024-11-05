@@ -3,6 +3,7 @@ title: Docker で Intel Fortran 実行環境を構築する
 description: Docker を活用して Fortran 環境を簡単にセットアップし、コンパイルと実行を行う方法を紹介する。
 date: 2023-10-24
 tag: Docker, Fortran
+slug: 20231024-ifort-docker-setup
 ---
 
 ![cover image from Unsplash](/assets/blog/20231024-ifort-docker-setup/cover.webp)
@@ -15,7 +16,7 @@ Docker を活用して Fortran 環境を簡単にセットアップし、コン�
 
 ## ディレクトリ構成
 
-```
+```txt
 .
 ├── Dockerfile
 ├── Makefile
@@ -105,7 +106,7 @@ CMD ["./hello"]
 
 作成されたイメージのサイズを確認してみる。
 
-```
+```txt
 $ docker image ls
 REPOSITORY        　(略)     　　SIZE
 ifort-hello-slim 　 (略)　　   　　　4.86GB
