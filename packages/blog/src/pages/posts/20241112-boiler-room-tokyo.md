@@ -6,7 +6,7 @@ tag: 音楽
 slug: 20241112-boiler-room-tokyo
 ---
 
-![cover image from Unsplash](/assets/blog/20241111-boiler-room-tokyo/cover.webp)
+![cover image from Unsplash](/assets/blog/20241112-boiler-room-tokyo/cover.webp)
 
 Boiler Room Tokyoに行ってきた。
 
