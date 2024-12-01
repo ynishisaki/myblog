@@ -1,6 +1,6 @@
 ---
 title: 高尾山に登ってきた
-description: 高尾山に登ってきた話。
+# description: 
 date: 2024-11-24
 tag: 山
 slug: 20241124-mount-takao
