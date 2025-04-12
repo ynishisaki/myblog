@@ -74,6 +74,11 @@ export default {
       })
       .replace(/\//g, "-");
   },
+  darkMode: true,
+  nextThemes: {
+    defaultTheme: "light",
+    themes: ["light", "dark"],
+  },
   readMore: "Read More",
   footer: <Footer />,
 };
