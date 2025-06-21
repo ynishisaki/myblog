@@ -109,7 +109,7 @@ async function faceBlurring(inputPath: string, outputPath: string) {
         width: boundingBox.width,
         height: boundingBox.height,
       })
-      .blur(100)
+      .blur(10)
       .toBuffer();
 
     compositeInputs.push({
